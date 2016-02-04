@@ -1,2 +1,2 @@
-EE
+# This my new Blog
 
