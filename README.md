@@ -3,3 +3,4 @@
 ### 辍如磨刀之石，不见其损，日有所亏。
 
 <div style="text-align:right">陶渊明</div>
+![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/cropped-Photo_20140225175851HBLM-e13944651686561.jpg)
