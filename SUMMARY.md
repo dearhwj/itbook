@@ -18,6 +18,8 @@
 * [MAC OS](macos/README.md)
 	* [MacOS软件搜集](macos/macos_software.md)
 	* [MacOS小窍门](macos/macos_tips.md) 	
+* [软件测试](test/README.md)
+	* [压力测试](test/pressure_test.md)		
 * [VIM](vim/README.md)
 	* [Vim小窍门](vim/vim_tips.md)
 	* [Vimdiff小窍门](vim/vimdiff_tips.md)	
