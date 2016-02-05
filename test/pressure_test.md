@@ -2,4 +2,4 @@
 在软件测试中：压力测试（Stress Test），也称为强度测试、负载测试。压力测试是模拟实际应用的软硬件环境及用户使用过程的系统负荷，长时间或超大负荷地运行测试软件，来测试被测系统的性能、可靠性、稳定性等。
 
 
-[一分钟学会Apache Benchmark](test/ab_one_minute.md)
+[一分钟学会Apache Benchmark](ab_one_minute.md)
