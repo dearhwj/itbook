@@ -26,9 +26,9 @@ J            合并两行
 
 ## vim删除
 
-[轻快的VIM（三）：删除]("http://www.cnblogs.com/nerxious/archive/2012/12/21/2828520.html")
+[轻快的VIM（三）：删除](http://www.cnblogs.com/nerxious/archive/2012/12/21/2828520.html)
 
-[vim删除文本的命令]("http://blog.csdn.net/riag/article/details/4184120")
+[vim删除文本的命令](http://blog.csdn.net/riag/article/details/4184120)
 
 #### 字符删除
 x            删除光标所在处字符
@@ -66,7 +66,7 @@ dgg    删除到文件首
 []
 
 
-#### [vim删除光标所在行上面几行]("http://zhidao.baidu.com/question/482024858.html")
+#### [vim删除光标所在行上面几行](http://zhidao.baidu.com/question/482024858.html)
 
 d3k
 向上删除3行，包括当前行总共4行。那个3可以换成任意数字。你也可以搭配j来向下删除一些行。
@@ -85,7 +85,7 @@ dgg  从当前行删除到第一行。
 
 
 
-####  [VI中的多行删除与复制]("http://blog.csdn.net/wallwind/article/details/7633356")
+####  [VI中的多行删除与复制](http://blog.csdn.net/wallwind/article/details/7633356)
 
 VI中的多行删除与复制
 法一： 
@@ -135,7 +135,7 @@ VI中的多行删除与复制
 要删除多行的话，可以用 ：5, 9 de
 
 
-#### [vim处理字符的大小写转换]("http://blog.chinaunix.net/uid-21843387-id-106013.html")
+#### [vim处理字符的大小写转换](http://blog.chinaunix.net/uid-21843387-id-106013.html)
 
 	~          将光标下的字母改变大小写
 	3~         将光标位置开始的3个字母改变其大小写
@@ -305,7 +305,7 @@ tips：``反引号可以返回到使用G之前的位置
 
 
 
-## vim中执行shell命令小结
+### vim中执行shell命令小结
 - !command
 
 	不退出vim，并执行shell命令command，将命令输出显示在vim的命令区域，不会改变当前编辑的文件的内容
@@ -346,8 +346,8 @@ tips：``反引号可以返回到使用G之前的位置
 - 开启shell命令 :shell，退出该shell exit
  
 ### 参考
-[vi编辑器常用的命令及快捷键]("http://hily.me/blog/2006/04/vi-shortcut/")
+[vi编辑器常用的命令及快捷键](http://hily.me/blog/2006/04/vi-shortcut/)
 
-[Vim 快捷键整理]("http://blog.csdn.net/ceven2010/article/details/7406341")
+[Vim 快捷键整理](http://blog.csdn.net/ceven2010/article/details/7406341)
  
-[ vi/vim 命令手册（高级篇） ]("http://blog.chinaunix.net/uid-20784896-id-495557.html") 
+[ vi/vim 命令手册（高级篇） ](http://blog.chinaunix.net/uid-20784896-id-495557.html) 

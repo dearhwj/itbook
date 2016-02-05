@@ -1,7 +1,7 @@
 # JQuery Tips
-[JQuery AJAX提交中文乱码的解决方案]("")
 
-[jQuery页面加载初始化的3种方法]("http://blog.csdn.net/tjcyjd/article/details/6713474")
+
+[jQuery页面加载初始化的3种方法](http://blog.csdn.net/tjcyjd/article/details/6713474)
 	
 	$(document).ready(function(){  
      alert("第一种方法。");   
@@ -16,11 +16,11 @@
 	});
 
 
-[jQuery JSONP 跨域实践]("http://aijezdm915.iteye.com/blog/1066299")
+[jQuery JSONP 跨域实践](http://aijezdm915.iteye.com/blog/1066299)
 
 
 
-[JQuery ajax]("http://www.cnblogs.com/jayleke/archive/2012/08/10/2633174.html") 
+[JQuery ajax](http://www.cnblogs.com/jayleke/archive/2012/08/10/2633174.html) 
     
     $.ajax({
 
@@ -36,7 +36,7 @@
 
     });
 
-[jquery radio的取值 radio的选中 radio的重置]("http://www.cnblogs.com/lear/p/3392644.html")
+[jquery radio的取值 radio的选中 radio的重置](http://www.cnblogs.com/lear/p/3392644.html)
 
 	1. 获取radio选中的value.
 
@@ -65,9 +65,9 @@
 	$('input:radio[name=sex]').attr('checked',false);
 
 
-[jquery 调用 click 事件 的 三种 方式]("http://blog.csdn.net/topwqp/article/details/8561366")
+[jquery 调用 click 事件 的 三种 方式](http://blog.csdn.net/topwqp/article/details/8561366)
 
-第一种方法
+	第一种方法
 
     $(document).ready(function(){  
      $("#clickme").click(function(){  
@@ -75,13 +75,13 @@
       });  
       
       
-第二种方法
+	第二种方法
 
     $('#clickmebind').bind("click", function(){  
     alert("Hello World  bind");  
     });       
     
-第三种方法
+	第三种方法
 
 	$('#clickmeon').on('click', function(){  
  	alert("Hello World  on");  
