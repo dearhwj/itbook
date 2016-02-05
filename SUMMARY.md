@@ -3,6 +3,8 @@
 * [算法](algorithm/README.md)
 	* [bloom filter](algorithm/bloom_filter.md)
 	* [其他算法](algorithm/other_algorithms.md)
+* [数据库](database/README.md)	
+	* [Mysql小技巧](database/mysql_tips.md)	
 * [Javascript](Javascript/README.md)
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)
