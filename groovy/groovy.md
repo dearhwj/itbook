@@ -1,11 +1,11 @@
 # Groovy
 
 ### 入门教程
-[Groovy Document]("http://groovy-lang.org/documentation.html")
+[Groovy Document](http://groovy-lang.org/documentation.html)
 
-[Groovy高效编程——动态改变对象的能力]("http://developer.51cto.com/art/200710/58079_all.htm")
+[Groovy高效编程——动态改变对象的能力](http://developer.51cto.com/art/200710/58079_all.htm)
 
-[Groovy中的五种特殊运算符]("http://it.chinawin.net/softwaredev/article-1b104.html")
+[Groovy中的五种特殊运算符](http://it.chinawin.net/softwaredev/article-1b104.html)
 
 	*. 一个集合使用展开运算符(*.)可以得到一个元素为原集合各个元素执行后面指定方法所得值的集合 
 	?: Elvis Operator(二元运算符) 由于Groovy中“非空即真”，所以原java中的三元运算符可以简化为二元运算符 
@@ -15,7 +15,7 @@
 	.& Method Closure Operator 我们知道闭包可以被作为一个方法的参数，但是怎么让一个方法作为一个方法的参数呢？Method Closure Operator就是用来解决上述问题的，它允许将一个方法当成一个闭包作为另一个方法的参数。
 
 
-[Groovy高效编程]("http://www.blogjava.net/BlueSUN/archive/2007/08/26/139460.html")
+[Groovy高效编程](http://www.blogjava.net/BlueSUN/archive/2007/08/26/139460.html)
 
 	each 遍历list
 	eachWithIndex 带index的each
@@ -40,7 +40,7 @@
 
 
 
-[Groovy入门教程]("http://blog.csdn.net/kmyhy/article/details/4200563")
+[Groovy入门教程](http://blog.csdn.net/kmyhy/article/details/4200563)
 
 	1. 不在需要程序员声明任何构造函数，因为groovy自动提供了足够你使用的构造函数。不用担心构造函数不够多，因为实际上只需要两个构造函数（1个不带参数的默认构造函数，1个只带一个map参数的构造函数—由于是map类型，通过这个参数你可以在构造对象时任意初始化它的成员变量）。
 	2. groovy中默认的修饰符就是public，所以public修饰符你根本就不需要写，这点跟java不一样。
@@ -83,8 +83,15 @@
 	Groovy所有的对象都有一个元类metaClass，我们可以通过metaClass属性访问该元类。通过元类，可以为这个对象增加方法（在java中不可想象）！
 	
 
+[安全导航](http://www.cnblogs.com/rollenholt/p/3349052.html)
 
- [groovy 定义数组方法]("http://zhidao.baidu.com/question/1925109968157524147.html")
+	如果你在访问属性的时候，避免出现空指针异常的话，那么安全导航操作符可能适合你：
+
+	def foo = null
+	def bar = foo?.something?.myMethod()
+	assert bar == null
+
+ [groovy 定义数组方法](http://zhidao.baidu.com/question/1925109968157524147.html)
 
  一、数组的定义及赋初值
 在Groovy语言中，数组的定义和Java语言中一样。
@@ -132,30 +139,30 @@
 	···
 
 ### 反射
-[Groovy深入探索——Metaclass的存放]("http://www.blogjava.net/johnnyjian/archive/2010/03/19/315962.html")
+[Groovy深入探索——Metaclass的存放](http://www.blogjava.net/johnnyjian/archive/2010/03/19/315962.html)
 
 	总的来说，在各种情况下，Metaclass的存放方式如下： 
 	Per-class Metaclass：存放在Class对应的ClassInfo中，而Class到ClassInfo的映射关系则存放在ClassInfo中的一个静态的ManagedConcurrentMap中；
 	POGO Per-instance Metaclass：直接存放在对象的metaClass字段中。
 	POJO Per-instance Metaclass：对象到Metaclass的映射关系存放在该对象的Class对应的ClassInfo中的一个ManagedConcurrentMap中。
 
-[Groovy基础——MetaClass详解]("http://attis-wong-163-com.iteye.com/blog/1235880")
+[Groovy基础——MetaClass详解](http://attis-wong-163-com.iteye.com/blog/1235880)
 
 	在groovy中任何的对象都是实现GroovyObject并且继承GroovyObjectSupport的，在GroovyObject的接口中，我们可以看到几个方法首先是getMetaClass方法和setMetaClass方法，metaClass用来支持动态方法和动态参数的调用。另一组方法是getProperty和setProperty方法，这组方法是用来支持动态参数的设定与赋值的。最后还有一个invokeMethod方法，该方法则是用于调用动态方法的。
 	
 	
 ### DSL
-[Groovy高效编程——创建DSL]("http://www.blogjava.net/BlueSUN/archive/2008/05/17/201026.html")
+[Groovy高效编程——创建DSL](http://www.blogjava.net/BlueSUN/archive/2008/05/17/201026.html)
 
-[Groovy高效编程——DSL实战(更新于2008.05.25)]("http://www.blogjava.net/BlueSUN/archive/2008/05/24/202609.html")	
+[Groovy高效编程——DSL实战(更新于2008.05.25)](http://www.blogjava.net/BlueSUN/archive/2008/05/24/202609.html)	
 
 ### Closure	
 	
-[Groovy解惑——closure中的delegate]("http://www.blogjava.net/BlueSUN/archive/2007/12/22/169580.html")	
+[Groovy解惑——closure中的delegate](http://www.blogjava.net/BlueSUN/archive/2007/12/22/169580.html)	
 	那closure的delegate的默认值是什么呢？默认值是closure所在context中的this（为了方便理解起见，可以暂时这么记忆，因为closure套closure的情况不是很多见。其实closure的delegate的默认值是closure的隐式变量owner，而owner通常引用closure所在context中的this，除非closure所处的context又是个closure，那么owner引用的就是那个外层的closure
 
 
-[Groovy解惑——closure中的owner]("http://www.blogjava.net/BlueSUN/archive/2007/12/archive/2007/12/23/169683.html")
+[Groovy解惑——closure中的owner](http://www.blogjava.net/BlueSUN/archive/2007/12/archive/2007/12/23/169683.html)
 
 	那么this, delegate以及owner有什么关系呢？
 	隐式变量delegate的默认值为owner，
@@ -166,16 +173,16 @@
 
 
 ### 正则表达式
-[groovy-正则表达式]("http://www.cnblogs.com/rollenholt/p/3349060.html")
+[groovy-正则表达式](http://www.cnblogs.com/rollenholt/p/3349060.html)
 
 	Groovy使用~”pattern” 来支持正则表达式，它将使用给定的模式字符串创建一个编译好的Java Pattern 对象。Groovy也支持 =~（创建一个Matcher）和 ==~ (返回boolean，是否给定的字符串匹配这个pattern)操作符。
 	
 ### 文件操作
-[groovy操作文件、目录及xml]("http://it.chinawin.net/softwaredev/article-e4.html")
+[groovy操作文件、目录及xml](http://it.chinawin.net/softwaredev/article-e4.html)
 
 
 ### HttpBuilder
-[Java程序员为什么学习Groovy(HttpBuilder)]("http://www.jianshu.com/p/a519bbd6e26c")
+[Java程序员为什么学习Groovy(HttpBuilder)](http://www.jianshu.com/p/a519bbd6e26c)
 
 	
 
