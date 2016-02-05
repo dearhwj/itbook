@@ -15,7 +15,7 @@
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)
 	* [Jquery小窍门](Javascript/jquery_tips.md)
-* [MAC OS](macos/README.MD)
+* [MAC OS](macos/README.md)
 	* [MacOS软件搜集](macos/macos_software.md)
 	* [MacOS小窍门](macos/macos_tips.md) 	
 * [VIM](vim/README.md)

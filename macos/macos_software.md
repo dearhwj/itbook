@@ -7,4 +7,4 @@ dash是为程序员量身定制的各类API & Command的查询工具，有了Das
 
 指定文档进行搜索
 ![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/dash_search_in_doc.png)
-![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/dash_search_in_doc.png)
+![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/dash_search_in_doc2.png)
