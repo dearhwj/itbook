@@ -25,3 +25,5 @@
 * [VIM](vim/README.md)
 	* [Vim小窍门](vim/vim_tips.md)
 	* [Vimdiff小窍门](vim/vimdiff_tips.md)	
+* [工具](tools/README.md)
+	* [Markdown](tools/markdown.md) 		
