@@ -1,6 +1,6 @@
 # AWK Tips
 
-[awk与cut在以空格为分割域时的区别]("http://blog.chinaunix.net/uid-25513153-id-178420.html")
+[awk与cut在以空格为分割域时的区别](http://blog.chinaunix.net/uid-25513153-id-178420.html)
 
 	awk 以空格为分割域时，是以单个或多个连续的空格为分隔符的；
 	cut则是以单个空格作为分隔符。
@@ -17,7 +17,7 @@ awk取一行中倒数第N个域，有什么方法吗
 	$(NF-5)
 
 
- [AWK 输出 ‘，“ 单引号，双引号 ]("http://ryyt1231.blog.163.com/blog/static/20708281201101945417606/")
+ [AWK 输出 ‘，“ 单引号，双引号 ](http://ryyt1231.blog.163.com/blog/static/20708281201101945417606/)
 
 	双引号：
 

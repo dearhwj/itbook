@@ -1,6 +1,6 @@
 # ls Tips
 
-[ linux下 ls 排序]("http://blog.itpub.net/14184018/viewspace-772677/")
+[ linux下 ls 排序](http://blog.itpub.net/14184018/viewspace-772677/)
 
 	ls -lS                       按大小降序排列
 	ls -l | sort -n -k5    按大小升序

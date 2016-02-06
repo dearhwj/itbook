@@ -1,8 +1,8 @@
 # Linux Tips
 
-[Linux curl命令详解]("http://www.linuxdiyf.com/linux/2800.html")
+[Linux curl命令详解](http://www.linuxdiyf.com/linux/2800.html)
 
-[curl cookie 抓取登陆后网页]("http://blog.sina.com.cn/s/blog_63d675190100p4vg.html")
+[curl cookie 抓取登陆后网页](http://blog.sina.com.cn/s/blog_63d675190100p4vg.html)
 
 	#cookie.txt
 
@@ -19,7 +19,7 @@
 	name - The name of the variable.
 	value - The value of the variable.
 
-[Linux 下curl模拟Http 的get or post请求]("http://blog.sina.com.cn/s/blog_6e2d53050101k230.html")
+[Linux 下curl模拟Http 的get or post请求](http://blog.sina.com.cn/s/blog_6e2d53050101k230.html)
 
 	curl -d "param1=value1&param2=value2" "http://www.baidu.com"
 
