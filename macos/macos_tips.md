@@ -1,10 +1,10 @@
 # Mac Tips
-[MAC下JAVA的安装路径]("http://www.blogjava.net/paulwong/archive/2014/07/12/415725.html")
+[MAC下JAVA的安装路径](http://www.blogjava.net/paulwong/archive/2014/07/12/415725.html)
 
 	/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home
 
 
-[简单命令行阻止Mac休眠]("http://digi.it.sohu.com/20121218/n360779320.shtml")
+[简单命令行阻止Mac休眠](http://digi.it.sohu.com/20121218/n360779320.shtml)
 
 	caffeinate -u -t 14400
 
@@ -14,7 +14,7 @@
 	
 	
 	
-[Mac 实用技巧：记住这几个快捷键，让光标指哪到哪]("http://sspai.com/32769")
+[Mac 实用技巧：记住这几个快捷键，让光标指哪到哪](http://sspai.com/32769)
 
 	「Command + 方向键上」将光标快速移动到整篇文本开头，
 	「Command + 方向键下」快速移动到文章结尾。	
@@ -28,7 +28,7 @@
 	「Command + Shift +左/右」可以选中一句话。
 	
 
-[Linux、Windows、Mac文本文件转换]("http://blog.csdn.net/yxc135/article/details/18909173")
+[Linux、Windows、Mac文本文件转换](http://blog.csdn.net/yxc135/article/details/18909173)
 
 	换行符的区别：
 	Windows:     '\r\n'

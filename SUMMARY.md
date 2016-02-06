@@ -27,7 +27,8 @@
 	
 * [MAC OS](macos/README.md)
 	* [MacOS软件搜集](macos/macos_software.md)
-	* [MacOS小窍门](macos/macos_tips.md) 	
+	* [MacOS小窍门](macos/macos_tips.md) 
+	* [程序员如何优雅地使用Mac](macos/mac_dev.md)	
 * [软件测试](test/README.md)
 	* [压力测试](test/pressure_test.md)
 		* [一分钟学会AB](test/ab_one_minute.md)	
