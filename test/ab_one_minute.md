@@ -1,7 +1,7 @@
 # 一分钟学会Apache Benchmark
 
 ab的全称是ApacheBench，是 Apache 附带的一个小工具，专门用于 HTTP Server 的benchmark testing，可以同时模拟多个并发请求
-[文档地址]("https://httpd.apache.org/docs/2.2/programs/ab.html")
+[文档地址](https://httpd.apache.org/docs/2.2/programs/ab.html)
 
 ### 安装
 如果使用的是mac，mac默认都装了:-)，Windows的自己去找找吧。
