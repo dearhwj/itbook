@@ -4,10 +4,10 @@
 
 ### Idea快捷方式
 
-[IntelliJ IDEA最新快捷键大全（Mac版）]("http://www.evget.com/article/2014/4/21/20866.html")
+[IntelliJ IDEA最新快捷键大全（Mac版）](http://www.evget.com/article/2014/4/21/20866.html)
 
 
-[Intellij IDEA 快捷键大全]("http://www.open-open.com/lib/view/open1396578860887.html")
+[Intellij IDEA 快捷键大全](http://www.open-open.com/lib/view/open1396578860887.html)
 
 	Ctrl+U，转到父类
 	Ctrl+”+/-”，当前方法展开、折叠
@@ -16,7 +16,7 @@
 	Tab，代码标签输入完成后，按 Tab，生成代码
 	Ctrl+Shift+”+/-”，全部展开、折叠
 
-[idea 十大快捷方式]("http://blog.csdn.net/dc_726/article/details/42784275")
+[idea 十大快捷方式](http://blog.csdn.net/dc_726/article/details/42784275)
 
 	Top #10切来切去：Ctrl+Tab
 	Top #9选你所想：Ctrl+W
@@ -33,7 +33,7 @@
 	Ctrl+Shift+V粘贴很早以前拷贝过的	
 
 
-[Mac版Intellij IDEA常用快捷键和配置]("http://www.3lian.com/edu/2015/04-15/205566.html")
+[Mac版Intellij IDEA常用快捷键和配置](http://www.3lian.com/edu/2015/04-15/205566.html)
 	
 	shift + command + u 大小写转换
 	command + alt + t
@@ -43,7 +43,7 @@
 	Ctrl+Shift+Up/Down 代码向上/下移动。
 
 
-[IntelliJ IDEA 快捷键和设置]("http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html")
+[IntelliJ IDEA 快捷键和设置](http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html)
 
 1. Ctrl+J 自动代码
 2. CTRL+ALT+I  自动缩进 
