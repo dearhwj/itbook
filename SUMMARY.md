@@ -27,4 +27,5 @@
 	* [Vimdiff小窍门](vim/vimdiff_tips.md)	
 * [开发工具](tools/README.md)
 	* [IntelliJ IDEA](tools/idea_tips.md) 	
-	* [Markdown](tools/markdown.md) 		
+	* [Markdown](tools/markdown.md) 
+	* [dot](tools/dot_drawing.md)		
