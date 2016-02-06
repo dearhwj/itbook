@@ -39,7 +39,11 @@ ab  -n 100 -c 2 https://www.aliyun.com/
 
 #### 对需要登录的URL进行压力测试
 
-多数网站是通过cookie记录登录信息的，我们就可以利用这个实现对登录URL的压力测试。以aliyun.com为例![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/login-ticket.png),把这个cookie的值提出来。组成下面这个命令行。 -C 用来指定cookie的key和value，-H用来指定HTTP的Head信息，因为我们调用的html是是一个jsonp接口，服务端对refer进行了限制。-v 这个参数可以显示返回的明细信息，我们通过这个参数可以看到服务器返回的实际的内容
+多数网站是通过cookie记录登录信息的，我们就可以利用这个实现对登录URL的压力测试。以aliyun.com为例!
+
+[image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/login-ticket.png)
+
+把这个cookie的值提出来。组成下面这个命令行。 -C 用来指定cookie的key和value，-H用来指定HTTP的Head信息，因为我们调用的html是是一个jsonp接口，服务端对refer进行了限制。-v 这个参数可以显示返回的明细信息，我们通过这个参数可以看到服务器返回的实际的内容
 
  ab  -v 3  -n  20 -c 2 -H  'referer:https://www.aliyun.com/' -C  'login_aliyunid_ticket=3_1$$w0Kpe0QRb9HAvoZo9V6an0wVT_HlGIKU7t1E5ePiMUZf_YNpoU_BOTwChTBoNM1ZJeedfK9zxYnbN5hossqIZCr6t7SGxRigm2Cb4fGaCdBZWIzmgdHq6sXXZQg4KFWufyvpeV*0*Cm58slMTJt0' https://promotion.aliyun.com/user/accountInfo.htm\?cback\=aliyunTopbarAccountInfo\&_\=1454220335484
 通过屏幕的输出能看到
