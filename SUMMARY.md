@@ -40,4 +40,5 @@
 * [开发工具](tools/README.md)
 	* [IntelliJ IDEA](tools/idea_tips.md) 	
 	* [Markdown](tools/markdown.md) 
-	* [dot](tools/dot_drawing.md)		
+	* [dot](tools/dot_drawing.md)	
+	* [Gitbook](tools/git_book.md)		
