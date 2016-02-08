@@ -3,6 +3,8 @@
 * [算法](algorithm/README.md)
 	* [bloom filter](algorithm/bloom_filter.md)
 	* [其他算法](algorithm/other_algorithms.md)
+* [架构](architecture/README.md)
+	* [REST](architecture/rest.md) 	 	
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md) 
 	* [chrome小技巧](chrome/chrome_tips.md) 
