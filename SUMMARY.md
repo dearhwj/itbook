@@ -13,7 +13,7 @@
 	* [Groovy脚本小技巧](groovy/grovvy_script.md)
 	* [spock](groovy/spock.md) 
 * [Java](java/README.md)		
-	* [Java开源项目](java/java_open_source_project)
+	* [Java开源项目](java/java_open_source_project.md)
 * [Javascript](Javascript/README.md)
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)
