@@ -4,6 +4,9 @@
 
 [Maven: The Complete Reference]("http://books.sonatype.com/mvnref-book/reference/") 
 
+### 插件机制
+[Maven 插件机制](http://www.tuicool.com/articles/ry2qAbb)
+
 
 ### Plugin
 [Maven Help插件的使用]("http://blog.csdn.net/zgmzyr/article/details/8691053")
