@@ -7,4 +7,11 @@
 
 	HttpOnly标志的引入是为了防止设置了该标志的cookie被JavaScript读取，但事实证明设置了这种cookie在某些浏览器中却能被JavaScript覆盖，可被攻击者利用来发动session fixation攻击。该问题被提出后，得到了相关厂商的响应
 	
-[cookie窃取和session劫持](http://blogread.cn/it/article/6919?f=sa)	
+[cookie窃取和session劫持](http://blogread.cn/it/article/6919?f=sa)
+
+
+[浅谈跨域WEB攻击](http://www.80sec.com/cross_domain_attack.html)
+	
+	基于cookie安全的跨域攻击
+	基于ajax跨域设置的跨域攻击
+	
