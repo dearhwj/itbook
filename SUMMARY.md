@@ -43,7 +43,7 @@
 	* [Vim小窍门](vim/vim_tips.md)
 	* [Vimdiff小窍门](vim/vimdiff_tips.md)
 * [WEB开发]
-	* [Cookie小窍门](web/cookie.md) 			
+	* [Cookie小窍门](web/cookie_tips.md) 			
 * [开发工具](tools/README.md)
 	* [IntelliJ IDEA](tools/idea_tips.md) 	
 	* [Markdown](tools/markdown.md) 

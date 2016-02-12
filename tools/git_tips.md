@@ -60,6 +60,9 @@
 	$ git checkout .
 	
 [git克隆远程项目并创建本地对应分支](http://jingyan.baidu.com/article/19192ad83ea879e53e5707ce.html)
+
+### 扩展
+[如何在Git Hooks中运行Grunt任务](http://www.jianshu.com/p/d9d6c90bbc9c)
 	
 ### 参考
 
