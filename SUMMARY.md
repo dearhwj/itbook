@@ -36,6 +36,8 @@
 * [Node](node/README.md)
 	* [Grunt小窍门](node/grunt_tips.md)
 	* [npm小窍门](node/npm_tips.md)	
+* [SEO](seo/README.md)
+	* [SEO小窍门](seo/seo_tips.md) 	
 * 安全
 	* [Web安全](security/web_security.md)	
 * [软件测试](test/README.md)
