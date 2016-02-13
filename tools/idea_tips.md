@@ -54,3 +54,10 @@
 7. ALT+ ↑/↓  在方法间快速移动定位 
 8. CTRL+ALT+F12  资源管理器打开文件夹 
 
+
+[如何成为 IntelliJ IDEA 键盘流](https://www.zhihu.com/question/20783392/answer/27211385)
+	
+
+	这是IDEA 13.1 新增的功能。详细演示和说明看这里 Postfix Code Completion in IntelliJ IDEA 13.1 EAP 。简单来说就是你可以先输入语句的主体（例如要赋值的表达式，或者要循环的集合变量），然后输入用小数点分隔的模板名称后缀，IDE自动帮你智能展开。
+
+
