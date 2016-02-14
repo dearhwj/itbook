@@ -32,9 +32,11 @@
 	* [运维小窍门](linux/linux_ops.md)	
 * [MAC OS](macos/README.md)
 	* [MacOS软件搜集](macos/macos_software.md)
+		* [Popclip以及插件开发](macos/popclip_tips.md)
+		* [Dash](macos/dash.md)
 	* [MacOS小窍门](macos/macos_tips.md) 
 	* [程序员如何优雅地使用Mac](macos/mac_dev.md)	
-	* [Popclip以及插件开发](macos/popclip_tips.md)
+	
 * [Node](node/README.md)
 	* [Grunt小窍门](node/grunt_tips.md)
 	* [npm小窍门](node/npm_tips.md)	
