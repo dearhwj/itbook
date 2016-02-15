@@ -8,3 +8,11 @@ dash是为程序员量身定制的各类API & Command的查询工具，有了Das
 指定文档进行搜索
 ![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/dash_search_in_doc.png)
 ![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/dash_search_in_doc2.png)
+
+
+### Dash周边
+除了Dash应用本身，还有一些插件和扩展可以更方便的使用Dash.
+
+#### IntelliJ IDEA的Dash插件
+在IDEA的插件仓库中安装Dash插件以后，对选中的关键字 通过快捷键Cmd-Shift-D (Mac OS X) or Ctrl-Shift-D (Windows, Linux)直接查询相关的API文档
+
