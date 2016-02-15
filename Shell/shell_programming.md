@@ -1,5 +1,13 @@
 # Shell Programming
 
+
+请问如何在shell中获得当前用户名
+
+		name=`whoami`
+
+[shell if else以及大于、小于、等于逻辑表达式](http://lxsym.blog.51cto.com/1364623/866331)
+	
+	
 [shell 判断文件、目录是否存在](http://blog.sina.com.cn/s/blog_9447b14f01016q2y.html)
 	
 	shell判断文件,目录是否存在或者具有权限 
@@ -133,7 +141,7 @@
 
 
 
-### [Linux bash shell 逐行读取文件的三种方法]("http://blog.chinaunix.net/uid-20551209-id-3761912.html")
+[Linux bash shell 逐行读取文件的三种方法](http://blog.chinaunix.net/uid-20551209-id-3761912.html)
 
 #### 方法一，指定换行符读取：
 
@@ -168,7 +176,7 @@
 访问二和三比较相似，推荐用方法三
 
 
-[用shell将时间字符串与时间戳互转]("http://blog.csdn.net/runming918/article/details/7384828")
+[用shell将时间字符串与时间戳互转](http://blog.csdn.net/runming918/article/details/7384828)
 
 	用shell将时间字符串与时间戳互转：
       date -d "2010-10-18 00:00:00" +%s         输出形如：1287331200

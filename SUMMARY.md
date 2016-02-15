@@ -32,7 +32,7 @@
 		* [zsh小窍门](linux/zsh.md) 
 		* [ssh小窍门](linux/ssh.md) 	
 	* [运维小窍门](linux/linux_ops.md)
-	* [Shell编程小窍门](linux/shell_programming.md)
+	* [Shell编程小窍门](Shell/shell_programming.md)
 * [MAC OS](macos/README.md)
 	* [MacOS软件搜集](macos/macos_software.md)
 		* [Popclip以及插件开发](macos/popclip_tips.md)
