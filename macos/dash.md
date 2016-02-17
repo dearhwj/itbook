@@ -16,3 +16,18 @@ dash是为程序员量身定制的各类API & Command的查询工具，有了Das
 #### IntelliJ IDEA的Dash插件
 在IDEA的插件仓库中安装Dash插件以后，对选中的关键字 通过快捷键Cmd-Shift-D (Mac OS X) or Ctrl-Shift-D (Windows, Linux)直接查询相关的API文档
 
+![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/idea_dash_plugin.png)
+
+
+#### PopClip
+PopClip是一款Mac上人尽皆知的小工具,它简单高效且具有强大的拓展功能，PopClip也提供了Dash的扩展
+
+![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/dash_pop_plugin.png)
+
+鼠标选中一段文字，点击Dash的图标
+![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/dash_popclip_plugin_2.png)
+
+然后Dash就会被唤起，并根据你选中的文字，查询相应的文档
+
+![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/dash_popclip_plugin3.png)
+
