@@ -59,6 +59,7 @@
 	* [IntelliJ IDEA](tools/idea_tips.md) 	
 	* [Markdown](tools/markdown.md) 
 	* [dot](tools/dot_drawing.md)	
-	* [Gitbook](tools/git_book.md)		
+	* [Gitbook](tools/git_book.md)
+	* [Sublim Text](tools/sublim_text_tips.md)	
 * 程序猿宝典
 	* [值得程序猿关注的微信公众号](programmer/wx_public.md) 	
