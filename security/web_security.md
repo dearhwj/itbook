@@ -1,7 +1,6 @@
 # WEB Security
 
-	
-[cookie窃取和session劫持](http://blogread.cn/it/article/6919?f=sa)
+
 
 
 [浅谈跨域WEB攻击](http://www.80sec.com/cross_domain_attack.html)

@@ -14,3 +14,5 @@ HttpOnly就是在设置cookie一个参数，一旦被设置，在浏览器的doc
 [使用HttpOnly提升Cookie安全性](http://blog.csdn.net/zzzmmmkkk/article/details/10862949)
 
 [浏览器中因cookie设置HttpOnly标志引起的安全问题](http://netsecurity.51cto.com/art/201404/435401.htm)
+
+[cookie窃取和session劫持](http://blogread.cn/it/article/6919?f=sa)
