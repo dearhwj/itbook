@@ -49,6 +49,7 @@
 	* [SEO小窍门](seo/seo_tips.md) 	
 * 安全
 	* [Web安全](security/web_security.md)	
+	* [使用HttpOnly提升Cookie安全性](security/cookie_httponly.md)
 * [软件测试](test/README.md)
 	* [压力测试](test/pressure_test.md)
 		* [一分钟学会AB](test/ab_one_minute.md)	
