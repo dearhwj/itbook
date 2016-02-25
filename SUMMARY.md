@@ -58,6 +58,9 @@
 	* [Vimdiff小窍门](vim/vimdiff_tips.md)
 * [WEB开发]
 	* [Cookie小窍门](web/cookie_tips.md) 		
+* [阿里云云产品]
+	* [ODPS](aliyun/odps_intro.md)	
+		*[ODPS中自定义函数] 	
 * [开发工具](tools/README.md)
 	* [IntelliJ IDEA](tools/idea_tips.md) 	
 	* [Markdown](tools/markdown.md) 
@@ -65,4 +68,5 @@
 	* [Gitbook](tools/git_book.md)
 	* [Sublim Text](tools/sublim_text_tips.md)	
 * 程序猿宝典
-	* [值得程序猿关注的微信公众号](programmer/wx_public.md) 	
+	* [值得程序猿关注的微信公众号](programmer/wx_public.md) 
+	* [java选择题(Easy带结果)](programmer/java_basic.md)	
