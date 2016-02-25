@@ -68,6 +68,7 @@
 	* [Gitbook](tools/git_book.md)
 	* [Sublim Text](tools/sublim_text_tips.md)	
 * 程序猿宝典
-	* [值得程序猿关注的微信公众号](programmer/wx_public.md) 
+	* [值得程序员关注的微信公众号](programmer/wx_public.md) 
+	* [程序员鄙视链](programmer/dev_down.md)
 	* [java选择题(简单不结果)](programmer/java_basic_noanswer.md)
 	* [java选择题(简单带结果)](programmer/java_basic.md)	
