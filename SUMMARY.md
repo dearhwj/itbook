@@ -71,4 +71,5 @@
 	* [值得程序员关注的微信公众号](programmer/wx_public.md) 
 	* [程序员鄙视链](programmer/dev_down.md)
 	* [java选择题(简单不结果)](programmer/java_basic_noanswer.md)
-	* [java选择题(简单带结果)](programmer/java_basic.md)	
+	* [java选择题(简单带结果)](programmer/java_basic.md)
+	* [java高阶面试题](programmer/java_advance.md)	
