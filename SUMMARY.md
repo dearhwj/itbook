@@ -50,6 +50,7 @@
 * 安全
 	* [Web安全](security/web_security.md)	
 	* [使用HttpOnly提升Cookie安全性](security/cookie_httponly.md)
+	* [转载：JSONP 安全攻防技术](security/jsonp_hijacker.md)
 * [软件测试](test/README.md)
 	* [压力测试](test/pressure_test.md)
 		* [一分钟学会AB](test/ab_one_minute.md)	
