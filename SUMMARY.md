@@ -68,6 +68,7 @@
 	* [dot](tools/dot_drawing.md)	
 	* [Gitbook](tools/git_book.md)
 	* [Sublim Text](tools/sublim_text_tips.md)	
+	* [Gitbook](tools/gitbook.md)
 * 程序猿宝典
 	* [值得程序员关注的微信公众号](programmer/wx_public.md) 
 	* [程序员鄙视链](programmer/dev_down.md)
