@@ -5,3 +5,8 @@
 
 	窗口管理软件 - SizeUp
 	Manico
+	
+[Shortcat：键盘快捷键新玩儿法](http://www.waerfa.com/shortcat)
+
+	Shortcat 是一款键盘辅助工具，可以通过快捷键到达屏幕上的任何文字而不需要移动鼠标
+	
