@@ -1,5 +1,5 @@
 # sizeup
-发布日期：2016年3月7日
+发表日期：2016年3月7日
 
 SizeUp 是一款窗口管理软件,快捷键完成各种窗口变换。另外有一款类似的窗口管理软件Moom，功能差不多，区别是快捷键不太一样。
 给个网上sizeup的介绍链接，[http://www.macx.cn/thread-2152214-1-1.html](http://www.macx.cn/thread-2152214-1-1.html) 
