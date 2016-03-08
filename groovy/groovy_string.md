@@ -85,3 +85,7 @@ ${..}里可以包含任意有效的Groovy表达式，包括方法调用或变量
 	assert 'hello'[0,2,4] == 'hlo' 
  
 	assert 'hello'[-4,-2] == 'el' 	
+	
+	
+### 参考文档
+[http://developer.51cto.com/art/200906/129168.htm](http://developer.51cto.com/art/200906/129168.htm)	
