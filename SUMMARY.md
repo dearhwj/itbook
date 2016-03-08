@@ -13,6 +13,7 @@
 * [Groovy](groovy/README.md)
 	* [Groovy小技巧](groovy/groovy.md)	 
 	* [Groovy脚本小技巧](groovy/grovvy_script.md)
+	* [在Groovy中使用字符串](groovy/groovy_string.md)
 	* [spock](groovy/spock.md) 
 * [Java](java/README.md)
 	* [Maven](java/maven_tips.md)	  		
