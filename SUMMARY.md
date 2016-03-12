@@ -13,6 +13,7 @@
 	* [Mysql小技巧](database/mysql_tips.md)
 * [Groovy](groovy/README.md)
 	* [Groovy小技巧](groovy/groovy.md)	 
+	* [Groovy操作JSON](groovy/groovy_json.md)	 
 	* [Groovy脚本小技巧](groovy/grovvy_script.md)
 	* [在Groovy中使用字符串](groovy/groovy_string.md)
 	* [spock](groovy/spock.md) 
@@ -32,7 +33,8 @@
 		* [awk小窍门](linux/awk_tips.md)
 		* [grep小窍门](linux/grep_tips.md)
 		* [zsh小窍门](linux/zsh.md) 
-		* [ssh小窍门](linux/ssh.md) 	
+		* [ssh小窍门](linux/ssh.md) 
+		* [crontab]	
 	* [运维小窍门](linux/linux_ops.md)
 	* [Shell编程小窍门](Shell/shell_programming.md)
 	* 小工具
