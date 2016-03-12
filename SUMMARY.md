@@ -34,7 +34,7 @@
 		* [grep小窍门](linux/grep_tips.md)
 		* [zsh小窍门](linux/zsh.md) 
 		* [ssh小窍门](linux/ssh.md) 
-		* [crontab]	
+		* [crontab](linux/contab.md)	
 	* [运维小窍门](linux/linux_ops.md)
 	* [Shell编程小窍门](Shell/shell_programming.md)
 	* 小工具
