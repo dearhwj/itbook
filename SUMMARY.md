@@ -63,7 +63,8 @@
 	* [Vim小窍门](vim/vim_tips.md)
 	* [Vimdiff小窍门](vim/vimdiff_tips.md)
 * [WEB开发]
-	* [Cookie小窍门](web/cookie_tips.md) 		
+	* [Cookie小窍门](web/cookie_tips.md) 
+	* [Http Post](web/http_post.md)		
 * [阿里云云产品]
 	* [ODPS](aliyun/odps_intro.md)	
 		*[ODPS中自定义函数] 	
@@ -82,4 +83,5 @@
 	* [java高阶面试题](programmer/java_advance.md)
 	* [《寿司之神》经典语录](programmer/sushi_talking.md)
 	* [一周分享计划内容安排](programmer/share_plan.md)
-	* [转载：尼古丁+咖啡因：不瞌睡的PPT](programmer/no_doze_ppt.md)	
+	* [转载：尼古丁+咖啡因：不瞌睡的PPT](programmer/no_doze_ppt.md)
+	* [如何提高演讲能力](programmer/improve_speech_capacity.md)	

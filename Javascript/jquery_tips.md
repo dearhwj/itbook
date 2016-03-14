@@ -86,5 +86,8 @@
 	$('#clickmeon').on('click', function(){  
  	alert("Hello World  on");  
 	});  
-	});      
+	});  
+	
+[jQuery ajax - post() 方法](http://www.w3school.com.cn/jquery/ajax_post.asp)
+	    
     

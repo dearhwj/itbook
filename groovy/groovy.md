@@ -184,6 +184,24 @@
 ### HttpBuilder
 [Java程序员为什么学习Groovy(HttpBuilder)](http://www.jianshu.com/p/a519bbd6e26c)
 
+
+### 操作符
+[美妙的操作符](http://www.ibm.com/developerworks/cn/java/j-pg10255.html)
+
+	a == b	a.equals(b)
+	a <=> b	a.compareTo(b)
+	a > b	如果 a.compareTo(b) 返回的值大于 0，那么这个条件为 true
+	a >= b	如果 a.compareTo(b) 返回的值大于等于 0，那么这个条件为 true
+	a < b	如果 a.compareTo(b) 小于 0，那么这个条件为 true
+	a <= b	如果 a.compareTo(b) 小于等于 0，那么这个条件为 true
+	a + b	a.plus(b)
+	a - b	a.minus(b)
+	a * b	a.multiply(b)
+	a / b	a.divide(b)
+	a++ or ++a	a.next()
+	a-- or --a	a.previous()
+	a << b	a.leftShift(b)
+
 	
 
 
