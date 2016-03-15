@@ -1,4 +1,8 @@
+
 # 《寿司之神》经典语录
+
+![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/sushi_talking_1.jpg)
+
 1. 极简的纯粹
 
 2. 只要够认真，手艺便会熟练；但若想成名立万，便需要天赋，剩下就看你有多努力

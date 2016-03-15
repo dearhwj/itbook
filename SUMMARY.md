@@ -16,7 +16,7 @@
 	* [Groovy操作JSON](groovy/groovy_json.md)	 
 	* [Groovy脚本小技巧](groovy/grovvy_script.md)
 	* [在Groovy中使用字符串](groovy/groovy_string.md)
-	* [spock](groovy/spock.md) 
+	* [使用Spock框架进行单元测试](groovy/spock.md) 
 * [Java](java/README.md)
 	* [Maven](java/maven_tips.md)	  		
 	* [Java开源项目](java/java_open_source_project.md)
