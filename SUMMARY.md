@@ -81,7 +81,7 @@
 	* [java选择题(简单不结果)](programmer/java_basic_noanswer.md)
 	* [java选择题(简单带结果)](programmer/java_basic.md)
 	* [java高阶面试题](programmer/java_advance.md)
-	* [《寿司之神》经典语录](programmer/sushi_talking.md)
+	* [推荐电影《寿司之神》](programmer/sushi_talking.md)
 	* [一周分享计划内容安排](programmer/share_plan.md)
 	* [转载：尼古丁+咖啡因：不瞌睡的PPT](programmer/no_doze_ppt.md)
 	* [如何提高演讲能力](programmer/improve_speech_capacity.md)	
