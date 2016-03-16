@@ -43,7 +43,8 @@
 	* [MacOS软件搜集](macos/macos_software.md)
 		* [Popclip以及插件开发](macos/popclip_tips.md)
 		* [Dash](macos/dash.md)
-		* [Sizeup](macos/sizeup.md)
+		* [窗口管理应用Sizeup](macos/sizeup.md)
+		* [应用切换工具Monica](macos/monica.md)
 	* [MacOS小窍门](macos/macos_tips.md) 
 	* [程序员如何优雅地使用Mac](macos/mac_dev.md)	
 	
