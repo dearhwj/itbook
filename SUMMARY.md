@@ -44,7 +44,7 @@
 		* [Popclip以及插件开发](macos/popclip_tips.md)
 		* [Dash](macos/dash.md)
 		* [窗口管理应用Sizeup](macos/sizeup.md)
-		* [应用切换工具Manico](macos/monica.md)
+		* [应用切换工具Manico](macos/manico.md)
 	* [MacOS小窍门](macos/macos_tips.md) 
 	* [程序员如何优雅地使用Mac](macos/mac_dev.md)	
 	
