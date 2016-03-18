@@ -3,6 +3,8 @@
 * [算法](algorithm/README.md)
 	* [bloom filter](algorithm/bloom_filter.md)
 	* [其他算法](algorithm/other_algorithms.md)
+* [硬件](hardware/README.md)
+	* [这几个数字每个程序员都应该知道](hardware/numbers_everyone_should_know.md)
 * [架构](architecture/README.md)
 	* [REST](architecture/rest.md) 
 	* [读书笔记：软件架构师应该知道的97件事](architecture/architecture_97.md)	* [阿里巴巴架构师总结的一些架构原则](architecture/architecture_principle_xunnan.md) 
