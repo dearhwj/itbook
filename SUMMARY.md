@@ -68,6 +68,7 @@
 	* [Vim小窍门](vim/vim_tips.md)
 	* [Vimdiff小窍门](vim/vimdiff_tips.md)
 	* [Vim操作剪贴板](vim/vim_clipboard.md)
+	* [vim删除文本的命令](vim/vim_delete.md)
 * [WEB开发]
 	* [Cookie小窍门](web/cookie_tips.md)
 	* [Http Post](web/http_post.md)		
