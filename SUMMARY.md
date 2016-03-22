@@ -50,8 +50,8 @@
 		* [Iterm2 快捷键介绍](macos/iterm2.md)
 	* [MacOS小窍门](macos/macos_tips.md)
 	* [程序员如何优雅地使用Mac](macos/mac_dev.md)
-* [网络]
-	*[快速诊断网络问题](network/network_diagnose.md) 
+* 网络
+	* [快速诊断网络问题](network/network_diagnose.md) 
 * [Node](node/README.md)
 	* [Grunt小窍门](node/grunt_tips.md)
 	* [npm小窍门](node/npm_tips.md)
