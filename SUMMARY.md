@@ -40,7 +40,9 @@
 	* [运维小窍门](linux/linux_ops.md)
 	* [Shell编程小窍门](Shell/shell_programming.md)
 	* 小工具
-		* [autojump](linux/autojump.md)
+		* [autojump](linux/autojump.md)	
+	* Just Play
+		[Linux或Mac修改motd,提供个性化login信息](linux/linux_motd.md)
 * [MAC OS](macos/README.md)
 	* [MacOS软件搜集](macos/macos_software.md)
 		* [Popclip以及插件开发](macos/popclip_tips.md)
