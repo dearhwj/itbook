@@ -5,7 +5,7 @@
 
 motd是message of the day的缩写，意思是“当天的提示信息”，通常在用户成功登录到Linux Shell（非交互登录）时出现，该信息可以从/etc/motd文本文件中找到。
 
-### 如果修改motd
+### 如何修改motd
 编辑/etc/motd,输入自己喜欢的个性化login信息，保存退出！重新登录
 
 
