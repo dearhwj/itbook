@@ -8,6 +8,7 @@
 * [架构](architecture/README.md)
 	* [REST](architecture/rest.md)
 	* [读书笔记：软件架构师应该知道的97件事](architecture/architecture_97.md)	* [阿里巴巴架构师总结的一些架构原则](architecture/architecture_principle_xunnan.md)
+	* [“框架”论述摘录](architecture/framework_expound.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)
