@@ -44,7 +44,7 @@
 		* [autojump](linux/autojump.md)	
 	* Just Play
 		* [Linux或Mac修改motd,提供个性化login信息](linux/linux_motd.md)
-		* [linux/mac命令行快捷键](linux/linux_commandline_shortcut.md)
+		* [Linux/Mac命令行快捷键](linux/linux_commandline_shortcut.md)
 * [MAC OS](macos/README.md)
 	* [MacOS软件搜集](macos/macos_software.md)
 		* [Popclip以及插件开发](macos/popclip_tips.md)
