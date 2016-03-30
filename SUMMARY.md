@@ -67,6 +67,7 @@
 	* [转载：JSONP 安全攻防技术](security/jsonp_hijacker.md)
 	* [SSRF攻击实例及防御](security/ssrf.md)
 * [软件测试](test/README.md)
+	* [性能测试基础知识—QPS和TPS](test/performance_test_qps_tps.md)
 	* [压力测试](test/pressure_test.md)
 		* [一分钟学会AB](test/ab_one_minute.md)
 * [VIM](vim/README.md)
