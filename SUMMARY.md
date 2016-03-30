@@ -98,3 +98,4 @@
 	* [一周分享计划内容安排](programmer/share_plan.md)
 	* [转载：尼古丁+咖啡因：不瞌睡的PPT](programmer/no_doze_ppt.md)
 	* [如何提高演讲能力](programmer/improve_speech_capacity.md)
+	* [学习搜狐双拼输入法](programmer/sohu_shuangping.md)
