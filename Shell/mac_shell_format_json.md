@@ -55,6 +55,9 @@ function jsonFormat2Open(){
 2. pbcopy
 
 
+### 参考资料
+[有命令行工具能格式化json吗](https://www.zhihu.com/question/20057446)
+
 
 
 

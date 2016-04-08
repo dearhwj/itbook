@@ -1,5 +1,11 @@
 # Shell Programming
 
+[Shell的RANDOM变量](http://blog.sina.com.cn/s/blog_a04184c101010knw.html)
+	
+	shell有一个环境变量RANDOM,范围是0--32767
+	如果想得到1--68范围内的数 ： $(($RANDOM%68+1 ))
+	如果想得到6--87范围内的数 ： $(($RANDOM%82+6 ))
+
 
 请问如何在shell中获得当前用户名
 
