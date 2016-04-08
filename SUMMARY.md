@@ -42,6 +42,7 @@
 	* [运维小窍门](linux/linux_ops.md)
 		* [/var/log目录下的20个Linux日志文件功能详解](linux/linux_log_file_function.md)
 	* [Shell编程小窍门](Shell/shell_programming.md)
+		* [MAC下通过命令行格式化JSON](Shell/mac_shell_format_json.md)
 	* 小工具
 		* [autojump](linux/autojump.md)	
 	* Just Play
