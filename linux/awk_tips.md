@@ -1,5 +1,9 @@
 # AWK Tips
 
+[awk 用-F指定多分隔符及正则表达式](http://blog.csdn.net/computer055maxi/article/details/6317251)
+	
+	命令行选项 -F"[@ /t]" 告诉awk @, 空格和Tab都是字段分隔符，例如：
+
 [awk与cut在以空格为分割域时的区别](http://blog.chinaunix.net/uid-25513153-id-178420.html)
 
 	awk 以空格为分割域时，是以单个或多个连续的空格为分隔符的；
