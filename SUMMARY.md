@@ -39,6 +39,7 @@
 		* [zsh小窍门](linux/zsh.md)
 		* [ssh小窍门](linux/ssh.md)
 		* [crontab](linux/crontab.md)
+		* [linux tr命令详解](linux/linux_command_tr.md)
 	* [运维小窍门](linux/linux_ops.md)
 		* [/var/log目录下的20个Linux日志文件功能详解](linux/linux_log_file_function.md)
 	* [Shell编程小窍门](Shell/shell_programming.md)
