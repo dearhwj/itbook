@@ -31,6 +31,9 @@
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)
 	* [Jquery小窍门](Javascript/jquery_tips.md)
+	
+* [Scala](scala/README.md)
+	* [Scala之HelloWorld](scala/scala_hello_world.md) 
 * [Linux](linux/README.md)
 	* [linux内核](linux/linux_kernal.md)
 	* [linux命令](linux/linux_command.md)

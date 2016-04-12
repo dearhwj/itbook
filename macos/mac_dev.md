@@ -38,6 +38,11 @@
 [如何向git账号上提交代码](http://www.cnblogs.com/wangkongming/p/4158664.html)
 
 
+[Tmux 速成教程：技巧和调整](http://blog.jobbole.com/87584/)
+
+	brew install tmux
+
+
 ### 其他
 
 [程序员如何优雅地使用 Mac？](http://www.zhihu.com/question/20873070)
