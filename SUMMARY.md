@@ -82,6 +82,7 @@
 * [WEB开发]
 	* [Cookie小窍门](web/cookie_tips.md)
 	* [Http Post](web/http_post.md)		
+	* [利用Tengine/Nginx的accesslog做诊断](web/nginx_accesslog_diagnose.md)
 * [阿里云云产品]
 	* [ODPS](aliyun/odps_intro.md)
 		*[ODPS中自定义函数] 	
