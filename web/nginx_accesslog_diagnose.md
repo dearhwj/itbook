@@ -3,8 +3,7 @@
 发布时间：2016年4月12日
 
 
-Nginx和Tengine会把HTTP访问的日志记录并输出到指定的目录（在我们测试和生产环境的地址是/alidata/www/logs/tengine/）
-下面说说利用Tengine和Nginx的accesslog做诊断的一些用法
+Nginx和Tengine会把HTTP访问的日志记录并输出到指定的目录,下面说说利用Tengine和Nginx的accesslog做诊断的一些用法
 
 ### 判断请求是否达到WEB服务器
 在某些场景下我们需要判断HTTP Request是否到了特定的服务器或者想知道请求到了哪台服务器，accesslog能帮上忙。从accesslog里面grep关键字就能找到线索。有种特殊的情况提醒大家，nginx输出log是等到请求都完成以后的，有种情况是你从accesslog里怎么也找不到请求记录，可能是nginx还没有处理完请求，应该是后端的upstreadm server或者nginx本身慢了
