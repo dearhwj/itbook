@@ -49,6 +49,7 @@
 	* [Shell编程小窍门](Shell/shell_programming.md)
 		* [MAC下通过命令行格式化JSON](Shell/mac_shell_format_json.md)
 		* [Shell命令查找源代码](Shell/find_source_code.md)
+		* [Shell Function按列提取内容](Shell/shell_extra_column.md)
 	* 小工具
 		* [autojump](linux/autojump.md)	
 	* Just Play
