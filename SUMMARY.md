@@ -7,6 +7,7 @@
 	* [这几个数字每个程序员都应该知道](hardware/numbers_everyone_should_know.md)
 * [架构](architecture/README.md)
 	* [REST](architecture/rest.md)
+	* [亚马逊的架构](architecture/aws_architecture_collection.md)
 	* [读书笔记：软件架构师应该知道的97件事](architecture/architecture_97.md)
 	* [阿里巴巴架构师总结的一些架构原则](architecture/architecture_principle_xunnan.md)
 	* [“框架”论述摘录](architecture/framework_expound.md)
