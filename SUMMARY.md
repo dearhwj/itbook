@@ -116,5 +116,6 @@
 	* [转载：尼古丁+咖啡因：不瞌睡的PPT](programmer/no_doze_ppt.md)
 	* [如何提高演讲能力](programmer/improve_speech_capacity.md)
 	* [学习搜狐双拼输入法](programmer/sohu_shuangping.md)
+	* [机器学习资源大全](ai/machine_learning_collection.md)
 * 胜读十年书
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 

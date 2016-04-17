@@ -356,3 +356,5 @@ tips：``反引号可以返回到使用G之前的位置
 [Vim 快捷键整理](http://blog.csdn.net/ceven2010/article/details/7406341)
  
 [ vi/vim 命令手册（高级篇） ](http://blog.chinaunix.net/uid-20784896-id-495557.html) 
+
+[简明Vim练级攻略](http://www.ccvita.com/487.html)
