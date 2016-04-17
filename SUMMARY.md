@@ -119,3 +119,4 @@
 	* [机器学习资源大全](ai/machine_learning_collection.md)
 * 胜读十年书
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
+	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
