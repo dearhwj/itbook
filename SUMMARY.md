@@ -120,3 +120,4 @@
 * 胜读十年书
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
+	* [百万富翁的生活习惯总结](beyondbook/millionaire_habits.md)
