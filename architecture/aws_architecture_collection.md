@@ -1,4 +1,5 @@
-# 亚马逊CTO总结的10个教训
+# 亚马逊的架构
+### 亚马逊CTO总结的10个教训
 原文地址：[http://blog.jobbole.com/99540/](http://blog.jobbole.com/99540/)
 
 1. 搭建可进化的系统

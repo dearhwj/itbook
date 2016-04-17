@@ -1,5 +1,6 @@
 # Summary
-
+* [人工智能](ai/README.md)
+	* [决策树算法介绍及应用](ai/decision_tree.md) 
 * [算法](algorithm/README.md)
 	* [bloom filter](algorithm/bloom_filter.md)
 	* [其他算法](algorithm/other_algorithms.md)
