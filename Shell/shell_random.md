@@ -60,8 +60,10 @@ linux的uuid码也是有内核提供的，在/proc/sys/kernel/random/uuid这个�
 	[chengmo@centos5 ~/shell]$ cat /proc/sys/kernel/random/uuid
 	7b57209a-d285-4fd0-88b4-9d3162d2e1bc	
 
-
+### Awk传递变量
+	awk 'BEGIN{srand();print rand()}'
 	
 	
 ### 参考资料
-[linux shell实现随机数多种方法（date,random,uuid)](http://www.cnblogs.com/chengmo/archive/2010/10/23/1858879.html)	
+[linux shell实现随机数多种方法（date,random,uuid)](http://www.cnblogs.com/chengmo/archive/2010/10/23/1858879.html)
+[Shell的RANDOM变量](http://blog.sina.com.cn/s/blog_a04184c101010knw.html)	
