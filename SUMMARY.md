@@ -46,11 +46,13 @@
 		* [linux tr命令详解](linux/linux_command_tr.md)
 	* [运维小窍门](linux/linux_ops.md)
 		* [/var/log目录下的20个Linux日志文件功能详解](linux/linux_log_file_function.md)
-	* [Shell编程小窍门](Shell/shell_programming.md)
+	* [Shell小窍门](Shell/shell_programming.md)
 		* [MAC下通过命令行格式化JSON](Shell/mac_shell_format_json.md)
 		* [Shell命令查找源代码](Shell/find_source_code.md)
 		* [Shell Function按列提取内容](Shell/shell_extra_column.md)
 		* [用XMLStarlet处理XML](Shell/xmlstarlet_tips.md)
+		* [Shell实现随机数](Shell/shell_random.md)
+		* [Shell的文本处理小窍门](Shell/shell_text_tips.md)
 	* 小工具
 		* [autojump](linux/autojump.md)	
 	* Just Play
