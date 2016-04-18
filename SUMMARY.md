@@ -40,6 +40,7 @@
 	* [linux内核](linux/linux_kernal.md)
 	* [linux命令](linux/linux_command.md)
 		* [ls小窍门](linux/ls_tips.md)
+		* [sort小窍门](linux/sort_tips.md)
 		* [awk小窍门](linux/awk_tips.md)
 		* [grep小窍门](linux/grep_tips.md)
 		* [zsh小窍门](linux/zsh.md)
@@ -106,6 +107,7 @@
 	* [Gitbook](tools/git_book.md)
 	* [Sublim Text](tools/sublim_text_tips.md)
 	* [Gitbook](tools/gitbook.md)
+	* [Excel](tools/excel_tips.md)
 * 程序猿宝典
 	* [值得程序员关注的微信公众号](programmer/wx_public.md)
 	* [程序员鄙视链](programmer/dev_down.md)

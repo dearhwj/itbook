@@ -1,4 +1,5 @@
 # AWK Tips
+[linux awk 内置函数详细介绍（实例）](http://www.cnblogs.com/chengmo/archive/2010/10/08/1845913.html)
 
 [awk 用-F指定多分隔符及正则表达式](http://blog.csdn.net/computer055maxi/article/details/6317251)
 	

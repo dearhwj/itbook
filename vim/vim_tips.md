@@ -349,6 +349,10 @@ tips：``反引号可以返回到使用G之前的位置
  如果输入的是:52 !bash，那么会把第52行的内容也就是ls -l作为命令执行，同时命令的输出结果会替换第52行的内容，注意其中的区别。
  
 - 开启shell命令 :shell，退出该shell exit
+
+
+
+
  
 ### 参考
 [vi编辑器常用的命令及快捷键](http://hily.me/blog/2006/04/vi-shortcut/)
@@ -358,3 +362,4 @@ tips：``反引号可以返回到使用G之前的位置
 [ vi/vim 命令手册（高级篇） ](http://blog.chinaunix.net/uid-20784896-id-495557.html) 
 
 [简明Vim练级攻略](http://www.ccvita.com/487.html)
+
