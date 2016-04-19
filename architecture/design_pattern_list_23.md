@@ -18,7 +18,7 @@
 
 6. Adapter Class/Object（适配器）
 
-7. Bridge（桥接）
+7. Bridge（桥接）：Bridge 模式把两个角色之间的继承关系改为了耦合的关系，从而使这两者可以从容自若的各自独立的变化，这也是Bridge模式的本意[设计模式-----桥接模式(Bridge Pattern)](http://www.cnblogs.com/houleixx/archive/2008/02/23/1078877.html)
 
 8. Composite（组合）
 

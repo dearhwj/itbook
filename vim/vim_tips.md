@@ -350,9 +350,46 @@ tips：``反引号可以返回到使用G之前的位置
  
 - 开启shell命令 :shell，退出该shell exit
 
+### 设置vim自动显示和关闭行号
 
+[http://www.blogbus.com/laymantech-logs/77125946.html](http://www.blogbus.com/laymantech-logs/77125946.html)	
 
+	set nu 或者 set number //显示行号；
+	set nonu 或者 set nonumber //关闭自动显示行号；
+	set ic //查找时忽略大小写；
+	set noic //查找时不忽略大小写。
 
+### vim的复制当前单词
+在普通模式下，可使用 yaw  命令复制当前光标所在单词
+
+### advanced commands in Vim: t,f,m,e,J
+[http://blog.sina.com.cn/s/blog_605f5b4f0101f0xz.html](http://blog.sina.com.cn/s/blog_605f5b4f0101f0xz.html)
+
+	删除一个分行符：J
+      在 Vim 中你可以把两行连起来，这意味着两行间的换行符被删除了。
+	以下面两行为例子：
+        A young intelligent 
+        turtle
+	把光标移到第一行，然后按 "J"：
+        A young intelligent turtle
+        
+    	D       从当前位置删除到行尾（"d$"的缩写）    
+    	
+    	移动到一个指定的字符: f/F/t/T
+		单字符查找命令是最有用的移动命令之一。"fx" 命令向前查找本行中的字符 x。
+		"F" 命令用于向左查找：
+		"tx" 命令与 "fx" 相似，但它只把光标移动到目标字符的前一个字符上。提示："t" 表示 "To"。这个命令的反向版本是 "Tx"。
+		
+		这四个命令可以通过 ";" 命令重复，"," 命令则用于反向重复。无论用哪个命令，光标永远都不会移出当前行'
+		t(to)的另一个用法是复制行到其他地方：
+		:t . 复制当前行并粘贴到当前行的下一行
+		:t 7 复制当前行并粘贴到第7行的下一行
+		:,+t0 复制当前行和当前行的下一行，并粘贴到文件的起始位置（,+是 . , . +1的缩写)
+		:1,t$ 复制从文件第一行到当前行的内容并粘贴到文件末尾(1, 是 1, .的缩写)
+		和t相关的命令是m(move)
+		4m10: 把第4行的内容剪切并粘贴在第10行的下一行
+		%:括号匹配 和 带数字前缀的移动定位
+		当光标不在一个有用的字符上，"%" 会先向前找到一个。比如当光标停留在上例中的行首时，"%" 会向前查找到第一个 "("。然后会移动到它的匹配处。
  
 ### 参考
 [vi编辑器常用的命令及快捷键](http://hily.me/blog/2006/04/vi-shortcut/)

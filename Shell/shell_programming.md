@@ -1,5 +1,16 @@
 # Shell Programming
 
+[linux shell 获取当前正在执行脚本的绝对路径](http://www.cnblogs.com/FlyFive/p/3640267.html)
+
+	basepath=$(cd `dirname $0`; pwd)
+	dirname $0，取得当前执行的脚本文件的父目录
+
+	cd `dirname $0`，进入这个目录(切换当前工作目录)
+
+	pwd，显示当前工作目录(cd执行后的)
+	
+	http://my.oschina.net/leejun2005/blog/150662?fromerr=vHZ1Ky8p
+
 [ linux bash shell中，单引号、 双引号，反引号（``）的区别及各种括号的区别](http://blog.csdn.net/miyatang/article/details/8077123)
 
 	反引号``和$()是一样的。在执行一条命令时，会先将其中的 ``，或者是$() 中的语句当作命令执行一遍，再将结果加入到原命令中重新执行

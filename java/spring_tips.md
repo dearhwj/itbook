@@ -1,5 +1,8 @@
 # Spring Tips
 
+[Spring中注入List，Set，Map,Properties](http://www.cnblogs.com/rollenholt/archive/2012/12/27/2835122.html)
+
+
 [spring RestTemplate用法详解]("http://blog.csdn.net/wwwihpccn/article/details/30496089")
 
 [Concurrency – Executors and Spring Integration]("http://www.javacodegeeks.com/

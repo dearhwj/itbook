@@ -13,7 +13,7 @@
 
 
 ### 第一步 搞定Imessage的短信发送。
-百度了一下Imessage的开发，可以利用Apple Script来发Imessage。AppleScript 是Mac OS X内置的一种功能强大的脚本语言,使用 AppleScript 的目的是把一些重复繁琐并且耗费时间的任务自动化。google到的教本很简单。
+百度了一下Imessage的开发，可以利用Apple Script来发Imessage。AppleScript 是Mac OS X内置的一种功能强大的脚本语言,使用 AppleScript 的目的是把一些重复繁琐并且耗费时间的任务自动化。google到的脚本很简单。
 	
 	on run {targetBuddyPhone, targetMessage}
     	tell application "Messages"
@@ -24,7 +24,7 @@
 	end run
 
 
-然后，用```osascript sendMessage.applescript   13958194816 "星期日早上好" ``` 测试通过
+然后，用```osascript sendMessage.applescript   1395819??? "星期日早上好" ``` 测试通过
 
 
 
@@ -72,7 +72,7 @@ osascript  sendMessage.applescript  1395819****  "`while read i;do echo "$i $RAN
 然而没有收到短信...... 是错误了吗？但命令执行没报错误呀
 
 ### 折戟成沙还在Imessage的调用
-查看了Mac消息应用里面的内容，原来我用脚本触发的短信（蓝色的）都被message拦截了没有发送出去。我用人工输入的发送的同样的内容是可以成功的。看来是mac加入了人机识别，Apple应该是为了防止Imessage的垃圾短信做的这个功能。那么为什么第一次能通过呢，逗我玩吗？
+查看了Mac消息应用里面的内容，原来我用脚本触发的短信（蓝色的）都被Imessage拦截了没有发送出去。我用手工输入的发送的同样的内容是可以成功的。看来是mac加入了人机识别，Apple应该是为了防止Imessage的垃圾短信做的这个功能。那么为什么第一次能通过呢，逗我玩吗？
 
 ![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/imessage_suspened.png)
 

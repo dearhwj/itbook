@@ -58,6 +58,8 @@ function jsonFormat2Open(){
 ### 参考资料
 [有命令行工具能格式化json吗](https://www.zhihu.com/question/20057446)
 
+[How can I pretty-print JSON](http://stackoverflow.com/questions/352098/how-can-i-pretty-print-json)
+
 
 
 
