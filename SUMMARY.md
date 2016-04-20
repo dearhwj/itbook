@@ -104,6 +104,7 @@
 	* [IntelliJ IDEA](tools/idea_tips.md) 	
 	* [Markdown](tools/markdown.md)
 	* [dot](tools/dot_drawing.md)
+	* [Git小窍门](tools/git_tips.md)
 	* [Gitbook](tools/git_book.md)
 	* [Sublim Text](tools/sublim_text_tips.md)
 	* [Gitbook](tools/gitbook.md)
