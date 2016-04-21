@@ -1,4 +1,8 @@
 # Mac Tips
+[mac系统同一程序不同窗口切换方法](http://www.win8xitong.cn/winodws10/46353.html)
+
+	同一程序的多个窗口你会发现，虽然桌面上有好多窗口，但是，他们都是源自同一个应用程序，所以，如果你想找到其中某一个窗口，这时候 Command+Tab 就不管用了。那么该怎么办呢?可以试试 Command+"~"
+
 [MAC下JAVA的安装路径](http://www.blogjava.net/paulwong/archive/2014/07/12/415725.html)
 
 	/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home
