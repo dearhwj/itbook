@@ -36,7 +36,8 @@
 	* [Jquery小窍门](Javascript/jquery_tips.md)
 	
 * [Scala](scala/README.md)
-	* [Scala之HelloWorld](scala/scala_hello_world.md) 
+	* [Scala开发环境搭建](scala/scala_prepare_environment.md) 
+	* [Scala入门](scala/scala_basic.md)
 * [Linux](linux/README.md)
 	* [linux内核](linux/linux_kernal.md)
 	* [linux命令](linux/linux_command.md)
