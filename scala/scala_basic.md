@@ -1,4 +1,51 @@
 # Scala Tips
+[类定义和构造函数](http://developer.51cto.com/art/200912/166814.htm)
+
+	定义Scala的类比较有趣的是定义基本（primary）构造函数时在类名称后直接加上构造函数的参数表。基本构造函数参数的类型不可省略（包括模式匹配，这是对象的类型信息的基础，不能省略也是当然的）。另一方面，可以注意到类型定义中的变量定义没有指定类型，这都是靠从构造函数参数的类型推断出来的。
+	由于在类中基本构造函数的参数定义前加上val或var后，对应的实例属性就会被定义，所以原来的属性定义就不需要了。
+	另外，Scala中覆盖父类的方法一定要加上override修饰符。
+
+[Scala类](http://blog.csdn.net/shijiebei2009/article/details/38666201)
+
+	在Scala中，getter和setter分别叫做age和age_=。默认的getter和setter是由Scala自动生成，但是你也可以手动生成
+	
+	用@BeanProperty注解来生成JavaBeans的getXxx/setXxx方法
+	
+	
+
+[Scala之主构造函数](http://blog.csdn.net/bluishglc/article/details/50899077)
+	
+	var/val限定的是变量是否可读写，与可见性无关，即对外可见；public和private声明的才是可见性，但是在省略这些关键字时还是有默认值的，情况如下：
+
+	如果只有var/val修饰，则字段总是对外可见的，即默认是public的
+	如果连var/val也没有，则字段对外不可见，同时内部只读，不可改写，即默认是：private val
+
+	第二条不适用于case class，case class的类参数在不指定val/var修饰时，会自动编译为public val，即对外只读，如果需要case class的字段外部可写，可以显式地指定var关键字！
+	规则如下：
+
+	对于var修饰的参数：外部可读/可改写 （实际上是：编译器为该类参数（字段）自动生成了getter和setter）
+	对于val修饰的参数：外部可读/不可改写（实际上是：编译器为该类参数（字段）只生成了getter没有生成setter）
+	对于private var修饰的参数：内部可读/可改写 （编译器不会为私有类参数（字段）自动生成getter和setter）
+	对于private val修饰的参数：内部可读/不可改写 （编译器不会为该类参数（字段）自动生成getter和setter）
+	
+[走进Scala——伴生对象（Companion Object）](http://dreamhead.blogbus.com/logs/60217908.html)	
+	
+	准备涉水Scala的Java程序员请注意，Scala里没有static。在大多数情况下，static真不该是static的。像Scala这样想在面向对象上更进一步的程序设计语言，取消static是一种进取的表现，这样得以保证了其面向对象模型的完整性。好吧，我承认，有时候，我们还是需要类一级的属性和操作的。在Scala里，我们还是有机会的，这便是伴生对象（Companion Object）的作用。
+	伴生对象本身就是一个Singleton，不同的是，它有一个与之同名的类（这里的class Companion），二者可以相互访问彼此的私有成员。
+	
+	
+[ scala apply方法 笔记](http://blog.csdn.net/pzw_0612/article/details/48576569)	
+
+	Scala程序特别要指出的是，单例对象会在第一次被访问的时候初始化。
+	object apply 是一种比较普遍用法。 主要用来解决复杂对象的初始化问题。同时也是单例	
+[ Scala中的None,Nothing,Null,Nil](http://blog.csdn.net/bluejoe2000/article/details/30465175)
+
+	None是一个object，是Option的子类型
+	scala推荐在可能返回空的方法使用Option[X]作为返回类型。如果有值就返回Some[x](Some也是Option的子类)，否则返回None
+	Null是所有AnyRef的子类，在scala的类型系统中，AnyRef是Any的子类，同时Any子类的还有AnyVal。对应java值类型的所有类型都是AnyVal的子类。所以Null可以赋值给所有的引用类型(AnyRef)，不能赋值给值类型，这个java的语义是相同的。 null是Null的唯一对象。 
+	Nothing是所有类型的子类，也是Null的子类。Nothing没有对象，但是可以用来定义类型。例如，如果一个方法抛出异常，则异常的返回值类型就是Nothing(虽然不会返回) 
+	Nil是一个空的List，定义为List[Nothing]，根据List的定义List[+A]，所有Nil是所有List[T]的子类。	
+	
 [ Scala和并发编程](http://blog.csdn.net/fancylovejava/article/details/24724395)
 	
 	Scala就是这样，通过“使用基于事件的模型进行线程间通信”，并且“把不变对象作为消息进行传递”来实现一个并发编程模型。
@@ -8,6 +55,8 @@
 
 	Scala中类对象中不可有静态变量和静态方法，但是提供了“伴侣对象”的功能：在和类的同一个文件中定义同名的Object对象：(须在同一文件中；main方法定义在Object对象中)
 	
+
+
 	
 [scala入门之变量定义](http://my.oschina.net/fhd/blog/273952)
 
