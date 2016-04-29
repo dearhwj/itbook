@@ -1,7 +1,11 @@
-# Nginx
+# Lua Collection
 
 lua_package_path
 
+
+[Nginx服务器中使用lua获取get或post参数](http://www.server110.com/nginx/201310/2800.html)
+
+[Lua中操作字符串的基本方法整理](http://www.3lian.com/edu/2015/05-29/217576.html)
 
 
 [LUA require 搜索路径指定方法](http://blog.csdn.net/langeldep/article/details/8289199)o

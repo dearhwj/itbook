@@ -112,6 +112,7 @@
 	* [Gitbook](tools/gitbook.md)
 	* [Excel](tools/excel_tips.md)
 	* [Lynx纯文字终端网页浏览器](tools/lynx_brower.md)
+	* [终端分屏软件tmux教程](tools/tmux_manual.md)
 * 程序猿宝典
 	* [值得程序员关注的微信公众号](programmer/wx_public.md)
 	* [程序员鄙视链](programmer/dev_down.md)
