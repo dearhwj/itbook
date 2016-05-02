@@ -49,6 +49,8 @@
 		* [ssh小窍门](linux/ssh.md)
 		* [crontab](linux/crontab.md)
 		* [linux tr命令详解](linux/linux_command_tr.md)
+		* [Linux/Mac批量删除文件](linux/batch_rm_files.md)
+		* [Linux的bg和fg命令介绍](linux/linux_bg_fg.md)
 	* [运维小窍门](linux/linux_ops.md)
 		* [/var/log目录下的20个Linux日志文件功能详解](linux/linux_log_file_function.md)
 	* [Shell小窍门](Shell/shell_programming.md)
@@ -58,9 +60,8 @@
 		* [用XMLStarlet处理XML](Shell/xmlstarlet_tips.md)
 		* [Shell实现随机数](Shell/shell_random.md)
 		* [Shell的文本处理小窍门](Shell/shell_text_tips.md)
-		* [Linux/Mac批量删除文件](Shell/batch_rm_files.md)
-	* 小工具
-		* [autojump](linux/autojump.md)	
+		* 小工具
+			* [autojump](linux/autojump.md)	
 	* Just Play
 		* [Linux或Mac修改motd,提供个性化login信息](linux/linux_motd.md)
 		* [Linux/Mac命令行快捷键](linux/linux_commandline_shortcut.md)
