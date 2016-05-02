@@ -45,3 +45,6 @@
 
 	C-y 粘贴剪切
 	
+[linux shell 快捷键](http://blog.chinaunix.net/uid-361890-id-342066.html)	
+		
+	
