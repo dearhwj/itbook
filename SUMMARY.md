@@ -58,7 +58,7 @@
 		* [用XMLStarlet处理XML](Shell/xmlstarlet_tips.md)
 		* [Shell实现随机数](Shell/shell_random.md)
 		* [Shell的文本处理小窍门](Shell/shell_text_tips.md)
-
+		* [Linux/Mac批量删除文件](Shell/batch_rm_files.md)
 	* 小工具
 		* [autojump](linux/autojump.md)	
 	* Just Play

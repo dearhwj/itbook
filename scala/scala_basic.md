@@ -1,4 +1,18 @@
-# Scala Tips
+# Scala Basic
+
+[细数Scala下划线“_”的用法](http://blog.csdn.net/i6448038/article/details/50017427)
+	
+	var name:String=_
+	这里的下划线和null的作用是一样的。
+	import math._
+	这里的math._就相当于Java中的math.*; 即“引用包中的所有内容”。
+	
+	val newArry= (1 to 10).map(_*2)
+  	 println(newArry)
+	这里的下划线代表了集合中的“某（this）”一个元素。这个用法很常见，在foreach等语句中也可以使用。
+	
+	
+
 [类定义和构造函数](http://developer.51cto.com/art/200912/166814.htm)
 
 	定义Scala的类比较有趣的是定义基本（primary）构造函数时在类名称后直接加上构造函数的参数表。基本构造函数参数的类型不可省略（包括模式匹配，这是对象的类型信息的基础，不能省略也是当然的）。另一方面，可以注意到类型定义中的变量定义没有指定类型，这都是靠从构造函数参数的类型推断出来的。
@@ -77,4 +91,23 @@
 	
 	由于Scala没有操作符，实际上，是以操作符的格式使用方法的一个途径，你或许想知道操作符优先级是怎么做到的。Scala基于操作符格式里方法的第一个字符决定优先级（这个规则有一个例外，稍后再说）。比方说，如果方法名开始于*，那么就比开始于+的方法有更高的优先级。因此2 + 2 * 7将被评估为2 + (2 * 7)，而a +++ b *** c（这里a，b和c是值或变量，而+++和***是方法）将被看作是a +++ (b *** c)，因为***方法比+++方法有更高的优先级。
 	
-![image](http://images.51cto.com/files/uploadimg/20090721/0849250.jpg)	
+![image](http://images.51cto.com/files/uploadimg/20090721/0849250.jpg)
+
+
+[Scala:fold,foldLeft和foldRight区别与联系](http://www.iteblog.com/archives/1228)
+
+	由于fold函数遍历没有特殊的次序，所以对fold的初始化参数和返回值都有限制。在这三个函数中，初始化参数和返回值的参数类型必须相同。
+	第一个限制是初始值的类型必须是list中元素类型的超类。在我们的例子中，我们的对List[Int]进行fold计算，而初始值是Int类型的，它是List[Int]的超类。
+	第二个限制是初始值必须是中立的(neutral)。也就是它不能改变结果。比如对加法来说，中立的值是0；而对于乘法来说则是1，对于list来说则是Nil。	
+	
+	
+[scala中的部分应用函数和偏函数的区别](http://my.oschina.net/aiguozhe/blog/49732)
+
+	部分应用函数（Partial Applied Function)是缺少部分参数的函数，是一个逻辑上概念
+	偏函数是只对函数定义域的一个子集进行定义的函数。 scala中用scala.PartialFunction[-T, +S]类来表示
+	
+	比如定义了一个函数：def sum(x: Int)(y: Int) = x + y, 当调用sum的时候，如果不提供所有的参数或某些参数还未知时，比如sum _ , sum(3)(_: Int), sum(_: Int)(3), 这样就生成了所谓的部分应用函数。部分应用函数只是逻辑上的一个表达，scala编译器会用Function1， Function2这些类来表示它.  
+	
+[scala 偏函数](http://blog.csdn.net/yyywyr/article/details/50277493)
+	 
+	 偏函数：当函数有多个参数，而在使用该函数时不想提供所有参数（比如函数有3个参数），只提供0~2个参数，此时得到的函数便是偏函数。
