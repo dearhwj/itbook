@@ -52,6 +52,7 @@
 		* [linux tr命令详解](linux/linux_command_tr.md)
 		* [Linux/Mac批量删除文件](linux/batch_rm_files.md)
 		* [Linux的bg和fg命令介绍](linux/linux_bg_fg.md)
+
 	* [运维小窍门](linux/linux_ops.md)
 		* [/var/log目录下的20个Linux日志文件功能详解](linux/linux_log_file_function.md)
 	* [Shell小窍门](Shell/shell_programming.md)
@@ -96,6 +97,7 @@
 	* [Vimdiff小窍门](vim/vimdiff_tips.md)
 	* [Vim操作剪贴板](vim/vim_clipboard.md)
 	* [vim删除文本的命令](vim/vim_delete.md)
+	* [cscope小窍门](vim/cscope_tips.md)
 * [WEB开发]
 	* [Cookie小窍门](web/cookie_tips.md)
 	* [Http Post](web/http_post.md)		
