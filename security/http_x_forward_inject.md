@@ -37,7 +37,7 @@ x-forwarded-for不光可以自己设置值，而且可以设置任意格式值�
 
 上面getip函数，除了客户端可以任意伪造IP，并且可以传入任意格式IP。 这样结果会带来2大问题，其一，如果你设置某个页面，做IP限制。 对方可以容易修改IP不断请求该页面。 其二，这类数据你如果直接使用，将带来SQL注册，跨站攻击等漏洞。至于其一，可以在业务上面做限制，最好不采用IP限制。 对于其二，这类可以带来巨大网络风险。我们必须加以纠正。需要对getip 进行修改，得到安全的getip函数。
 
-[http://www.jb51.net/article/21161.htm](http://www.jb51.net/article/21161.htm)  里面有一个 HTTP_X_FORWARDED_FOR获取客户端IP导致SQL注入的漏洞
+[http://www.jb51.net/article/21161.htm](http://www.jb51.net/article/21161.htm)  同样讲了一个 HTTP_X_FORWARDED_FOR获取客户端IP导致SQL注入的漏洞
 
 	string sql = "INSERT INTO (IP) VALUE ('" + IP + "')"; 
 	那么也许破坏者还可以进行SQL注入进行数据破坏!! 
