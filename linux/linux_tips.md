@@ -1,5 +1,9 @@
 # Linux Tips
 
+[Linux权限位（S位）](http://binyan17.iteye.com/blog/1444452)
+	
+	会创建s与t权限，是为了让一般用户在执行某些程序的时候，能够暂时具有该程序拥有者的权限。举例来说，我们知道，账号与密码的存放文件其实是 /etc/passwd与 /etc/shadow。而 /etc/shadow文件的权限是“-r--------”。它的拥有者是root。在这个权限中，仅有root可以“强制”存储，其他人是连看都不行的。
+
 [Linux curl命令详解](http://www.linuxdiyf.com/linux/2800.html)
 
 [curl cookie 抓取登陆后网页](http://blog.sina.com.cn/s/blog_63d675190100p4vg.html)

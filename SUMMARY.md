@@ -131,8 +131,9 @@
 	* [如何提高演讲能力](programmer/improve_speech_capacity.md)
 	* [学习搜狐双拼输入法](programmer/sohu_shuangping.md)
 	* [机器学习资源大全](ai/machine_learning_collection.md)
-* 管理
-	* [转载:技术团队管理不仅仅是管理](management/tech_team_management.md) 
+* 技术管理
+	* [转载:技术团队管理不仅仅是管理](tech_management/tech_team_management.md) 
+	* [转载:业务和商业才是技术的驱动力](tech_management/business_drive_tech.md)
 * 胜读十年书
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)

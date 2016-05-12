@@ -46,3 +46,7 @@ x-forwarded-for不光可以自己设置值，而且可以设置任意格式值�
 ### 结论
 1. web参数检测里面一个基本原则：“一切输入都是有害的”，因此，只要是输入我们就需要进行过滤。
 2. 业务上不要依赖IP进行限制或业务操作
+
+
+### 参考
+[web站点获取用户IP的安全方法 HTTP_X_FORWARDED_FOR检验](http://www.cnblogs.com/chengmo/archive/2013/05/31/php-2.html)

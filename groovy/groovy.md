@@ -3,6 +3,16 @@
 ### 入门教程
 [Groovy Document](http://groovy-lang.org/documentation.html)
 
+[Groovy中的隐式构造函数](http://yeziwang.iteye.com/blog/827155)
+
+	Groovy 中提供了一种可以将List直接转成对象的方式，这种方式将隐式调用Groovy bean中定义的构造函数来创建对象。
+	显示使用as来调用对应的构造函数	
+	def addr=["home","office"] as Addr
+	隐式的让groovy通过类型推断来调用对应的构造函数
+	Addr addr=["home","office"]  
+	groovy bean需要显示提供对应的构造函数定义。	
+
+
 [Groovy高效编程——动态改变对象的能力](http://developer.51cto.com/art/200710/58079_all.htm)
 
 [Groovy中的五种特殊运算符](http://it.chinawin.net/softwaredev/article-1b104.html)
