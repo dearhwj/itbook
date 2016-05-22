@@ -139,4 +139,4 @@
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
 	* [百万富翁的生活习惯总结](beyondbook/millionaire_habits.md)
 	* [你的生活逃不出这25张图](beyondbook/your_life_25_sentence.md)
-	* [番茄工作法](beyond/pomodoro.md)
+	* [番茄工作法](beyondbook/pomodoro.md)
