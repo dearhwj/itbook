@@ -211,6 +211,17 @@
 	a++ or ++a	a.next()
 	a-- or --a	a.previous()
 	a << b	a.leftShift(b)
+	
+	
+### Groovy Generics failure
+
+It parses if you add the public modifier
+
+	interface A {
+	  public <T> T getByClass( Class<T> clazz )
+	}
+
+	
 
 	
 

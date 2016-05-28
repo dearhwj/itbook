@@ -1,4 +1,5 @@
 # Lua Tips
+[Lua 5.1 参考手册](http://old.sebug.net/paper/books/lua/lua_manual.html)
 
 
 [Lua中的loadfile、dofile、require详解](http://www.jb51.net/article/55125.htm)

@@ -114,6 +114,7 @@
 	* [Git小窍门](tools/git_tips.md)
 	* [Gitbook](tools/git_book.md)
 	* [Sublim Text](tools/sublim_text_tips.md)
+	* [Atom文本代码编辑器小窍门](tools/atom_tips.md)
 	* [Gitbook](tools/gitbook.md)
 	* [Excel](tools/excel_tips.md)
 	* [Lynx纯文字终端网页浏览器](tools/lynx_brower.md)
