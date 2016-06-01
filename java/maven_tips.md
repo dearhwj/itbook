@@ -9,6 +9,8 @@
 
 
 ### Plugin
+[Maven Failsafe Plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/)
+
 [Maven Help插件的使用]("http://blog.csdn.net/zgmzyr/article/details/8691053")
 
 	help:describe
@@ -33,6 +35,10 @@
 [Can I run a specific testng test group via maven?]("http://stackoverflow.com/questions/2922581/can-i-run-a-specific-testng-test-group-via-maven")	
 
 	Try mvn test -Dgroups=group3,group2
+	
+[Separating Integration Tests from Unit Tests Using Maven Failsafe & JUnit @Category](http://calenlegaspi.blogspot.com/2015/01/separating-integration-tests-from-unit.html)
+
+	There's more than one way to separate integration tests. By default, Failsafe picks up any class with a suffix "IT" or "ITCase", or prefixed with "IT"	
 
 
 	
