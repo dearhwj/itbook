@@ -39,6 +39,40 @@
 [Separating Integration Tests from Unit Tests Using Maven Failsafe & JUnit @Category](http://calenlegaspi.blogspot.com/2015/01/separating-integration-tests-from-unit.html)
 
 	There's more than one way to separate integration tests. By default, Failsafe picks up any class with a suffix "IT" or "ITCase", or prefixed with "IT"	
+	
+	
+[How do I find out which settings.xml file maven is using](http://stackoverflow.com/questions/9988814/how-do-i-find-out-which-settings-xml-file-maven-is-using)
+	
+	Use the Maven debug option, ie mvn -X 	
+	
+[Introduction to Plugin Prefix Resolution]	(http://maven.apache.org/guides/introduction/introduction-to-plugin-prefix-mapping.html)
+
+	In order to give users a convenient prefix with which to reference your plugin a prefix must be associated with your plugin when it is built. By default, Maven will make a guess at the plugin-prefix to be used, by removing any instances of "maven" or "plugin" surrounded by hyphens in the plugin's artifact ID. The conventional artifact ID formats to use are:
+
+	maven-${prefix}-plugin - for official plugins maintained by the Apache Maven team itself (you must not use this naming pattern for your plugin, see this note for more informations)
+	${prefix}-maven-plugin - for plugins from other sources
+	If your plugin's artifactId fits this pattern, Maven will automatically map your plugin to the correct prefix in the metadata stored within your plugin's groupId path on the repository. However, if you want to customize the prefix used to reference your plugin, you can specify the prefix directly through a configuration parameter on the maven-plugin-plugin in your plugin's POM:
+	
+	<project>
+	  ...
+  	<build>
+    	...
+    <plugins>
+      ...
+      <plugin>
+        <artifactId>maven-plugin-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          ...
+          <goalPrefix>somePrefix</goalPrefix>
+    	    </configuration>
+	      </plugin>
+    	</plugins>
+  	</build>
+	</project>
+	
+	mvn somePrefix:goal
+
 
 
 	
