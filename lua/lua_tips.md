@@ -1,4 +1,6 @@
 # Lua Tips
+[Lua中使用table.concat连接大量字符串实例]()
+
 [Lua 5.1 参考手册](http://old.sebug.net/paper/books/lua/lua_manual.html)
 
 
