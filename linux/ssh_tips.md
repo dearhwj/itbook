@@ -1,5 +1,16 @@
 # SSH Tips
 
+[shell中 diff命令怎么比较远程和本地的文件夹](http://www.iteye.com/problems/69708)
+
+	比较文件可以这样写： 
+	ssh host "cat /dir/test.txt" | diff - /dir/test.txt 
+	
+	比较两个文件夹也是diff dir1 dir2。加上-r是递归。 
+
+	远程目录，先用sshfs把远程目录挂载到本地。然后就像普通的diff一样了。 
+	
+	远程目录，先用sshfs把远程目录挂载到本地。然后就像普通的diff一样了。 
+
 [批量配置SSH 免密钥登录脚本](http://blog.csdn.net/a3470194/article/details/50523527)
 
 

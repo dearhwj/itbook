@@ -148,3 +148,4 @@
 	* [百万富翁的生活习惯总结](beyondbook/millionaire_habits.md)
 	* [你的生活逃不出这25张图](beyondbook/your_life_25_sentence.md)
 	* [番茄工作法](beyondbook/pomodoro.md)
+	* [大卫谈学习](beyondbook/david_talking_about_study.md)

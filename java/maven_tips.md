@@ -73,6 +73,12 @@
 	
 	mvn somePrefix:goal
 
+[Why Maven command MVN sonar:sonar works without any plugin configuration in my POM.xml?](http://stackoverflow.com/questions/14979530/why-maven-command-mvn-sonarsonar-works-without-any-plugin-configuration-in-my-p)
+
+  参考：[Introduction to Plugin Prefix Resolution](http://maven.apache.org/guides/introduction/introduction-to-plugin-prefix-mapping.html)
+  
+	The reason is that the Sonar Maven Plugin is hosted at the Codehaus Mojo project and benefits from the groupId "org.codehaus.mojo". This allows to use the shortcut "sonar:sonar" instead of "org.codehaus.mojo:sonar-maven-plugin::sonar" (see the section "Configuring Maven to Search for Plugins" of the Maven documentation)
+
 
 
 	
