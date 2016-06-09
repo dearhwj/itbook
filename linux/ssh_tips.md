@@ -1,5 +1,15 @@
 # SSH Tips
 
+
+[SSH隧道](http://blog.selfup.cn/1539.html)
+
+	生产环境中的集群往往在一个局域网中，而该局域网只能通过某台特定的堡垒机来访问。这样的网络环境下可以通过SSH隧道将一些端口隐射出来，比如CM的7180和HUE的8888端口，这样就可以在本机上通过浏览器来访问CM和HUE了。
+
+	ssh -C -f -N -g -L 7180:master-ip:7180 接口机IP -p 8282
+
+	ssh -C -f -N -g -L 7180:master-ip:7180 接口机IP -p 8282
+	上述命令意思是通过接口机（ssh端口为8282）将master-ip机器的7180端口隐射到本机的7180端口，这样可以通过访问http://localhost:7180来访问master-ip机器的7180端口。
+
 [shell中 diff命令怎么比较远程和本地的文件夹](http://www.iteye.com/problems/69708)
 
 	比较文件可以这样写： 

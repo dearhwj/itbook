@@ -95,6 +95,7 @@
 	* [使用HttpOnly提升Cookie安全性](security/cookie_httponly.md)
 	* [转载：JSONP 安全攻防技术](security/jsonp_hijacker.md)
 	* [SSRF攻击实例及防御](security/ssrf.md)
+	* [CSRF跨站请求伪造](security/csrf.md)
 	* [获取用户Ip地址通用方法以及常见安全隐患](security/http_x_forward_inject.md)
 * [软件测试](test/README.md)
 	* [性能测试基础知识—QPS和TPS](test/performance_test_qps_tps.md)
