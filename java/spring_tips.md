@@ -11,6 +11,23 @@
 	如果指定了type，则从上下文中找到类型匹配的唯一bean进行装配，找不到或者找到多个，都会抛出异常
 	如果既没有指定name，又没有指定type，则自动按照byName方式进行装配（见2）；如果没有匹配，则回退为一个原始类型（UserDao）进行匹配，如果匹配则自动装配；
 
+
+[	Spring 注解 @Resource和@Autowired](http://my.oschina.net/u/216467/blog/205951)
+
+	  @Autowired注解是按类型装配依赖对象，默认情况下它要求依赖对象必须存在，如果允许null值，可以设置它required属性为false。如果我们想使用按名称装配，可以结合@Qualifier注解一起使用。如下：
+
+	@Autowired  @Qualifier("userDao")
+	private PersonDao  personDao;
+
+
+[Exclude subpackages from Spring autowiring?](http://stackoverflow.com/questions/10725192/exclude-subpackages-from-spring-autowiring)
+
+	<context:component-scan base-package="com.example">
+    <context:exclude-filter type="regex" expression="com\.example\.ignore\..*"/>
+ 	</context:component-scan>
+ 	
+ 
+
 [Spring中注入List，Set，Map,Properties](http://www.cnblogs.com/rollenholt/archive/2012/12/27/2835122.html)
 
 

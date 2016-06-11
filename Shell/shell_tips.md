@@ -1,5 +1,15 @@
 # Shell Tips
 
+[shell脚本中echo显示内容带颜色](http://www.cnblogs.com/lr-ting/archive/2013/02/28/2936792.html)
+
+	shell脚本中echo显示内容带颜色显示,echo显示带颜色，需要使用参数-e 
+	格式如下：
+	echo -e "\033[字背景颜色；文字颜色m字符串\033[0m" 
+	echo -e "\033[41;36m something here \033[0m" 
+	
+	其中41的位置代表底色， 36的位置是代表字的颜色 
+	
+
 [每个极客都应该知道的Linux技巧]()
 
 	检查不是由你运行的程序

@@ -1,4 +1,21 @@
 # 机器学习资源大全
+[详细解释数据挖掘中的 10 大算法（上）](http://blog.jobbole.com/90316/)
+	
+	1、C4.5算法
+	2. k 均值聚类算法
+	3.支持向量机
+	4. Apriori 关联算法
+	5.EM 最大期望算法 Expectation Maximization
+	
+[详细解释数据挖掘中的 10 大算法（下）](http://blog.jobbole.com/89037/)
+
+	6.PageRank算法
+	7.AdaBoost 迭代算法
+	8.kNN：k最近邻算法
+	9. Naive Bayes 朴素贝叶斯算法
+	10.CART 分类算法
+	
+
 [机器学习常见的算法面试题总结](http://www.codeceo.com/article/machine-learn-algorithm-interview.html)
 
 

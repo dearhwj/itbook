@@ -33,6 +33,8 @@
 	* [Java开源项目](java/java_open_source_project.md)
 	* Java小窍门
 		* [快速定位Java堆栈信息的问题](java/jstack_output_insight.md)
+	* [Spring小窍门](java/spring_tips.md)	
+	* [lombok的使用和原理](java/lombok_tips.md)	
 * [Javascript](Javascript/README.md)
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)

@@ -1,4 +1,22 @@
 # Mac Tips
+[让 Mac OS X 终端显示颜色](http://blog.sina.com.cn/s/blog_6a60817301012p3e.html)
+
+	要看彩色输出的ls、grep，加参数：
+	ls -G
+	grep --color
+
+	要看彩色的vim，启动后输入：
+	:syntax on
+
+	要固定效果的话改一下参数文件，正常用bash的这样改：
+	$ cd
+	$ echo "export CLICOLOR=1" >> .bash_profile
+	$ echo "alias grep='grep --color=auto'" >> .bash_profile
+	$ echo "syntax on" >> .vimrc
+
+	习惯用csh的这样改：
+	% echo "setenv CLICOLOR 1" >> .cshrc
+
 [Mac文件太大无法复制到u盘解决办法](http://www.pc6.com/edu/88142.html)
 
 	目前大部分U盘出厂格式为FAT32，而这种格式是不支持存储4GB以上文件的，所以在拷贝一些高清电影、游戏等文件时会出现以上提示。如何解决这个问题呢，这还是很简单的，把 FAT32 格式转换为 ExFAT 即可，这里需要用到 MAC 系统中的一个工具——磁盘工具。
