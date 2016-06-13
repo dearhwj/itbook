@@ -1,6 +1,7 @@
 # Summary
 * [人工智能](ai/README.md)
 	* [决策树算法介绍及应用](ai/decision_tree.md) 
+	* [机器学习资源大全](ai/machine_learning_collection.md)
 * [算法](algorithm/README.md)
 	* [bloom filter](algorithm/bloom_filter.md)
 	* [其他算法](algorithm/other_algorithms.md)
@@ -35,6 +36,7 @@
 		* [快速定位Java堆栈信息的问题](java/jstack_output_insight.md)
 	* [Spring小窍门](java/spring_tips.md)	
 	* [lombok的使用和原理](java/lombok_tips.md)	
+	* [RxJava响应式编程框架](java/java_open_source_rxjava.md)
 * [Javascript](Javascript/README.md)
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)
@@ -141,7 +143,6 @@
 	* [转载：尼古丁+咖啡因：不瞌睡的PPT](programmer/no_doze_ppt.md)
 	* [如何提高演讲能力](programmer/improve_speech_capacity.md)
 	* [学习搜狐双拼输入法](programmer/sohu_shuangping.md)
-	* [机器学习资源大全](ai/machine_learning_collection.md)
 * 技术管理
 	* [转载:技术团队管理不仅仅是管理](tech_management/tech_team_management.md) 
 	* [转载:业务和商业才是技术的驱动力](tech_management/business_drive_tech.md)
