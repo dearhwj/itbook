@@ -1,4 +1,31 @@
 # 机器学习资源大全
+[TF-IDF与余弦相似性的应用（一）：自动提取关键词](http://www.ruanyifeng.com/blog/2013/03/tf-idf.html)
+
+	TF-IDF与一个词在文档中的出现次数成正比，与该词在整个语言中的出现次数成反比。
+	
+[F-IDF与余弦相似性的应用（二）：找出相似文章](http://www.ruanyifeng.com/blog/2013/03/cosine_similarity.html)	
+	
+	　（1）使用TF-IDF算法，找出两篇文章的关键词；
+	　（2）每篇文章各取出若干个关键词（比如20个），合并成一个集合，计算每篇文章对于这个集合中的词的词频（为了避免文章长度的差异，可以使用相对词频）；
+	　（3）生成两篇文章各自的词频向量；
+	　（4）计算两个向量的余弦相似度，值越大就表示越相似。
+		
+		"余弦相似度"是一种非常有用的算法，只要是计算两个向量的相似程度，都可以采用它。		
+
+[Slope One :简单高效的协同过滤算法(Collaborative Filtering)](http://www.cnblogs.com/kuber/archive/2008/06/10/1216846.html)
+
+
+[数据归一化和两种常用的归一化方法](http://www.cnblogs.com/chaosimple/archive/2013/07/31/3227271.html)
+
+	数据标准化（归一化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。以下是两种常用的归一化方法：
+	一、min-max标准化（Min-Max Normalization）
+	也称为离差标准化，是对原始数据的线性变换，使结果值映射到[0 - 1]之间。
+	二、Z-score标准化方法
+	这种方法给予原始数据的均值（mean）和标准差（standard deviation）进行数据的标准化。经过处理的数据符合标准正态分布，即均值为0，标准差为1，	
+
+
+[基于物品的协同过滤推荐算法——读“Item-Based Collaborative Filtering Recommendation Algorithms”](http://blog.csdn.net/huagong_adu/article/details/7362908)
+
 [详细解释数据挖掘中的 10 大算法（上）](http://blog.jobbole.com/90316/)
 	
 	1、C4.5算法

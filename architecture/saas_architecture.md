@@ -36,5 +36,7 @@
 [Salesforce Architecture - How They Handle 1.3 Billion Transactions A Day](http://highscalability.com/blog/2013/9/23/salesforce-architecture-how-they-handle-13-billion-transacti.html)
 
 	Sandbox - an instance of the salesforce.com service that hosts full copies of production orgs for customer application development purposes. Customers using our platform can have full application development lifecycles. These are test environments for customers to do user acceptance testing against their applications before deploying changes into their production org.
+	
+[How to SaaS](https://blogs.msdn.microsoft.com/rahul/2007/03/27/how-to-saas/)	
 
 

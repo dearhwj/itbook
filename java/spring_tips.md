@@ -19,6 +19,10 @@
 	@Autowired  @Qualifier("userDao")
 	private PersonDao  personDao;
 
+[context:component-scan 配置详解](http://jbutton.iteye.com/blog/1050136)
+
+[<context:component-scan>使用说明](http://blog.csdn.net/chunqiuwei/article/details/16115135)
+
 
 [Exclude subpackages from Spring autowiring?](http://stackoverflow.com/questions/10725192/exclude-subpackages-from-spring-autowiring)
 

@@ -4,6 +4,35 @@
 
 [Maven: The Complete Reference](http://books.sonatype.com/mvnref-book/reference/) 
 
+### Maven的生命周期
+[Maven 构建生命周期](http://www.yiibai.com/maven/maven_build_life_cycle.html)
+	
+	Maven有以下三种标准的生命周期：clean、default(或 build)、site
+	这是 Maven 主要的生命周期，用于构建应用程序。它有以下 23 个阶段。
+	validate	验证项目是否正确，并且所有必要的信息可用于完成构建过程
+	initialize	建立初始化状态，例如设置属性
+	generate-sources	产生任何的源代码包含在编译阶段
+	process-sources	处理源代码，例如，过滤器值
+	generate-resources	包含在包中产生的资源
+	process-resources	复制和处理资源到目标目录，准备打包阶段
+	compile	编译该项目的源代码
+	process-classes	从编译生成的文件提交处理，例如：Java类的字节码增强/优化
+	generate-test-sources	生成任何测试的源代码包含在编译阶段
+	process-test-sources	处理测试源代码，例如，过滤器任何值
+	test-compile	编译测试源代码到测试目标目录
+	process-test-classes	处理测试代码文件编译生成的文件
+	test	运行测试使用合适的单元测试框架（JUnit）
+	prepare-package	执行必要的任何操作的实际打包之前准备一个包
+	package	提取编译后的代码，并在其分发格式打包，如JAR，WAR或EAR文件
+	pre-integration-test	完成执行集成测试之前所需操作。例如，设置所需的环境
+	integration-test	处理并在必要时部署软件包到集成测试可以运行的环境
+	pre-integration-test	完成集成测试已全部执行后所需操作。例如，清理环境
+	verify	运行任何检查，验证包是有效的，符合质量审核规定
+	install	将包安装到本地存储库，它可以用作当地其他项目的依赖
+	7
+	deploy	复制最终的包到远程仓库与其他开发者和项目共享	
+
+
 ### Maven的预定义变量
 [List of predefined Maven properties](https://github.com/cko/predefined_maven_properties/blob/master/README.md)
 	
@@ -120,7 +149,7 @@
 	
 	mvn somePrefix:goal
 
-#### [Why Maven command MVN sonar:sonar works without any plugin configuration in my POM.xml?](http://stackoverflow.com/questions/14979530/why-maven-command-mvn-sonarsonar-works-without-any-plugin-configuration-in-my-p)
+#### [Why Maven command MVN sonar:sonar works without any plugin configuration in my POM.xml](http://stackoverflow.com/questions/14979530/why-maven-command-mvn-sonarsonar-works-without-any-plugin-configuration-in-my-p)
 
   参考：[Introduction to Plugin Prefix Resolution](http://maven.apache.org/guides/introduction/introduction-to-plugin-prefix-mapping.html)
   

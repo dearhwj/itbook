@@ -1,4 +1,18 @@
 # Git小窍门
+
+[ git rebase简介(基本篇)](http://blog.csdn.net/hudashi/article/details/7664631/)
+	
+	在rebase的过程中，也许会出现冲突(conflict). 在这种情况，Git会停止rebase并会让你去解决 冲突；在解决完冲突后，用"git-add"命令去更新这些内容的索引(index), 然后，你无需执行 git-commit,只要执行:
+	$ git rebase --continue
+	这样git会继续应用(apply)余下的补丁。
+	在任何时候，你可以用--abort参数来终止rebase的行动，并且"mywork" 分支会回到rebase开始前的状态。
+	$ git rebase --abort
+
+[ Git fetch和git pull的区别](http://blog.csdn.net/hudashi/article/details/7664457)
+
+	在实际使用中，git fetch更安全一些 因为在merge前，我们可以查看更新情况，然后再决定是否合并
+	另外，fetch可以获取远端的分支信息
+
 [ git中手动删除的文件如何在git中删除](http://blog.csdn.net/xiaoyuanzhiying/article/details/44085135)
 
 	第一种就是用 git rm files 删除你手动删除的文件或文件夹。

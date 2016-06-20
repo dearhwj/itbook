@@ -10,7 +10,7 @@
 * [架构](architecture/README.md)
 	* [REST](architecture/rest.md)
 	* [亚马逊的架构](architecture/aws_architecture_collection.md)
-	* [多租户架构](architecture/multi-tenant_data_architecture.md)
+	* [SAAS架构](architecture/saas_architecture.md)
 	* [读书笔记：软件架构师应该知道的97件事](architecture/architecture_97.md)
 	* [阿里巴巴架构师总结的一些架构原则](architecture/architecture_principle_xunnan.md)
 	* [“框架”论述摘录](architecture/framework_expound.md)
@@ -85,6 +85,7 @@
 		* [窗口管理应用Sizeup](macos/sizeup.md)
 		* [应用切换工具Manico](macos/manico.md)
 		* [Iterm2 快捷键介绍](macos/iterm2.md)
+		* [几个有用的mac命令](macos/useful_macos_command.md)
 	* [MacOS小窍门](macos/macos_tips.md)
 	* [程序员如何优雅地使用Mac](macos/mac_dev.md)
 * 网络

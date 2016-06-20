@@ -1,4 +1,19 @@
 # Mac Tips
+[8个不可不知的Mac OS X专用命令行工具](https://segmentfault.com/a/1190000000509514)
+
+	open命令
+	用于打开文件、目录或执行程序。就等同于在命令行模式下，重复图形界面“双击”的动作。
+	
+	pbcopy 和 pbpaste 
+	这两个工具可以打通命令行和剪贴板。当然用鼠标操作复制粘贴也可以——但这两个工具的真正威力，发挥在将其用作Unix工具的时候。意思就是说：可以将这两个工具用作管道、IO重定向以及和其他命令的整合。
+	
+	screencapture
+	screencapture命令可以截图。和Grab.app与cmd + shift + 3或cmd + shift + 4热键相似，但更加的灵活。
+	
+	say
+	say是一个文本转语音（TTS）的有趣的工具，引擎和OS X使用的一样也是VoiceOver。如果不加其他选项，则会简单的语音朗读你给定的字符串。用-f选项朗读特定文本文件，-o选项将朗读结果存为音频文件而不是播放
+	
+
 [让 Mac OS X 终端显示颜色](http://blog.sina.com.cn/s/blog_6a60817301012p3e.html)
 
 	要看彩色输出的ls、grep，加参数：
