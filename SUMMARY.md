@@ -104,6 +104,7 @@
 	* [获取用户Ip地址通用方法以及常见安全隐患](security/http_x_forward_inject.md)
 * [软件测试](test/README.md)
 	* [性能测试基础知识—QPS和TPS](test/performance_test_qps_tps.md)
+	* [集成测试和单元测试](test/unit_test_integeration_test.md)
 	* [压力测试](test/pressure_test.md)
 		* [一分钟学会AB](test/ab_one_minute.md)
 * [VIM](vim/README.md)

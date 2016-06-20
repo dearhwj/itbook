@@ -75,4 +75,4 @@
 1. [HSF指定IP调用](http://gitlab.alibaba-inc.com/middleware/hsf2-0/wikis/user_specified_target_invoke)
 2. [Maven Failsafe Plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/)
 3. [parser单元测试case解析插件](http://docs.alibaba-inc.com/pages/viewpage.action?pageId=230520605)
-
+4. [离线系统中使用cobertura统一收集UT与集成测试覆盖率](http://www.atatech.org/articles/53650)
