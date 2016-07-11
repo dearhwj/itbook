@@ -84,6 +84,11 @@
 ### Plugin
 [Maven Failsafe Plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/)
 
+
+[Maven插件之build-helper-maven-plugin](http://blog.csdn.net/wangjunjun2008/article/details/17553503)
+
+	把原有项目添加到Maven管理时，总会出现很多莫名奇妙的问题，其中之一便是Maven默认的项目结构和自己的项目结构不一致，导致无法编译源代码，更不用说部署、运行项目了。Java程序开发，一般使用Eclipse、MyEclipse等工具，其源码目录为src，这与Maven默认的src/main/java不同。因此，在没有额外配置的情况下，使用Maven命令无法完成代码的编译。针对这种情况，codehaus提供了build-helper-maven-plugin插件来支持自定义的项目目录结构(相对于Maven默认目录结构来说)。
+
 [Maven Help插件的使用]("http://blog.csdn.net/zgmzyr/article/details/8691053")
 
 	help:describe
@@ -155,6 +160,10 @@
   
 	The reason is that the Sonar Maven Plugin is hosted at the Codehaus Mojo project and benefits from the groupId "org.codehaus.mojo". This allows to use the shortcut "sonar:sonar" instead of "org.codehaus.mojo:sonar-maven-plugin::sonar" (see the section "Configuring Maven to Search for Plugins" of the Maven documentation)
 
+#### [如何显示maven的生命周期](http://stackoverflow.com/questions/1709625/maven-command-to-list-lifecycle-phases-along-with-bound-goals)
+
+
+	mvn help:describe -Dcmd=compile (or any other valid phase)
 
 #### 子模块如何设置父工程的版本
 

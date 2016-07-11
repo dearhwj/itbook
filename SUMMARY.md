@@ -133,6 +133,7 @@
 	* [Excel](tools/excel_tips.md)
 	* [Lynx纯文字终端网页浏览器](tools/lynx_brower.md)
 	* [终端分屏软件tmux教程](tools/tmux_manual.md)
+	* [Idea的Mybatis插件](tools/idea_mybatis_plugin.md)
 * 程序猿宝典
 	* [值得程序员关注的微信公众号](programmer/wx_public.md)
 	* [程序员鄙视链](programmer/dev_down.md)
@@ -148,6 +149,7 @@
 * 技术管理
 	* [转载:技术团队管理不仅仅是管理](tech_management/tech_team_management.md) 
 	* [转载:业务和商业才是技术的驱动力](tech_management/business_drive_tech.md)
+	* [Facebook Collection](tech_management/facebook_collection.md)
 * 胜读十年书
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)

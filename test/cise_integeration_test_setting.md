@@ -1,9 +1,9 @@
 # 在CISE上定制集成测试环境
 
 
-1. 把集成测试的代码跟生产代码写在一个工程，不同的module里面里面，这样的好处就是可以降低测试用例的维护成本
-2. CISE的集成测试要能自动部署相应的集成测试环境.如果测试的分支是master，就拉取日常环境的aone配置，并进行测试。如果测试分支是branch，去拉取相应的aone项目项目环境的配置并完成部署
-3. 集成测试依赖服务提供的service，在cise上运行测试可以依赖相应的集成测试服务provider，如果整个集成测试流程中会启动集成测试环境（tomcat+HSF），可以利用[HSF指定IP调用](http://gitlab.alibaba-inc.com/middleware/hsf2-0/wikis/user_specified_target_invoke)功能调用到特定的HSF Provider上。但在本地运行单元测试的时候，可以识别相应的选项直接依赖默认的服务provider。
+### 工程结构
+1. 把集成测试的代码跟生产代码写在同一project，但在不同的module里面里面，这样的好处就是可以降低测试用例的维护成本。
+2. 用Groovy+Spock框架编写集成测试用例，测试代码都集中在test这个module里面，命名规则*ITCase。
 
 ### 自定义CISE镜像
 1. CISE提供了[CISE制作自有镜像(自定义镜像)](http://docs.alibaba-inc.com:8090/pages/viewpage.action?pageId=242953509)功能，可以自定义集成测试的运行环境，例如tomcat、jdk、maven等等。我自定义了一个cise_aliyun_tomcat7_mvn3的镜像，这个镜像支持了tomcat7和maven3。但目前这镜像和cise的标准镜像不兼容，导致一些cise的一些指令运行不了比如jdk和maven版本的定制；还有一个问题，因为是自定义镜像，CISE不会预创建该镜像对应的服务器，所以整个初始化+启动的过程会比标准的CISE镜像慢好多。
@@ -56,10 +56,11 @@
 
 	```
 
-### 开发集成测试用例
-1. 我们还是用Groovy+Spock框架编写集成测试用例，测试代码都集中在test这个module里面，命名规则*ITCase。
+### 准备cise.yml
+
 2. 在pom文件中配置failsafe，运行集成测试。并利用cise的parser单元测试case解析插件分析测试用例的结果。
-3. 最后调整.cise.yml
+3. CISE的集成测试要能自动部署相应的集成测试环境.如果测试的分支是master，就拉取日常环境的aone配置，并进行测试。如果测试分支是branch，去拉取相应的aone项目项目环境的配置并完成部署
+3. 集成测试依赖服务提供的service，在cise上运行测试可以依赖相应的集成测试服务provider，如果整个集成测试流程中会启动集成测试环境（tomcat+HSF），可以利用[HSF指定IP调用](http://gitlab.alibaba-inc.com/middleware/hsf2-0/wikis/user_specified_target_invoke)功能调用到特定的HSF Provider上。但在本地运行单元测试的时候，可以识别相应的选项直接依赖默认的服务provider。
 
 
 

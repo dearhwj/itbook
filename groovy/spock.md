@@ -26,7 +26,56 @@ spock主要的学习资料都在后面的参考里面列着，熟悉了java的�
 2. 用groovy+spock来写单元测试，让编写单元测试的效率提升。
 
 
-		
+###  配置gmavenplus插件运行单元/集成测试
+groovy的单元/集成测试需要先利用gmavenplus插件，把groovy编译成相应的java class文件，然后surefire就可以运行相应的单元测试了
+
+``` 
+ <build>
+        <plugins>
+<plugin>
+                <!-- The gmavenplus plugin is used to compile Groovy code. To learn more about this plugin,
+                visit https://github.com/groovy/GMavenPlus/wiki -->
+                <groupId>org.codehaus.gmavenplus</groupId>
+                <artifactId>gmavenplus-plugin</artifactId>
+                <version>1.5</version>
+                <configuration>
+                    <testSources>
+                        <testSource>
+                            <directory>${project.basedir}/src/test/groovy</directory>
+                            <includes>
+                               <include>**/*.groovy</include>
+                            </includes>
+                        </testSource>
+                    </testSources>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-all</artifactId>
+                        <!-- any version of Groovy \>= 1.5.0 should work here -->
+                        <version>2.4.1</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>testCompile</goal>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+</plugins>
+  </build>
+```		
+
+### IntelliJ的Groovy插件
+IntelliJ idea 默认不能很好的处理groovy的代码路径(src/main/groovy、src/test/groovy)。GMavenPlus IntelliJ Plugin这个插件会把src/main/groovy and src/test/groovy加入到IntelliJ工程的构建路径中
+
+
+
+
 
 
 ###参考

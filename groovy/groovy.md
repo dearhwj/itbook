@@ -148,6 +148,9 @@
 	}
 	···
 
+
+[Groovy Tip 5 数组](http://blog.csdn.net/hivon/article/details/2312839)
+
 ### 反射
 [Groovy深入探索——Metaclass的存放](http://www.blogjava.net/johnnyjian/archive/2010/03/19/315962.html)
 
@@ -186,6 +189,10 @@
 [groovy-正则表达式](http://www.cnblogs.com/rollenholt/p/3349060.html)
 
 	Groovy使用~”pattern” 来支持正则表达式，它将使用给定的模式字符串创建一个编译好的Java Pattern 对象。Groovy也支持 =~（创建一个Matcher）和 ==~ (返回boolean，是否给定的字符串匹配这个pattern)操作符。
+
+[Groovy之旅系列之五(正则之分组)](http://www.blogjava.net/supercrsky/archive/2008/05/13/200155.html)
+
+[ Unmi 学习 Groovy 之正则表达式](http://blog.csdn.net/kypfos/article/details/3178235)
 	
 ### 文件操作
 [groovy操作文件、目录及xml](http://it.chinawin.net/softwaredev/article-e4.html)

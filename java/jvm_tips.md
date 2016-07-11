@@ -3,3 +3,6 @@
 
 [-Xmx1024m -Xms1024m -Xmn512m -Xss256k”——Java运行参数]("http://blog.sina.com.cn/s/blog_60cc33d70100or93.html")
 
+
+[Linux与JVM的内存关系分析](http://www.tuicool.com/articles/y2eQ3a)
+

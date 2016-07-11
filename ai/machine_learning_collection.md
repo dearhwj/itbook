@@ -1,4 +1,21 @@
 # 机器学习资源大全
+[使用Spark MLlib给豆瓣用户推荐电影](http://www.colobu.com/2015/11/30/movie-recommendation-for-douban-users-by-spark-mllib/)
+
+[为豆瓣电影实现User-based协同过滤的推荐系统](http://www.colobu.com/2015/12/02/user-based-recommender-for-douban-movies/)
+
+[为豆瓣电影实现Item-based协同过滤的推荐系统](http://www.colobu.com/2015/12/03/item-based-recommender-for-douban-movies/)
+
+
+
+[搜索引擎算法:信息指纹算法,分段签名算法,关键词复制网页算法随机映射算法,近似网页发现算法研究](http://www.xituzhidu.net/post/271.html)
+
+	信息指纹算法
+	分段签名算法
+	基于关键词的复制网页算法
+	 随机映射算法
+	 近似网页发现算法
+
+
 [TF-IDF与余弦相似性的应用（一）：自动提取关键词](http://www.ruanyifeng.com/blog/2013/03/tf-idf.html)
 
 	TF-IDF与一个词在文档中的出现次数成正比，与该词在整个语言中的出现次数成反比。

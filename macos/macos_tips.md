@@ -1,4 +1,20 @@
 # Mac Tips
+
+[mac的窗口管理快捷方式]
+	
+	在当前软件窗口下进行同类切换
+	command+` 这个快捷键是让你切换当前活跃软件的窗口，例如你打开了3个Safari窗口，那么+`  就可以在这三个窗口之间进行快速切换
+	
+	最小化当前窗口
+	command+M 将当前的一个窗口最小化，并且最小化后可以在Dock中看到。需要的话点击即可放大还原。
+	另外：最小化当前程序的所有窗口command+alt+M
+
+
+
+[homebrew常用命令](http://my.oschina.net/gujianhan/blog/203704)
+
+
+
 [8个不可不知的Mac OS X专用命令行工具](https://segmentfault.com/a/1190000000509514)
 
 	open命令

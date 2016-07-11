@@ -1,5 +1,8 @@
 # Git小窍门
 
+[Git回滚的常用手法](http://hittyt.iteye.com/blog/1961386)
+
+
 [ git rebase简介(基本篇)](http://blog.csdn.net/hudashi/article/details/7664631/)
 	
 	在rebase的过程中，也许会出现冲突(conflict). 在这种情况，Git会停止rebase并会让你去解决 冲突；在解决完冲突后，用"git-add"命令去更新这些内容的索引(index), 然后，你无需执行 git-commit,只要执行:

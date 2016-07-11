@@ -12,7 +12,7 @@
 
 多租户和虚拟化在概念是比较类似，都是给每个用户一个虚拟的实例，并且都支持定制化，但是它们作用的层次不同：虚拟化主要是虚拟出一个操作系统的实例，而多租户则是主要虚拟出一个应用的实例。
 
-
+[Salesforce：五大秘诀让SaaS公司年收入破50亿美元](http://www.itvalue.com.cn/event/monthly/monthly257.html)
 
 [多租户技术](http://baike.baidu.com/view/6838400.htm)
 
@@ -38,5 +38,6 @@
 	Sandbox - an instance of the salesforce.com service that hosts full copies of production orgs for customer application development purposes. Customers using our platform can have full application development lifecycles. These are test environments for customers to do user acceptance testing against their applications before deploying changes into their production org.
 	
 [How to SaaS](https://blogs.msdn.microsoft.com/rahul/2007/03/27/how-to-saas/)	
+
 
 

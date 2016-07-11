@@ -7,6 +7,7 @@
 3. 切换标签：command + 数字 或 command + 左右方向键
 4. 切换全屏：command + enter
 5. 查找：command + f
+6. 修改窗口的标题：command + i
 
 ### 分屏
 1. 垂直分屏：command + d
