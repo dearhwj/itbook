@@ -1,7 +1,7 @@
 # Idea Mybatis 插件
 ***Intellij Idea Mybatis插件主要功能：***
 
-1. 提供Mapper接口与配置文件中对应SQL的导航，用OPTION+COMMAND+B(Mac)快捷键可以跳转。这个功能最好使，XML和Java Mapper相互跳转非常方便。当然也可以通过鼠标点击左边的箭头来操作。
+1. 提供Mapper接口与配置文件中对应SQL的导航。这个功能最好使，MAC下可以用【OPTION+COMMAND+B】快捷键可以相互跳转，当然也可以通过鼠标点击左边的箭头来操作（如下图）。
 ![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/ide_mybatis_plugin.png)
 
 2. 编辑XML文件时自动补全
