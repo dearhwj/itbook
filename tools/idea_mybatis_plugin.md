@@ -1,4 +1,6 @@
 # Idea Mybatis 插件
+分享一个idea mybatis的开发插件可以提升mybatis的开发效率，不过这个plugin是收费的，baidu一下也能找到你想要的......
+
 ***Intellij Idea Mybatis插件主要功能：***
 
 1. 提供Mapper接口与配置文件中对应SQL的导航。这个功能最好使，MAC下可以用【OPTION+COMMAND+B】快捷键可以相互跳转，当然也可以通过鼠标点击左边的箭头来操作（如下图）。
