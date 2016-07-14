@@ -90,9 +90,10 @@
 	* [程序员如何优雅地使用Mac](macos/mac_dev.md)
 * 网络
 	* [快速诊断网络问题](network/network_diagnose.md) 
-* [Node](node/README.md)
-	* [Grunt小窍门](node/grunt_tips.md)
-	* [npm小窍门](node/npm_tips.md)
+* [前端](frontend/README.md)
+	* [Grunt小窍门](frontend/grunt_tips.md)
+	* [npm小窍门](frontend/npm_tips.md)
+	* [bower使用入门](frontend/bower_getting_started.md)
 * [SEO](seo/README.md)
 	* [SEO小窍门](seo/seo_tips.md) 	
 * 安全
