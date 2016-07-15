@@ -4,6 +4,7 @@
 	* [机器学习资源大全](ai/machine_learning_collection.md)
 * [算法](algorithm/README.md)
 	* [bloom filter](algorithm/bloom_filter.md)
+	* [Twitter的分布式自增ID算法Snowflake](algorithm/snowflake.md)
 	* [其他算法](algorithm/other_algorithms.md)
 * [硬件](hardware/README.md)
 	* [这几个数字每个程序员都应该知道](hardware/numbers_everyone_should_know.md)
@@ -94,6 +95,7 @@
 	* [Grunt小窍门](frontend/grunt_tips.md)
 	* [npm小窍门](frontend/npm_tips.md)
 	* [bower使用入门](frontend/bower_getting_started.md)
+	* [Node小窍门](frontend/node_tips.md)
 * [SEO](seo/README.md)
 	* [SEO小窍门](seo/seo_tips.md) 	
 * 安全

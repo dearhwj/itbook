@@ -1,4 +1,10 @@
 # Shell Tips
+[Shell(Bash)中如何判断是否存在某个命令](https://segmentfault.com/q/1010000000156870)
+	
+	最好避免使用 which，做为一个外部的工具，并不一定存在，在发行版之间也会有区别，有的系统的 which 命令不会设置有效的 exit status，存在一定的不确定性。
+
+	Bash 有提供一些内建命令如 hash、type、command 也能达到要求。
+
 
 [shell脚本中echo显示内容带颜色](http://www.cnblogs.com/lr-ting/archive/2013/02/28/2936792.html)
 
