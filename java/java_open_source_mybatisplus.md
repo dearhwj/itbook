@@ -68,8 +68,9 @@ mybatis提供了以下缺省的CRUD功能：
 		4. UUID
 	5. @TableField用于申明pojo熟悉和表字段的对应关系。
 
-	```
-	
+
+		```
+			
 		@TableName("project_member")
 		public class ProjectMember extends BaseModel {
 
@@ -95,12 +96,13 @@ mybatis提供了以下缺省的CRUD功能：
 	    private String loginName;
 
 
-	}
+		}
 	
-	```
+		```
 	 
 3. 定义相关的mybatis mapper。mybatis plus提供了一个BaseMapper包含了缺省的CRUD功能。所以，我们自己的mapper只需要继承该接口后，无需编写 mapper.xml 文件，即可获得CRUD功能。
 	![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/mybatis_plus_base_mapper_methods.png)
+	
 	
 	```
 	
@@ -159,6 +161,45 @@ mybatis提供了以下缺省的CRUD功能：
 	
 	```
 	
+	public class ProjectMemberBoImpl implements ProjectMemberBo {
+
+
+    	@Autowired
+	    private ProjectMemberMapper projectMemberMapper;
+
+    	@Override
+	    public boolean batchInsertProjectMembers(List<ProjectMember> members) {
+        if(members==null || members.size()==0){
+            throw  new IllegalArgumentException("param[members] cannot be null or empty");
+        }
+
+        for (ProjectMember item:members){
+            if(item==null){
+                throw  new IllegalArgumentException("param[members.item] cannot be null or empty");
+            }
+
+            if(item.getDeleted()==null|| item.getDeleted()==true){
+                throw  new IllegalArgumentException("param[members.item.deleted] cannot be null or false");
+            }
+
+            item.setGmtCreated(new Date());
+            item.setGmtModified(new Date());
+            if(item.getProjectId()==null){
+
+                throw new IllegalArgumentException("param[members.item.projectId] cannot be null");
+            }
+            if(StringUtils.isBlank(item.getLoginName())){
+                throw new IllegalArgumentException("param[members.item.loginName] cannot be empty");
+            }
+
+            if(StringUtils.isBlank(item.getWorkNumber())){
+                throw new IllegalArgumentException("param[members.item.worknumber] cannot be empty");
+            }
+        }
+        return projectMemberMapper.insertBatch(members)==members.size();
+
+    }
+	
 	    @Override
     	public List<ProjectMember> queryProjectMemberListByWorkNumber(String workNumber) {
         	if(workNumber==null){
@@ -207,6 +248,7 @@ mybatis提供了以下缺省的CRUD功能：
     	    return projectMemberMapper.updateSelective(entity, where)==1;
     	}
 	}
+	
 	```
 
 
