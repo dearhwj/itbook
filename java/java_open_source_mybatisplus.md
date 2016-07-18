@@ -32,8 +32,10 @@ mybatis提供了以下缺省的CRUD功能：
 用从原来的spring+mybaits的集成方式变成spring+mybaits plus+mybaits  还是很简单的，只需要几个步骤。
 
 1.  将原来的spring的sqlSessionFactory,改成mybatisplus提供的sqlSessionFactory，代码如下
-	
-    	原来的
+
+	``` 
+
+    原来的
 	    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
     	    <property name="dataSource" ref="dataSource" />
         	<property name="mapperLocations" value="classpath:mapper/*Mapper.xml" />
@@ -55,7 +57,8 @@ mybatis提供了以下缺省的CRUD功能：
             </bean>
         </property>
 	    </bean>
-
+	    
+	```
 2. 对单表对应的pojo加上mybatis plus所需的annotation。 mybatis plus提供了3种Annotation。
 	3. @TableName用于声明pojo对应的单表名 
 	4. @TableId用于声明pojo对应的单表的PK字段。PK字段目前支持4种生成策略。
@@ -64,8 +67,9 @@ mybatis提供了以下缺省的CRUD功能：
 		3. ID_WORKER: 全局唯一ID。这个是基于Twitter-Snowflake的Java实现，想了解算法细节的可以参考[Twitter-Snowflake，64位自增ID算法详解](http://www.lanindex.com/twitter-snowflake%EF%BC%8C64%E4%BD%8D%E8%87%AA%E5%A2%9Eid%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/)
 		4. UUID
 	5. @TableField用于申明pojo熟悉和表字段的对应关系。
-	
+
 	```
+	
 		@TableName("project_member")
 		public class ProjectMember extends BaseModel {
 
@@ -92,21 +96,25 @@ mybatis提供了以下缺省的CRUD功能：
 
 
 	}
+	
 	```
 	 
 3. 定义相关的mybatis mapper。mybatis plus提供了一个BaseMapper包含了缺省的CRUD功能。所以，我们自己的mapper只需要继承该接口后，无需编写 mapper.xml 文件，即可获得CRUD功能。
 	![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/mybatis_plus_base_mapper_methods.png)
 	
 	```
+	
 	public interface ProjectMemberMapper extends BaseMapper<ProjectMember,Integer>{
 
 
 	}
+	
 	``` 
 4. 定义相关的业务类。虽然mybatis plus 提供了缺省基于通用CRUD的业务操作的接口(IService)和实现类(CommonServiceImpl、SuperServiceImpl)，但这些业务类的定义都是面向CRUD，而不是面向业务操作的封装，所以我更喜欢自己去封装业务类,这样语义会更清楚一些。mybatis plus 提供了比较丰富的单表操作的CRUD实现，实现封装成本也不大。
 
 
 	```
+	
 	public interface ProjectMemberBo {
 
 
