@@ -69,7 +69,7 @@ mybatis提供了以下缺省的CRUD功能：
 	5. @TableField用于申明pojo熟悉和表字段的对应关系。
 
 
-		```
+		
 			
 		@TableName("project_member")
 		public class ProjectMember extends BaseModel {
@@ -98,24 +98,24 @@ mybatis提供了以下缺省的CRUD功能：
 
 		}
 	
-		```
+		
 	 
 3. 定义相关的mybatis mapper。mybatis plus提供了一个BaseMapper包含了缺省的CRUD功能。所以，我们自己的mapper只需要继承该接口后，无需编写 mapper.xml 文件，即可获得CRUD功能。
 	![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/mybatis_plus_base_mapper_methods.png)
 	
 	
-	```
+	
 	
 	public interface ProjectMemberMapper extends BaseMapper<ProjectMember,Integer>{
 
 
 	}
 	
-	``` 
+	
 4. 定义相关的业务类。虽然mybatis plus 提供了缺省基于通用CRUD的业务操作的接口(IService)和实现类(CommonServiceImpl、SuperServiceImpl)，但这些业务类的定义都是面向CRUD，而不是面向业务操作的封装，所以我更喜欢自己去封装业务类,这样语义会更清楚一些。mybatis plus 提供了比较丰富的单表操作的CRUD实现，实现封装成本也不大。
 
 
-	```
+	
 	
 	public interface ProjectMemberBo {
 
@@ -154,12 +154,12 @@ mybatis提供了以下缺省的CRUD功能：
 	}
 	
 	
-	```
+	
 	
 	实现类注入了mapper以后，可以基于缺省的CRUD操作实现业务操作。
 	
 	
-	```
+	
 	
 	public class ProjectMemberBoImpl implements ProjectMemberBo {
 
@@ -249,7 +249,7 @@ mybatis提供了以下缺省的CRUD功能：
     	}
 	}
 	
-	```
+	
 
 
 ### mybatis plus的实现原理
