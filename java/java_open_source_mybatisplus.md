@@ -31,7 +31,7 @@ mybatis提供了以下缺省的CRUD功能：
 ### 示例
 用从原来的spring+mybaits的集成方式变成spring+mybaits plus+mybaits  还是很简单的，只需要几个步骤。
 
-1.  讲原来的spring的sqlSessionFactory,改成mybatisplus提供的sqlSessionFactory，代码如下
+1.  将原来的spring的sqlSessionFactory,改成mybatisplus提供的sqlSessionFactory，代码如下
 	
     	原来的
 	    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
