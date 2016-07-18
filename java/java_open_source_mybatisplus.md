@@ -43,7 +43,7 @@ mybatis提供了以下缺省的CRUD功能：
     	 <bean id="sqlSessionFactory" 			class="com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean">
 	        <property name="dataSource" ref="dataSource" />
     	    <property name="mapperLocations" value="classpath:mapper/*Mapper.xml" />
-        <property name="typeAliasesPackage" value="com.aliyun.taiji.project.dal.dao.impl" />
+        <property name="typeAliasesPackage" value="com.aliyun.taiji.project.dal.model" />
         <property name="configuration">
             <bean class="org.apache.ibatis.session.Configuration">
                 <property name="mapUnderscoreToCamelCase" value="true"/>
