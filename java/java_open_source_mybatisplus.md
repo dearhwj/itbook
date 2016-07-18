@@ -38,6 +38,11 @@ mybatis提供了以下缺省的CRUD功能：
     	    <property name="dataSource" ref="dataSource" />
         	<property name="mapperLocations" value="classpath:mapper/*Mapper.xml" />
 	        <property name="typeAliasesPackage" value="com.aliyun.taiji.dal.dao.impl" />
+	        <property name="configuration">
+	           	 <bean class="org.apache.ibatis.session.Configuration">
+    	            <property name="mapUnderscoreToCamelCase" value="true"/>
+            	</bean>
+        	</property>
 	    </bean> 	
 	    变动以后的
     	 <bean id="sqlSessionFactory" 			class="com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean">
@@ -59,7 +64,6 @@ mybatis提供了以下缺省的CRUD功能：
 		3. ID_WORKER: 全局唯一ID。这个是基于Twitter-Snowflake的Java实现，想了解算法细节的可以参考[Twitter-Snowflake，64位自增ID算法详解](http://www.lanindex.com/twitter-snowflake%EF%BC%8C64%E4%BD%8D%E8%87%AA%E5%A2%9Eid%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/)
 		4. UUID
 	5. @TableField用于申明pojo熟悉和表字段的对应关系。
-	
 	
 	```
 		@TableName("project_member")
@@ -100,6 +104,7 @@ mybatis提供了以下缺省的CRUD功能：
 	}
 	``` 
 4. 定义相关的业务类。虽然mybatis plus 提供了缺省基于通用CRUD的业务操作的接口(IService)和实现类(CommonServiceImpl、SuperServiceImpl)，但这些业务类的定义都是面向CRUD，而不是面向业务操作的封装，所以我更喜欢自己去封装业务类,这样语义会更清楚一些。mybatis plus 提供了比较丰富的单表操作的CRUD实现，实现封装成本也不大。
+
 
 	```
 	public interface ProjectMemberBo {
@@ -142,6 +147,7 @@ mybatis提供了以下缺省的CRUD功能：
 	```
 	
 	实现类注入了mapper以后，可以基于缺省的CRUD操作实现业务操作。
+	
 	
 	```
 	
