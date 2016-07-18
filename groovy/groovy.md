@@ -202,6 +202,9 @@
 [Java程序员为什么学习Groovy(HttpBuilder)](http://www.jianshu.com/p/a519bbd6e26c)
 
 
+### 单元测试
+[Mocking Static Methods in Groovy](https://dzone.com/articles/mocking-static-methods-groovy)
+
 ### 操作符
 [美妙的操作符](http://www.ibm.com/developerworks/cn/java/j-pg10255.html)
 
