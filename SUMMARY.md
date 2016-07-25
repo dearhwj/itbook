@@ -97,6 +97,7 @@
 	* [npm小窍门](frontend/npm_tips.md)
 	* [bower使用入门](frontend/bower_getting_started.md)
 	* [Node小窍门](frontend/node_tips.md)
+	* [Mock2Easy](frontend/mock2easy.md)
 * [SEO](seo/README.md)
 	* [SEO小窍门](seo/seo_tips.md) 	
 * 安全

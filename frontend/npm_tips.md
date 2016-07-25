@@ -1,4 +1,15 @@
 # NPM Tips
+[NPM 中文文档](http://www.npmjs.com.cn/)
+
+[package.json for NPM 文件详解](http://ju.outofmemory.cn/entry/130809)
+	
+	scripts:通过设置这个可以使NPM调用一些命令脚本，封装一些功能。
+
+
+[请问 npm install --save 与 npm install --save-dev 的区别](http://cnodejs.org/topic/54d33df497be414b68dcf503)
+
+	一个放在package.json 的dependencies , 一个放在devDependencies里面
+	产品模式用dependencies，开发模式用devDep。所以，猜猜test相关npm该放到哪里？
 
 [淘宝 NPM 镜像](http://npm.taobao.org/)
 
