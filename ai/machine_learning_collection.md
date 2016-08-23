@@ -1,4 +1,30 @@
 # 机器学习资源大全
+[算术平均数](http://baike.baidu.com/view/415917.htm)
+	
+	算术平均数（ arithmetic mean），又称均值，是统计学中最基本、最常用的一种平均指标，分为简单算术平均数、加权算术平均数。它主要适用于数值型数据，不适用于品质数据。根据表现形式的不同，算术平均数有不同的计算形式和计算公式。
+	算术平均数是加权平均数的一种特殊形式（特殊在各项的权重相等）。在实际问题中，当各项权重不相等时，计算平均数时就要采用加权平均数；当各项权相等时，计算平均数就要采用算术平均数。
+
+
+[标准差（Standard Deviation](http://baike.baidu.com/view/78339.htm)
+
+	标准差（Standard Deviation） ，中文环境中又常称均方差，但不同于均方误差（mean squared error，均方误差是各数据偏离真实值的距离平方和的平均数，也即误差平方和的平均数，计算公式形式上接近方差，它的开方叫均方根误差，均方根误差才和标准差形式上接近），标准差是离均差平方和平均后的方根，用σ表示。标准差是方差的算术平方根。标准差能反映一个数据集的离散程度。平均数相同的两组组数据，标准差未必相同。
+	
+	
+[数据归一化和两种常用的归一化方法](http://www.cnblogs.com/chaosimple/archive/2013/07/31/3227271.html)
+
+	数据标准化（归一化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。以下是两种常用的归一化方法：
+	一、min-max标准化（Min-Max Normalization）
+	也称为离差标准化，是对原始数据的线性变换，使结果值映射到[0 - 1]之间。
+	二、Z-score标准化方法
+	这种方法给予原始数据的均值（mean）和标准差（standard deviation）进行数据的标准化。经过处理的数据符合标准正态分布，即均值为0，标准差为1，		
+	
+[为什么一些机器学习模型需要对数据进行归一化](http://www.cnblogs.com/LBSer/p/4440590.html)
+
+	归一化为什么能提高梯度下降法求解最优解的速度？
+	归一化有可能提高精度
+	归一化的类型	
+	
+
 [使用Spark MLlib给豆瓣用户推荐电影](http://www.colobu.com/2015/11/30/movie-recommendation-for-douban-users-by-spark-mllib/)
 
 [为豆瓣电影实现User-based协同过滤的推荐系统](http://www.colobu.com/2015/12/02/user-based-recommender-for-douban-movies/)
@@ -32,13 +58,7 @@
 [Slope One :简单高效的协同过滤算法(Collaborative Filtering)](http://www.cnblogs.com/kuber/archive/2008/06/10/1216846.html)
 
 
-[数据归一化和两种常用的归一化方法](http://www.cnblogs.com/chaosimple/archive/2013/07/31/3227271.html)
 
-	数据标准化（归一化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。以下是两种常用的归一化方法：
-	一、min-max标准化（Min-Max Normalization）
-	也称为离差标准化，是对原始数据的线性变换，使结果值映射到[0 - 1]之间。
-	二、Z-score标准化方法
-	这种方法给予原始数据的均值（mean）和标准差（standard deviation）进行数据的标准化。经过处理的数据符合标准正态分布，即均值为0，标准差为1，	
 
 
 [基于物品的协同过滤推荐算法——读“Item-Based Collaborative Filtering Recommendation Algorithms”](http://blog.csdn.net/huagong_adu/article/details/7362908)

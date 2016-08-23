@@ -1,4 +1,8 @@
 # Git小窍门
+[error: src refspec master does not match any](http://www.crifan.com/git_push_error_src_refspec_master_does_not_match_any/)
+
+	得知是由于当前项目下没有文件供上传，项目为空所导致的。
+
 
 [Git回滚的常用手法](http://hittyt.iteye.com/blog/1961386)
 

@@ -16,4 +16,5 @@
 	$ npm init
 	$ npm install webpack --save-dev
 	
-	
+
+[webpack-howto](https://github.com/petehunt/webpack-howto)	

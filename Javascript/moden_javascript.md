@@ -1,6 +1,6 @@
 # Moden Javascipt
 
-
+[使用＂立即执行函数＂（Immediately-Invoked Function Expression，IIFE）](http://www.ithao123.cn/content-5615777.html)
 
 [Javascript 严格模式详解](http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html)
 
