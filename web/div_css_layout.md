@@ -1,5 +1,14 @@
 # DIV+CSS布局
 
+[CSS overflow 属性](http://www.w3school.com.cn/cssref/pr_pos_overflow.asp)
+
+	visible	默认值。内容不会被修剪，会呈现在元素框之外。
+	hidden	内容会被修剪，并且其余内容是不可见的。
+	scroll	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+	auto	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+	inherit	规定应该从父元素继承 overflow 属性的值。
+
+
 [ul和li实现分两列（多列）布局显示](http://blog.csdn.net/itmyhome1990/article/details/19756399)
 
 ```
