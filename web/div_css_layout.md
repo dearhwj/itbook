@@ -1,4 +1,4 @@
-# HTML布局
+# DIV+CSS布局
 
 [ul和li实现分两列（多列）布局显示](http://blog.csdn.net/itmyhome1990/article/details/19756399)
 
