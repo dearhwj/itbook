@@ -1,5 +1,12 @@
 # DIV+CSS布局
 
+[CSS实现DIV居中对齐 div居右对齐 div居左对齐](http://www.divcss5.com/jiqiao/j633.shtml)
+
+	div左对齐条件与方法:只需要对要靠左对齐（局左）的div样式加float:left即可。
+	div右对齐条件与方法:只需要对要靠右对齐（局右）的div样式加float:right即可。
+	div居中对齐条件与方法:只需要对要居中对齐的div样式加margin:0 auto，不再需要加float样式。
+	
+
 [CSS overflow 属性](http://www.w3school.com.cn/cssref/pr_pos_overflow.asp)
 
 	visible	默认值。内容不会被修剪，会呈现在元素框之外。

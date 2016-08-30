@@ -80,6 +80,11 @@
 ### 插件机制
 [Maven 插件机制](http://www.tuicool.com/articles/ry2qAbb)
 
+[Maven的pom.xml文件详解------Build Settings](http://blog.csdn.net/tomato__/article/details/13625497)	
+	
+	如果你的POM有一个parent，它可以从parent的build/plugins或者pluginManagement集成plugin配置。这样孩子POM和parent POM中都存在groupId为my.group的plugin，Maven默认的行为将是根据属性名称将两个plugin的configuration的内容进行合并。如果孩子POM中有一个属性，则该属性是有效的，如果孩子POM中没有一个属性，但parent POM中存在，则parent中的属性是有效的。通过在configuration元素中增加combine.children和combine.self属性，孩子POM可以控制Maven怎么合并plugin的configuration。combine.children="append"表示父POM和子POM的属性合并起来；combine.self="override"表示子POM的属性完全覆盖父POM的。
+
+
 
 ### Plugin
 [Maven Failsafe Plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/)
@@ -103,6 +108,12 @@
  
  	如果想了解详细信息，可以在其后加上-Ddetail 或者 -Dfull
  	如：mvn help:describe -Dplugin=org.apache.maven.plugins:maven-war-plugin -Ddetail
+
+
+[Maven忽略测试失败](http://theron19.iteye.com/blog/657221)
+
+	通常，你会开发一个带有很多失败单元测试的系统。 如果你正在实践测试驱动开发(TDD)，你可能会使用测试失败来衡量你离项目完成有多远。 如果你有失败的单元测试，但你仍然希望产生构建输出，你就必须告诉 Maven 让它忽略测试失败。 当Maven 遇到一个测试失败，它默认的行为是停止当前的构建。 如果你希望继续构建项目，即使 Surefire 插件遇到了失败的单元测试，你就需要设置 Surefire 的testFailureIgnore 这个配置属性为 true。
+	mvn test -Dmaven.test.failure.ignore=true
 
 
 ### Tips
