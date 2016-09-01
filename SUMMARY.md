@@ -31,7 +31,7 @@
 	* [在Groovy中使用字符串](groovy/groovy_string.md)
 	* [使用Spock框架进行单元测试](groovy/spock.md)
 * [Java](java/README.md)
-	* [Maven](java/maven_tips.md)	  		
+	* [Maven小窍门](java/maven_tips.md)	  		
 	* [Java开源项目](java/java_open_source_project.md)
 	* Java小窍门
 		* [快速定位Java堆栈信息的问题](java/jstack_output_insight.md)

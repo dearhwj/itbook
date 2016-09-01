@@ -90,6 +90,12 @@
 [Maven Failsafe Plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/)
 
 
+[Groovy Eclipse Maven plugin](https://github.com/groovy/groovy-eclipse/wiki/Groovy-Eclipse-Maven-plugin)
+
+	The simplest way to set up your source folders is to do nothing at all: add all of your Groovy files to src/main/java and src/test/java. This requires absolutely no extra configuration and is easy to implement. However, this is not a standard maven approach to setting up your project. If you require a more standard maven approach, then it is possible to put your Groovy files in src/main/groovy and src/test/groovy and you Java files in src/main/java and src/test/java. There are several ways of doing this.
+
+
+
 [Maven插件之build-helper-maven-plugin](http://blog.csdn.net/wangjunjun2008/article/details/17553503)
 
 	把原有项目添加到Maven管理时，总会出现很多莫名奇妙的问题，其中之一便是Maven默认的项目结构和自己的项目结构不一致，导致无法编译源代码，更不用说部署、运行项目了。Java程序开发，一般使用Eclipse、MyEclipse等工具，其源码目录为src，这与Maven默认的src/main/java不同。因此，在没有额外配置的情况下，使用Maven命令无法完成代码的编译。针对这种情况，codehaus提供了build-helper-maven-plugin插件来支持自定义的项目目录结构(相对于Maven默认目录结构来说)。
