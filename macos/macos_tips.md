@@ -1,4 +1,10 @@
 # Mac Tips
+[微信客户端截图]
+
+Control + Command + W 隐藏
+Control + Command + A 截图
+
+
 
 [mac的窗口管理快捷方式]
 	
