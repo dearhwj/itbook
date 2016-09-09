@@ -27,6 +27,7 @@
 * [Groovy](groovy/README.md)
 	* [Groovy小技巧](groovy/groovy.md)	 
 	* [Groovy操作JSON](groovy/groovy_json.md)	 
+	* [《Groovy In Action》阅读笔记](groovy/groovy_in_action.md)
 	* [Groovy脚本小技巧](groovy/grovvy_script.md)
 	* [在Groovy中使用字符串](groovy/groovy_string.md)
 	* [使用Spock框架进行单元测试](groovy/spock.md)
@@ -140,6 +141,7 @@
 	* [Lynx纯文字终端网页浏览器](tools/lynx_brower.md)
 	* [终端分屏软件tmux教程](tools/tmux_manual.md)
 	* [Idea的Mybatis插件](tools/idea_mybatis_plugin.md)
+	* [ccat——上色的cat命令](tools/ccat.md)	
 * 程序猿宝典
 	* [值得程序员关注的微信公众号](programmer/wx_public.md)
 	* [程序员鄙视链](programmer/dev_down.md)

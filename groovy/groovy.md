@@ -222,6 +222,49 @@
 	a-- or --a	a.previous()
 	a << b	a.leftShift(b)
 	
+[Groovy学习笔记——as操作符](http://johnnyjian.iteye.com/blog/160796)
+
+	在Groovy中，as操作符有两种用途：定义导入别名和类型转换。
+	只要在import一个类或方法的时候使用as操作符，就可以对其进行重命名
+	import java.lang.Math as M  // 定义类的别名  
+	assert M.log10(100) == 2  	
+	
+	语法为“变量 as 类型”，在执行这个操作时，将调用左操作数的类的asType方法：
+
+	class A {  
+    	def val  
+	    def asType(Class t) {  
+    	    assert t == Integer  
+        	val  
+	    }  
+	}  
+	def a = new A(val:123)  
+	assert a as int == 123  // 这里调用了A#asType方法
+	
+	
+	也可以使用as操作符把一个map转换成一个bean：
+
+	a = [val:321] as A  // 与new A(val:321)功能相同  
+	assert a.val == 321  
+	
+	把一个list用as操作符转换成其他类型时，将使用该类型的合适的构造函数：
+	
+	class B {  
+    	def a  
+    	def b  
+    	B(a, b) {  
+       	 this.a = a  
+        	this.b = b  
+    	}  
+	}  
+	def b = [1, 2] as B // 这里调用了B(a, b)构造函数  
+	assert b.a == 1 &&  b.b == 2  
+	
+	
+	可以把一个闭包转换成interface，如果该interface中有多个方法，则这些方法都会调用该闭包：
+	
+	也可以把一个闭包的map转换成interface：
+	
 	
 ### Groovy Generics failure
 
