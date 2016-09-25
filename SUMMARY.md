@@ -75,6 +75,7 @@
 		* [Shell Function按列提取内容](Shell/shell_extra_column.md)
 		* [用XMLStarlet处理XML](Shell/xmlstarlet_tips.md)
 		* [Shell实现随机数](Shell/shell_random.md)
+		* [在Shell命令行处理JSON数据的方法](Shell/shell_jq_json.md)
 		* [Shell的文本处理小窍门](Shell/shell_text_tips.md)
 		* 小工具
 			* [autojump](linux/autojump.md)	
@@ -125,6 +126,7 @@
 	* [利用Tengine/Nginx的accesslog做诊断](web/nginx_accesslog_diagnose.md)
 	* [Nginx/Tengine错误码](web/nginx_error_code.md)
 	* [DIV+CSS布局](web/div_css_layout.md)
+	* [解决provisional headers are shown的过程](web/provisional_headers_are_shown.md)
 * [阿里云云产品]
 	* [ODPS](aliyun/odps_intro.md)
 		*[ODPS中自定义函数] 	

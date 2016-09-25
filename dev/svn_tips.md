@@ -1,4 +1,9 @@
 # Svn Tips
+[指定用户名，进行svn操作](http://blog.csdn.net/binglingshuang/article/details/6758760)
+
+	http://blog.csdn.net/binglingshuang/article/details/6758760
+	
+
 [svn log 查询我刚刚提交修改的内容]("http://www.blogdaren.com/post-1556.html")
 
 	$ svn log -r 8 -v
