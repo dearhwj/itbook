@@ -17,7 +17,7 @@
 	* [“框架”论述摘录](architecture/framework_expound.md)
 	* [23种设计模式](architecture/design_pattern_list_23.md)
 	* [架构的内容](architecture/architecture_content.md)
-	
+	* [电商系统架构整理](architecture/electronic_business_architecture.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)
