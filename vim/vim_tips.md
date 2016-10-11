@@ -529,13 +529,25 @@ tips：``反引号可以返回到使用G之前的位置
 	tee 是一个把 stdin 保存到文件的小工具。
 	而 %，是vim当中一个只读寄存器的名字，总保存着当前编辑文件的文件路径。
 	所以执行这个命令，就相当于从vim外部修改了当前编辑的文件，好完工。
-参考
+
+
+#### 自动加载文件
+在.vimrc文件中增加以下配置项，另外需要移动光标才能更新编辑器的内容
+
+```  
+  	set autoread
+	au CursorHold * checktime
+   	set updatetime=1000
+   	
+```
+
+## 参考
 
 [如何在vim保存时获得sudo权限](https://segmentfault.com/q/1010000000151086)
 
 [How does the vim “write with sudo” trick work?](http://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work)
 
-## 参考
+
 [vi编辑器常用的命令及快捷键](http://hily.me/blog/2006/04/vi-shortcut/)
 
 [Vim 快捷键整理](http://blog.csdn.net/ceven2010/article/details/7406341)
