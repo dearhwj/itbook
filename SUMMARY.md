@@ -130,6 +130,7 @@
 	* [Nginx/Tengine错误码](web/nginx_error_code.md)
 	* [DIV+CSS布局](web/div_css_layout.md)
 	* [解决provisional headers are shown的过程](web/provisional_headers_are_shown.md)
+	* [几个大型网站提供的IP API接口调用方法]（web/ip_query.md）
 * [阿里云云产品]
 	* [ODPS](aliyun/odps_intro.md)
 		*[ODPS中自定义函数] 	
