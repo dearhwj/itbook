@@ -116,6 +116,7 @@
 	* [性能测试基础知识—QPS和TPS](test/performance_test_qps_tps.md)
 	* [集成测试和单元测试](test/unit_test_integeration_test.md)
 	* [Linux性能分析](test/linux_performance.md)
+	* [Jenkins二次开发](test/jenkins_dev.md)
 	* [压力测试](test/pressure_test.md)
 		* [一分钟学会AB](test/ab_one_minute.md)
 * [VIM](vim/README.md)

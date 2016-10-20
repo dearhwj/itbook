@@ -11,7 +11,35 @@ You will typically name your plugin <yourplugin>-maven-plugin.Calling it maven-<
 
 ### Your First Plugin
 
+[http://maven.apache.org/guides/plugin/guide-java-plugin-development.html](http://maven.apache.org/guides/plugin/guide-java-plugin-development.html)
+
 When processing the source tree to find mojos, plugin-tools looks for classes with either @Mojo Java 5 annotation or "goal" javadoc annotation. Any class with this annotation are included in the plugin configuration file.
+
+
+
+```
+
+package sample.plugin;
+ 
+import org.apache.maven.plugin.AbstractMojo;
+import org.apache.maven.plugin.MojoExecutionException;
+import org.apache.maven.plugins.annotations.Mojo;
+ 
+/**
+ * Says "Hi" to the user.
+ *
+ */
+@Mojo( name = "sayhi")
+public class GreetingMojo extends AbstractMojo
+{
+    public void execute() throws MojoExecutionException
+    {
+        getLog().info( "Hello, world." );
+    }
+}
+
+```
+
 
 
 
