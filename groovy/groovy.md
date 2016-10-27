@@ -275,7 +275,11 @@ It parses if you add the public modifier
 	}
 
 	
+### Groovy2.0 新特性
 
+1. 静态类型检查
+2. 静态编译 @CompileStatic 代码会被静态编译，同时生成的字节码非常像javac的字节码，运行速度一样
+3. 多catch块 catch(IOException | NullPointerException e) {
 	
 
 
