@@ -70,6 +70,7 @@
 		* [nc命令详解](linux/linux_command_nc.md)
 		* [test命令](linux/linux_command_test.md)
 		* [curl命令](linux/linux_command_curl.md)
+		* [find命令](linux/linux_command_find.md)
 	* [运维小窍门](linux/linux_ops.md)
 		* [/var/log目录下的20个Linux日志文件功能详解](linux/linux_log_file_function.md)
 	* [Shell小窍门](Shell/shell_programming.md)
