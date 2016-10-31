@@ -79,7 +79,7 @@
 		* [Shell Function按列提取内容](Shell/shell_extra_column.md)
 		* [用XMLStarlet处理XML](Shell/xmlstarlet_tips.md)
 		* [Shell实现随机数](Shell/shell_random.md)
-		* [在Shell命令行处理JSON数据的方法](Shell/shell_jq_json.md)
+		* [用jq命令处理json数据](Shell/shell_jq_json.md)
 		* [Shell的文本处理小窍门](Shell/shell_text_tips.md)
 		* 小工具
 			* [autojump](linux/autojump.md)	
