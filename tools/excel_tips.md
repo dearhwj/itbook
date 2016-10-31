@@ -13,3 +13,6 @@
 
 [EXCEL表格中怎么去除重复的项](http://jingyan.baidu.com/article/9989c746788b60f648ecfec0.html)
 
+
+
+[excel表格的分段筛选怎么弄](https://zhidao.baidu.com/question/570880692.html)

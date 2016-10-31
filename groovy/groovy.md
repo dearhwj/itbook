@@ -182,7 +182,28 @@
 	如果closure没有‘嵌套’在其他closure中，那么该closure的owner的值为this；
 	否则该closure的owner引用的是‘直接包含’该closure的closure
 	
+[闭包为参数的迭代集合的方法](http://blog.csdn.net/escaflone/article/details/5508291)
 
+	1、boolean any(Closure clos)
+     有一个集合元素满足闭包条件则返回true
+	2、List collect(Closure clos)
+     把集合每个元素用闭包转换后返回列表
+	3、List clooect(Collection coll,Closure clos)
+     把集合每个元素用闭包转换后放到coll中
+	4、bollean every(Closure clos)
+     判断是否每个元素都满足闭包条件
+	5、List findAll(Closure clos)
+     从集合中找到满足闭包条件的所有元素
+	6、Object find(Closure clos)
+     从集合中找的满足闭包条件的第一个元素
+	7、int findindexOf(Closure clos)
+     从集合中找到满足闭包条件的第一个元素的索引
+	8、Object inject(Object value,Closure clos)
+     value 与 第一个元素传给闭包，结果值与第二个集合元素又传给闭包，类推。（可以用来求阶乘）
+	9、void reverseEach(Closure clos)
+     反向迭代
+	10、List sort(Closure clos)
+     排序集合
 
 
 ### 正则表达式
