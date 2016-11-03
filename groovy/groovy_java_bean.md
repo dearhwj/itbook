@@ -1,5 +1,28 @@
 # Groovy处理Java Bean
 
+
+### 用Closure替代匿名类
+
+```
+
+interface  Talkable {
+     void  sayHello(String name)
+}
+	
+
+def man  =  [
+     //  实现接口 
+    sayHello:{String name  ->  println  " Hello, $name " }
+] as Talkable
+
+man.sayHello( " Daniel " )
+
+运行结果：
+Hello, Daniel
+
+```
+
+
 ### Getter and Setter
 
 1. 在Groovy中，类无访问修饰符则被认为是public；而属性无访问修饰符则认为是private。方法无访问修饰符则认为是public。 

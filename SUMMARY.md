@@ -22,6 +22,7 @@
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)
+	* [chrome快捷键](chrome/chrome_shortcut.md)
 * [数据库](database/README.md)
 	* [Mysql小技巧](database/mysql_tips.md)
 	* [SQL小技巧](database/sql_tips.md)
