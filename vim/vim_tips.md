@@ -588,6 +588,12 @@ tips：``反引号可以返回到使用G之前的位置
    	
 ```
 
+
+
+#### 键盘映射
+
+	inoremap jk <esc>
+
 ## 参考
 
 [如何在vim保存时获得sudo权限](https://segmentfault.com/q/1010000000151086)

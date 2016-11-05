@@ -68,3 +68,11 @@
 
 
 [IdeaVim插件施用技巧](http://my.oschina.net/pureboys/blog/182211)
+
+
+[IdeaVim插件HomePage](https://github.com/JetBrains/ideavim/blob/master/README.md)
+	
+	~/.ideavimrc
+	Your IdeaVim-specific Vim initialization commands
+	You can read your ~/.vimrc file from ~/.ideavimrc using this command:
+	source ~/.vimrc
