@@ -1,4 +1,8 @@
 # Shell Tips
+[shell 中获取当前工作路径和命令文件所在绝对路径](http://blog.csdn.net/samxx8/article/details/51254546)
+	
+	basepath=$(cd `dirname $0`; pwd)
+
 [Shell(Bash)中如何判断是否存在某个命令](https://segmentfault.com/q/1010000000156870)
 	
 	最好避免使用 which，做为一个外部的工具，并不一定存在，在发行版之间也会有区别，有的系统的 which 命令不会设置有效的 exit status，存在一定的不确定性。
@@ -63,4 +67,4 @@
 	
 [linux shell 快捷键](http://blog.chinaunix.net/uid-361890-id-342066.html)	
 		
-	
+	 
