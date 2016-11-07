@@ -36,13 +36,13 @@
 	* [在Groovy中使用字符串](groovy/groovy_string.md)
 	* [使用Spock框架进行单元测试](groovy/spock.md)
 * [Java](java/README.md)
-	* [Maven小窍门](java/maven_tips.md)	  		
+	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发](java/maven_plugin_dev.md)
 	* [Java开源项目](java/java_open_source_project.md)
 	* Java小窍门
 		* [快速定位Java堆栈信息的问题](java/jstack_output_insight.md)
 	* [Spring小窍门](java/spring_tips.md)	
-	* [lombok的使用和原理](java/lombok_tips.md)	
+	* [lombok的使用和原理](java/lombok_tips.md)
 	* [RxJava响应式编程框架](java/java_open_source_rxjava.md)
 	* [Mybatis Plus(MyBatis增强工具包)](java/java_open_source_mybatisplus.md)
 * [Javascript](Javascript/README.md)
@@ -136,10 +136,9 @@
 	* [Nginx/Tengine错误码](web/nginx_error_code.md)
 	* [DIV+CSS布局](web/div_css_layout.md)
 	* [解决provisional headers are shown的过程](web/provisional_headers_are_shown.md)
-	* [几个大型网站提供的IP API接口调用方法]（web/ip_query.md）
+	* [几个大型网站提供的IP API接口调用方法](web/ip_query.md)
 * [阿里云云产品]
 	* [ODPS](aliyun/odps_intro.md)
-		*[ODPS中自定义函数] 	
 * [开发工具](tools/README.md)
 	* [IntelliJ IDEA](tools/idea_tips.md) 	
 	* [Markdown](tools/markdown.md)
