@@ -32,6 +32,7 @@
 	* [Groovy处理Java Bean](groovy/groovy_java_bean.md) 
 	* [Groovy处理Boolean](groovy/groovy_boolean.md)
 	* [Groovy运算符重载](groovy/groovy_operator_overloading.md)
+	* [Groovy的==的行为](groovy/groovy_equals.md)
 	* [《Groovy In Action》阅读笔记](groovy/groovy_in_action.md)
 	* [Groovy脚本小技巧](groovy/grovvy_script.md)
 	* [在Groovy中使用字符串](groovy/groovy_string.md)
