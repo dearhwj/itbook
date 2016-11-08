@@ -1,5 +1,9 @@
 # Mac Tips
 
+[Mac iPhone 传照片，Mac iPhone AirDrop怎么用](http://jingyan.baidu.com/article/4e5b3e1950579091901e24b1.html)
+	
+	在 Mac 电脑上，直接把想要传到 iPhone 上的文件或照片，拖到 AirDrop 中显示的 iPhone 上即可。
+
 [苹果鼠标移动速度太慢](http://bbs.feng.com/read-htm-tid-6658230.html)
 
 
