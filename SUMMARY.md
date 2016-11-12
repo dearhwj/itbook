@@ -31,6 +31,7 @@
 	* [Groovy操作JSON](groovy/groovy_json.md)
 	* [Groovy处理Java Bean](groovy/groovy_java_bean.md) 
 	* [Groovy处理Boolean](groovy/groovy_boolean.md)
+	* [Groovy中使用as](groovy/groovy_as.md)
 	* [Groovy运算符重载](groovy/groovy_operator_overloading.md)
 	* [Groovy的==的行为](groovy/groovy_equals.md)
 	* [Groovy中使用Gpath](groovy/groovy_gpath.md)
