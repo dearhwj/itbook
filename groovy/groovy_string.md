@@ -89,6 +89,10 @@ ${..}里可以包含任意有效的Groovy表达式，包括方法调用或变量
  
 	assert 'hello'[-4,-2] == 'el' 	
 	
-	
+### GString Lazy-Evaluation
+
+GString’s lazy evaluation is a very powerful concept. However, use caution not to trip over that string. If we expect our references used in expressions to change and we want their current value to be used in the lazy evaluation, we must remember not to place them directly in the expressions, but rather within a no-parameter closure.
+
+	quote = "Today ${-> company } stock closed at ${-> price }"      stocks.each { key, value ->        company = key        price = value        println quote	}	
 ### 参考文档
 [http://developer.51cto.com/art/200906/129168.htm](http://developer.51cto.com/art/200906/129168.htm)	
