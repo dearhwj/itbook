@@ -74,7 +74,12 @@ groovy的单元/集成测试需要先利用gmavenplus插件，把groovy编译成
 IntelliJ idea 默认不能很好的处理groovy的代码路径(src/main/groovy、src/test/groovy)。GMavenPlus IntelliJ Plugin这个插件会把src/main/groovy and src/test/groovy加入到IntelliJ工程的构建路径中
 
 
+### Tips
 
+#### 异常断言
+
+	如果要验证有没有抛出异常，可以用thrown()
+	如果要验证没有抛出某种异常，可以用notThrown()
 
 
 

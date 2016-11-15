@@ -1,7 +1,37 @@
 # Maven插件开发
+### Maven 核心原理
+
+[Maven 核心原理](http://blog.jobbole.com/107576/)
 
 
-### Guide to Developing Java Plugins
+
+
+### HelloWorld
+
+[开发自己的Maven插件之一:hello world](http://blog.csdn.net/csfreebird/article/details/7709109)
+
+	[ERROR] Failed to execute goal org.apache.maven.plugins:maven-plugin-plugin:2.9:descriptor (default-descriptor) on project plugin-example1: Error extracting plugin descriptor: 'No mojo definitions were found for plugin: org.freebird:plugin-example1.' -> [Help 1]  
+	
+	需要加入一个maven-plugin-plugin来生成descriptor。不知道Maven的官方文档中为什么不提。
+
+```	
+	<build>  
+  <plugins>  
+    <plugin>  
+      <groupId>org.apache.maven.plugins</groupId>  
+      <artifactId>maven-plugin-plugin</artifactId>  
+      <version>3.0</version>  
+      <executions>  
+      </executions>  
+      <configuration>  
+        <!-- Needed for Java 5 annotation based configuration, for some reason. -->  
+        <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>  
+      </configuration>  
+    </plugin>  
+  </plugins>  
+</build> 
+
+```
 
 [Guide to Developing Java Plugins](http://maven.apache.org/guides/plugin/guide-java-plugin-development.html)
 
