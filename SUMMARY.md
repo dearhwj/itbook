@@ -44,8 +44,7 @@
 	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发](java/maven_plugin_dev.md)
 	* [Java开源项目](java/java_open_source_project.md)
-	* Java小窍门
-		* [快速定位Java堆栈信息的问题](java/jstack_output_insight.md)
+	* [快速定位Java堆栈信息的问题](java/jstack_output_insight.md)
 	* [Spring小窍门](java/spring_tips.md)	
 	* [lombok的使用和原理](java/lombok_tips.md)
 	* [RxJava响应式编程框架](java/java_open_source_rxjava.md)
@@ -89,9 +88,7 @@
 		* [Shell实现随机数](Shell/shell_random.md)
 		* [用jq命令处理json数据](Shell/shell_jq_json.md)
 		* [Shell的文本处理小窍门](Shell/shell_text_tips.md)
-		* 小工具
-			* [autojump](linux/autojump.md)	
-	* Just Play
+		* [autojump](linux/autojump.md)	
 		* [Linux或Mac修改motd,提供个性化login信息](linux/linux_motd.md)
 		* [Linux/Mac命令行快捷键](linux/linux_commandline_shortcut.md)
 * [MAC OS](macos/README.md)
@@ -145,7 +142,7 @@
 * [阿里云云产品]
 	* [ODPS](aliyun/odps_intro.md)
 * [开发工具](tools/README.md)
-	* [IntelliJ IDEA](tools/idea_tips.md) 	
+	* [IntelliJ IDEA](tools/idea_tips.md) 
 	* [Markdown](tools/markdown.md)
 	* [dot](tools/dot_drawing.md)
 	* [Git小窍门](tools/git_tips.md)
