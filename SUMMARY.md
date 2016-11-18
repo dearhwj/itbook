@@ -53,7 +53,6 @@
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)
 	* [Jquery小窍门](Javascript/jquery_tips.md)
-	
 * [Scala](scala/README.md)
 	* [Scala开发环境搭建](scala/scala_prepare_environment.md) 
 	* [Scala入门](scala/scala_basic.md)
