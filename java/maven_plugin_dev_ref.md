@@ -1,4 +1,4 @@
-# Maven插件开发
+# Maven插件开发资料
 ### Maven 核心原理
 
 [Maven 核心原理](http://blog.jobbole.com/107576/)
