@@ -1,8 +1,6 @@
 # Groovy XML处理
 
 
-
-
 ### GPath
 
 1. 用"."查询元素，用@attributeName查询元素的属性
