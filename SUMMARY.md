@@ -170,6 +170,7 @@
 	* [如何提高演讲能力](programmer/improve_speech_capacity.md)
 	* [学习搜狐双拼输入法](programmer/sohu_shuangping.md)
 	* [推荐一本SQL的好书《SQL COOKBOOK》](programmer/good_book_sql_cookbook.md)
+	* [如何加入开源项目邮件组](progorammer/join_maillist.md)
 * 技术管理
 	* [转载:技术团队管理不仅仅是管理](tech_management/tech_team_management.md) 
 	* [转载:业务和商业才是技术的驱动力](tech_management/business_drive_tech.md)
