@@ -34,3 +34,21 @@ If the POGO does not implement GroovyInterceptable, then Groovy looks for the me
 2. getMetaMethod  get a metamethod
 3. To get a list of overloaded methods, we use the plural forms of these methods—getMetaMethods() and getStaticMetaMethods()
 4. we can use getMetaProperty() and getStaticMetaProperty() for a metaproperty
+5. Method respondsTo find out whether an object would respond to a method cal
+
+###  Dynamically Accessing Objects
+
+```
+
+def printInfo(obj) {// Assume user entered these values from standard input usrRequestedProperty = 'bytes'usrRequestedMethod = 'toUpperCase'        println obj[usrRequestedProperty]//orprintln obj."$usrRequestedProperty"println obj."$usrRequestedMethod"()//orprintln obj.invokeMethod(usrRequestedMethod, null)} 
+printInfo('hello')
+
+```
+1. To invoke a property dynamically, we can use the index operator [] or use the dot notation followed by a GString evaluating the property name
+2. To invoke a method, use the dot notation or call the invokeMethod on the object, giving it the method name and list of arguments
+3. To iterate over all of an object’s properties, we can use the properties property
+
+
+### Intercepting Methods Using MOP
+1. Intercepting Methods Using MetaClass
+2.  Intercepting Methods Using GroovyInterceptable

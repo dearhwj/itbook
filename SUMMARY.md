@@ -45,6 +45,7 @@
 	* [Groovy数据库操作](groovy/groovy_db.md)
 	* [Groovy处理XML](groovy/groovy_xml.md)
 	* [Groovy元对象协议](groovy/groovy_mop.md)
+	* [Category和use块](groovy/groovy_category_use.md)
 * [Java](java/README.md)
 	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发资料](java/maven_plugin_dev_ref.md)
@@ -186,3 +187,4 @@
 	* [你的生活逃不出这25张图](beyondbook/your_life_25_sentence.md)
 	* [番茄工作法](beyondbook/pomodoro.md)
 	* [大卫谈学习](beyondbook/david_talking_about_study.md)
+	* [如何“自我介绍”](beyondbook/self_introduction.md)
