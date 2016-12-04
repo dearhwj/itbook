@@ -51,4 +51,28 @@ printInfo('hello')
 
 ### Intercepting Methods Using MOP
 1. Intercepting Methods Using MetaClass
-2.  Intercepting Methods Using GroovyInterceptable
+2.  Intercepting Methods Using GroovyInterceptable### ExpandoMetaClass (EMC) DSL
+
+Adding methods to the metaclass using the syntax ClassName.metaClass.method = {...} is simple and convenient if we want to add one or two methods. If we want to add a bunch of methods, the declaration and setup will soon feel like a burden. Groovy provides a way to group these methods into a convenient syntax called an ExpandoMetaClass (EMC) DSL.
+
+
+```
+
+
+Integer.metaClass { daysFromNow = { ->Calendar today = Calendar.instance today.add(Calendar.DAY_OF_MONTH, delegate) today.time}getDaysFromNow = { ->Calendar today = Calendar.instance today.add(Calendar.DAY_OF_MONTH, delegate) today.time}'static' {isEven = { val -> val % 2 == 0 }}constructor = { Calendar calendar ->new Integer(calendar.get(Calendar.DAY_OF_YEAR))}constructor = { int val ->println "Intercepting constructor call"constructor = Integer.class.getConstructor(Integer.TYPE) constructor.newInstance(val)} }
+
+
+```
+
+
+ExpandoMetaClass has some limitations, however. The injected methods are available only for calls within Groovy code.  We can’t use these methods from within compiled Java code. They can’t be used with reflection from Java code, either.
+
+
+### Injecting Methods into Specific Instances
+
+The MetaClass is per-instance. If we want an instance to have a different behavior than the other objects instantiated from the same class, we inject the methods into the metaClass obtained from the specific instance. Alternatively, we can create an instance of ExpandoMetaClass, add the desired methods to it (including the methods we’d like to preserve from the instance’s current metaClass), initialize it (required to indicate the completion of method/property additions), and attach it to the instance we desire to enhance.
+
+
+### Injecting Methods Using Mixins
+
+We can mix behavior into existing classes to inject methods into both Groovy and Java classes.
