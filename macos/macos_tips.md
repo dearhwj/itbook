@@ -7,7 +7,9 @@
 [苹果鼠标移动速度太慢](http://bbs.feng.com/read-htm-tid-6658230.html)
 
 
+[苹果电脑 Mac OS X 更新后重启，一直提示 “xxx” 想使用 “本地项目” 钥匙串，密码怎么输入都不对，怎么办？](https://www.zhihu.com/question/21883195)
 
+![](accountsd.png)
 
 [微信客户端截图]
 

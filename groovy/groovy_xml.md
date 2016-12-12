@@ -8,3 +8,5 @@
 ### 其他 
 
 [Building, parsing, and slurping XML](http://www.ibm.com/developerworks/library/j-pg05199/index.html)
+
+[Groovy工具箱(xml)](http://www.jianshu.com/p/6e95030fa55d)

@@ -76,3 +76,29 @@ The MetaClass is per-instance. If we want an instance to have a different behavi
 ### Injecting Methods Using Mixins
 
 We can mix behavior into existing classes to inject methods into both Groovy and Java classes.
+
+
+### Expando类
+
+Expando对象就像一个Map对象一样，可以任意的增加键值对，然后存储起来。也像一个动态的GroovyBean对象，它可以不用预先设定任何的属性，一切都可以在使用的时候增加。它与Map对象的最大不同在于Expando对象除了可以在运行期增加属性以外，还可以动态的增加方法。
+
+
+```
+def person = new Expando()
+     
+      person.name = 'Alice'
+     
+      person.age = 18
+     
+      person.description = {
+         println """
+           ----------description---------
+               name: ${person.name}
+              age:  ${person.age}
+           ------------------------------
+         """
+      }
+     
+      person.description()
+
+```
