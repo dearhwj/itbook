@@ -32,6 +32,9 @@
 
 [插件地址](https://chrome.google.com/webstore/detail/chphlpgkkbolifaimnlloiipkdnihall)
 
+###  Copy As Markdown
+将你在页面中选中的HTML格式转化为Markdown格式。
+[插件地址](https://chrome.google.com/webstore/detail/copy-as-markdown/dgoenpnkphkichnohepecnmpmihnabdg)
 
 ### 其他插件
 
