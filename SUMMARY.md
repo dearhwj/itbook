@@ -21,6 +21,7 @@
 	* [架构的内容](architecture/architecture_content.md)
 	* [电商系统架构整理](architecture/electronic_business_architecture.md)
 	* [开放平台架构整理](architecture/open_platform_architecture.md)
+	* [蔡学镛的微博阅读笔记](architecture/author_caixueyong.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)
