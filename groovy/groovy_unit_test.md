@@ -22,4 +22,32 @@ class TestUsingExpandoMetaClass extends GroovyTestCase {
 void testMyMethod() {	def result	def emc = new ExpandoMetaClass(CodeWithHeavierDependencies, true) 
 	emc.println = { text -> result = text }	emc.someAction = { -> 25 }	emc.initialize()	def testObj = new CodeWithHeavierDependencies()
 	testObj.metaClass = emc   testObj.myMethod()   assertEquals 35, result```
-
+### Mocking Using Map
+```
+class TestUsingMap extends GroovyTestCase { void testMethodA() {def text = ''def fileMock = [write : { text = it }]def testObj = new ClassWithDependency() testObj.methodA(1, fileMock)assertEquals "The value is 1.", text }}
+```
+
+
+### Mocking Using the Groovy Mock Library
+#### Using StubFor
+```
+import com.agiledeveloper.ClassWithDependencyclass TestUsingStubFor extends GroovyTestCase {	void testMethodB() {	 def testObj = new ClassWithDependency() -	 def fileMock = new groovy.mock.interceptor.StubFor(java.io.FileWriter)	 def text
+	 fileMock.demand.write { text = it.toString() }	 fileMock.demand.close {} -    fileMock.use {   } 	testObj.methodB(1)	assertEquals "The value is 1.", text -}}
+```
+
+
+#### Using MockFor
+
+
+```
+class TwoFileUserTest extends GroovyTestCase { 
+	void testUseFiles() {		def testObj = new TwoFileUser()		def testData = 'Multi Files'		def fileMock = new groovy.mock.interceptor.MockFor(java.io.FileWriter) 
+		fileMock.demand.write() 	{ assertEquals testData, it } 
+		fileMock.demand.write() { assertEquals testData.size(), it }
+		fileMock.demand.close(2..2) {}		fileMock.use {    	  	testObj.useFiles(testData)	    }	}
+
+	void tearDown() {		new File('output1.txt').delete() new File('output2.txt').delete()	}
+
+
+
+```
