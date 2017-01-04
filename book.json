@@ -1,0 +1,14 @@
+{
+    "title" : "Gibook Use",
+    "description" : "记录Gitbook的配置和一些插件的使用",
+    "author" : "happy_future",
+    "generator": "site",
+    "language" : "zh-hans",
+    "gitbook" : "2.6.4",
+   "plugins": [
+        "mermaid-2"
+    ],
+    "pluginsConfig": {
+	  "theme": "forest"
+    }
+}
