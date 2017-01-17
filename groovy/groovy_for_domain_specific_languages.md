@@ -21,3 +21,9 @@ Possible solutions: findIndexOf(groovy.lang.Closure), findIndexOf(int, groovy.la
 1. Closures are anonymous. A closure is just a snippet of code that can be assigned to a variable and executed later
 2. All closures are a sub class of type groovy.lang.Closure. Because groovy.lang is automatically imported, we can refer to Closure as a type within our code.
 3. For each closure that is declared in our code, Groovy generates a Closure class for us, which is a subclass of groovy.lang.Closure. Our closure object is an instance of this class. Although we cannot predict what exact type of closure is generated, we can rely on it being a subtype of groovy.lang.Closure.
+
+
+### Calling closures
+1. Using the unnamed ()
+2. By calling the call()
+3. By calling the doCall() 

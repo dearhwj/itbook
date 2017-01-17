@@ -148,7 +148,8 @@
 	* [DIV+CSS布局](web/div_css_layout.md)
 	* [解决provisional headers are shown的过程](web/provisional_headers_are_shown.md)
 	* [几个大型网站提供的IP API接口调用方法](web/ip_query.md)
-	* [图解HTTPS通信过程](web/https_process.md)
+	* [HTTPS的设计过程](web/https_process.md)
+	* [HTTPS知识储备](web/https_required_security_knowledge.md)
 * [阿里云云产品]
 	* [ODPS](aliyun/odps_intro.md)
 * [开发工具](tools/README.md)
