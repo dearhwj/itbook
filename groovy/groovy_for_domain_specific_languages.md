@@ -27,3 +27,31 @@ Possible solutions: findIndexOf(groovy.lang.Closure), findIndexOf(int, groovy.la
 1. Using the unnamed ()
 2. By calling the call()
 3. By calling the doCall() 
+
+
+### Closure Parameters
+
+1. The parameter list is a comma-separated list of parameter names with optional type de nitions. Closures behave slightly different depending on whether we supply the optional type.
+2. For a closure with no explicit parameter de ned, we can expect a doCall that accepts varargs to be generated.
+3. For a closure accepting only one dynamically-typed parameter, we would expect our doCall to also accept a single parameter.
+4. A closure that accepts typed parameters will have a doCall method that accepts only the same speci c types as the closure parameters to be generated.
+5. To accept multiple parameters, we list the parameters in order before the -> symbol.
+6. We can de ne default parameters by supplying a value in the parameter list, as follows:
+
+
+### curry
+在调用 curry() 方法时，不需要提供所有的实际参数。curry 过的 调用只引起了闭包的部分应用程序。闭包的 部分应用程序 是另一个 Closure 对象，在这个对象中有些值已经被修正。
+
+```
+def multiply = { x, y -> return x * y }  // closure
+def triple = multiply.curry(3)           // triple = { y -> return 3 * y }
+def quadruple = multiply.curry(4) 
+// quadruple = { y -> return 4 * y }
+def p = triple.call(4)                   // explicit call
+def q = quadruple(5)                     // implicit call
+println "p: ${p}"                        // p is 12
+println "q: ${q}"                        // q is 20
+```
+
+### Closure return values
+A closure can have explicit return statements. If a return statement is encountered, then the value de ned in the return statement is returned; If no return statement is encountered, then the value returned by the closure is the result of evaluating the last statement encountered in the closure block

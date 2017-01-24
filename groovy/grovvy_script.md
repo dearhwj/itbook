@@ -31,6 +31,10 @@
 
 [Dependency management with Grape](http://docs.groovy-lang.org/latest/html/documentation/grape.html)
 
+	@Grab(group='org.springframework', module='spring-orm', version='3.2.5.RELEASE')
+	
+	
+
 [《Groovy官方教程》Grape依赖管理器](http://ifeve.com/groovy-grape/)
 
 	不是所有的依赖都在maven中心仓库里，你可以像下面这样添加新的仓库:
