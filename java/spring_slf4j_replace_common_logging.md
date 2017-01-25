@@ -19,7 +19,18 @@
                 
 ```    
 
-由于commons-logging使用方很多，***切记一定要彻底排干净***
+由于commons-logging使用方很多，spring、apache的组件都会用到commons-logging，***切记一定要彻底排干净***
+加入
+```
+<dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jcl-over-slf4j</artifactId>
+        <version>1.7.9</version>
+</dependency>
+
+```
+
+
 
 
 

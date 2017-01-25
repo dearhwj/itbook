@@ -60,6 +60,8 @@
 	* [RxJava响应式编程框架](java/java_open_source_rxjava.md)
 	* [Mybatis Plus(MyBatis增强工具包)](java/java_open_source_mybatisplus.md)
 	* [JDK 6和JDK 7中substring的原理及区别](java/string_substring_jdk6_vs_jdk7.md)
+	* [System.Properties和System.getenv区别](java/system_getenv_vs_getproperty.md)
+	* [Java spi机制浅谈](java/java_spi_mechanism.md)
 * [Javascript](Javascript/README.md)
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)
