@@ -200,3 +200,4 @@
 	* [番茄工作法](beyondbook/pomodoro.md)
 	* [大卫谈学习](beyondbook/david_talking_about_study.md)
 	* [如何“自我介绍”](beyondbook/self_introduction.md)
+	* [学习曲线与Hacking大脑](beyondbook/learning_curve_hacking_brain.md)
