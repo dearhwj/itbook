@@ -187,6 +187,7 @@
 	* [程序员技能图谱](programmer/programmer_skill_map.md)
 	* [用mermaid在gitbook中画图](programmer/gitbook_mermaid.md)
 	* [【知乎：为什么很多产品经理都不愿意做后台阅读笔记】](programmer/how_hard_backend_product_manager.md)
+	* [程序员应该了解的GitHub](programmer/programmer_need_know_about_github.md)
 * 技术管理
 	* [转载:技术团队管理不仅仅是管理](tech_management/tech_team_management.md) 
 	* [转载:业务和商业才是技术的驱动力](tech_management/business_drive_tech.md)
