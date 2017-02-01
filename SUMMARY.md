@@ -61,6 +61,8 @@
 	* [JDK 6和JDK 7中substring的原理及区别](java/string_substring_jdk6_vs_jdk7.md)
 	* [System.Properties和System.getenv区别](java/system_getenv_vs_getproperty.md)
 	* [Java spi机制浅谈](java/java_spi_mechanism.md)
+	* [WEBX](webx/README.md)
+		* [WEBX Tips](java/webx/webx_tips.md)
 	* [Spring](spring/README.md)
 		* [Spring小窍门](java/spring/spring_tips.md)
 * [Javascript](Javascript/README.md)

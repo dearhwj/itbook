@@ -1,4 +1,4 @@
-# WEBX
+# WEBX Tips
 ### 页面布局
 1. Screen,代表页面的主体。
 2. Layout,代表页面的布局。
@@ -9,3 +9,10 @@
 		
 ### webx URIBrokerService用法
 [http://blog.sina.com.cn/s/blog_5a15b7d10102vt95.html]("http://blog.sina.com.cn/s/blog_5a15b7d10102vt95.html")
+
+
+
+### webx请求处理
+[webx3对请求的处理流程详解一](http://blog.csdn.net/paincupid/article/details/50900808)
+
+
