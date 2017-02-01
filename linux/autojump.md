@@ -9,3 +9,17 @@ linux下还有比cd更难用的命令吗？不知身在何处要pwd, 然后cd  .
 大家自己搞定，使用的效果看下图。j 是个什么鬼？j 是autojump的别名，目的是减少输入。
 
 ![image](http://blogimages.oss-cn-hangzhou.aliyuncs.com/autojump_demo.png)
+
+
+### 常用的命令
+
+参考[https://github.com/wting/autojump](https://github.com/wting/autojump)
+
+|命令|example|
+| --- | --- |
+|j {foo}| Jump To A Directory That Contains foo|
+|jc {bar}|Jump To A Child Directory|
+|jo {music}|Open File Manager To Directories (instead of jumping)|
+|jco {foo} |Opening a file manager to a child directory is also supported|
+|j {w} {in}|Using Multiple Arguments|
+
