@@ -21,7 +21,7 @@ graph TD;
   C-->D;
 {% endmermaid %}
 
-
+## OAuth Provider实现
 
 
 ### 相关的API
@@ -47,6 +47,8 @@ WeiboX
 
 
 https://api.weibo.com/oauth2/authorize?forcelogin=true&scope=all&client_id=83996567&response_type=code&redirect_uri=http%3A%2F%2Fweiboformac.sinaapp.com%2F_auth%2Fcallback.php
+
+
 
 
 
