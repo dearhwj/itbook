@@ -13,15 +13,19 @@ OAuth 2.0 是目前比较流行的做法，它率先被Google, Yahoo, Microsoft,
 
 ## OAuth2的验证流程
 
-{% mermaid %}
+```mermaid
 graph TD;
   A-->B;
   A-->C;
   B-->D;
   C-->D;
-{% endmermaid %}
+```
+## OAuth2服务提供
+|服务名称|URL|
+| --- | ---|
+| 授权服务|/oauth/authorize |
+|token验证服务|/oauth/token|
 
-## OAuth Provider实现
 
 
 ### 相关的API
