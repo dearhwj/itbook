@@ -21,10 +21,7 @@ graph TD;
   C-->D;
 ```
 ## OAuth2服务提供
-|服务名称|URL|
-| --- | ---|
-| 授权服务|/oauth/authorize |
-|token验证服务|/oauth/token|
+实现方案[https://github.com/favccxx/FavOAuth2](https://github.com/favccxx/FavOAuth2)
 
 
 

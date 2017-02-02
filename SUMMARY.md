@@ -23,6 +23,7 @@
 	* [开放平台架构整理](architecture/open_platform_architecture.md)
 	* [蔡学镛的微博阅读笔记](architecture/author_caixueyong.md)
 	* [蔡学镛的软件架构设计方法论](architecture/architecture_design_caixueyong.md)
+	* [简单之道](architecture/the_zen_of_simple.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)
