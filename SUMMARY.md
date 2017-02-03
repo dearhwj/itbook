@@ -158,8 +158,9 @@
 	* [几个大型网站提供的IP API接口调用方法](web/ip_query.md)
 	* [HTTPS的设计过程](web/https_process.md)
 	* [HTTPS知识储备](web/https_required_security_knowledge.md)
-* [阿里云云产品]
-	* [ODPS](aliyun/odps_intro.md)
+* [云计算]
+	* [ODPS](cloud_computing/odps_intro.md)
+	* [Azure消费数据API](cloud_computing/aliyun_vs_azure_billing_api.md)
 * [开发工具](tools/README.md)
 	* [IntelliJ IDEA](tools/idea_tips.md) 
 	* [Markdown](tools/markdown.md)
