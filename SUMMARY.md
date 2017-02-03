@@ -199,7 +199,7 @@
 	* [Facebook Collection](tech_management/facebook_collection.md)
 	* [阿里巴巴新人寄语](tech_management/alibaba_junior_words.md)
 	* [阿里巴巴的招聘要求](tech_management/alibaba_job_requirement.md)
-	* [张小龙提到团队的理念](tecg_management/team_by_zhang_xiao_long.md)
+	* [张小龙提到团队的理念](tech_management/team_by_zhang_xiao_long.md)
 	* [Difference between Boss and Leader](tech_management/boss_vs_leader.md)
 * 胜读十年书
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
