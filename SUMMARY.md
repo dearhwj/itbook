@@ -199,6 +199,7 @@
 	* [Facebook Collection](tech_management/facebook_collection.md)
 	* [阿里巴巴新人寄语](tech_management/alibaba_junior_words.md)
 	* [阿里巴巴的招聘要求](tech_management/alibaba_job_requirement.md)
+	* [张小龙提到团队的理念](tecg_management/team_by_zhang_xiao_long.md)
 * 胜读十年书
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
