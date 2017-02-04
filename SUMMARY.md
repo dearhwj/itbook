@@ -75,6 +75,7 @@
 	* [Scala入门](scala/scala_basic.md)
 * [Linux](linux/README.md)
 	* [linux内核](linux/linux_kernal.md)
+	* [Linux Performance Analysis and Tools](linux/linux_performance_analysis_and_tools.md)
 	* [linux命令](linux/linux_command.md)
 		* [ls小窍门](linux/ls_tips.md)
 		* [sort小窍门](linux/sort_tips.md)
