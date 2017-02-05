@@ -203,6 +203,8 @@
 	* [张小龙提到团队的理念](tech_management/team_by_zhang_xiao_long.md)
 	* [Boss和Leader的区别](tech_management/boss_vs_leader.md)
 	* [转载:开发团队的效率](tech_management/dev_team_efficiency.md)
+	* [转载:公司高速发展是对团队最好的管理](tech_managemnt/high_speed_development_is_best_management.md)
+	* [严格是大爱](tech_management/strictness_is_big_love.md)
 * 胜读十年书
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
