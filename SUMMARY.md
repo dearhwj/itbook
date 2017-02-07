@@ -214,3 +214,4 @@
 	* [大卫谈学习](beyondbook/david_talking_about_study.md)
 	* [如何“自我介绍”](beyondbook/self_introduction.md)
 	* [学习曲线与Hacking大脑](beyondbook/learning_curve_hacking_brain.md)
+	* [我们不能在创造问题的思维层面去思考解决方法](beyondbook/we_cannt_solve_problem.md)

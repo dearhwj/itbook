@@ -1,5 +1,7 @@
 # 转载:公司高速发展是对团队最好的管理
 
+原文地址:[http://www.infoq.com/cn/articles/ego-interview-fankai/](http://www.infoq.com/cn/articles/ego-interview-fankai/)
+
 
 ## 因地制宜选择合适的管理风格
 

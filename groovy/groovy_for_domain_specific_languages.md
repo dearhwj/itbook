@@ -55,3 +55,7 @@ println "q: ${q}"                        // q is 20
 
 ### Closure return values
 A closure can have explicit return statements. If a return statement is encountered, then the value de ned in the return statement is returned; If no return statement is encountered, then the value returned by the closure is the result of evaluating the last statement encountered in the closure block
+
+
+
+
