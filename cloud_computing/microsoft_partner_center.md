@@ -111,3 +111,62 @@
 1. 你能看到reseller是需要通过指定customerId来查询订单的，其实就是说订单还是归属到客户的，需要用客户ID进行查询路由
 2. 同样是奇葩的设计一把取出客户所有的订单，不会爆吗？
 
+
+
+## Get a customer's subscriptions
+获取一个客户所有的subscription。Azure中Subscription被分为License based subscription和Usage based subscription
+
+原文:[https://msdn.microsoft.com/en-us/library/partnercenter/mt634673.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634673.aspx)
+
+| Method  | Request URI  |                                                                                                                               
+| ------- | --- |
+| **GET** | {baseURL}/v1/customers/{customer-tenant-id}/subscriptions HTTP/1.1|
+
+## Update the nickname for a subscription
+更新subscription的nickname，就是给客户的subscription取一个别名
+原文:[https://msdn.microsoft.com/en-us/library/partnercenter/mt634726.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634726.aspx)
+
+
+## Get a customer's billing profile
+获取一个客户的billing信息。
+
+原文：[https://msdn.microsoft.com/en-us/library/partnercenter/mt634670.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634670.aspx)
+
+```
+{
+    "id": "<billing-profile-id>",
+    "firstName": "FirstName",
+    "lastName": "LastName",
+    "email": "email@sample.com",
+    "culture": "en-US",
+    "language": "en",
+    "companyName": "CompanyName",
+    "defaultAddress": {
+        "country": "US",
+        "city": "Redmond",
+        "state": "WA",
+        "addressLine1": "1 Microsoft Way",
+        "postalCode": "98052",
+        "firstName": "FirstName",
+        "lastName": "LastName",
+        "phoneNumber": "4255555555"
+    },
+    "links": {
+        "self": {
+            "uri": "/v1/customers/<customer-tenant-id>/profiles/billing",
+            "method": "GET",
+            "headers": []
+        }
+    },
+    "attributes": {
+        "etag": "<etag>",
+        "objectType": "CustomerBillingProfile"
+    }
+}
+
+
+```
+
+
+## Get a customer's company profile
+获取

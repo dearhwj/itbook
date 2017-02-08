@@ -57,5 +57,14 @@ println "q: ${q}"                        // q is 20
 A closure can have explicit return statements. If a return statement is encountered, then the value de ned in the return statement is returned; If no return statement is encountered, then the value returned by the closure is the result of evaluating the last statement encountered in the closure block
 
 
+### Adding a command-line interface
+
+```
+#!/usr/bin/env groovyString.metaClass.search = { Closure c ->     GeeTwitter.search(delegate, c)}if (args)    evaluate(new File(args[0]))else    println "Usage: GeeTwitter <script>"
+            
+```
+
+The evaluate method in Groovy allows us to pass a  le containing Groovy code to the Groovy interpreter. Any code contained within the  le is compiled and executed within the same virtual machine as the one where we are running the loading script. When the above script is executed from the command, the groovy command is invoked by the shell, which in turn launches a JVM. The evaluate method causes the target script to be loaded and executed in the same environment, and everything else works as if by magic.
+
 
 
