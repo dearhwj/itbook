@@ -22,6 +22,11 @@
 2. MS-RequestId vs MS-CorrelationId 不同的地方在于MS-CorrelationId每次调用都是不同的
 
 
+## 基本的领域模型
+### Customer客户
+客户信息有公司信息和Biling信息构成
+
+
 
 ## Create a Customer(创建一个客户)
 
@@ -168,5 +173,82 @@
 ```
 
 
+## Update a customer's billing profile
+更新客户的billing profile
+
+更新客户的profile信息，post的是一个很大的json字符串，看来是整个overwrite掉的。另外partner这边提供了更新客户billing profile的api，但没有提供更新客户company信息的api。billing profile包含了以下信息
+
+```
+
+{
+    "id": "a58ceba5-60ac-48e4-a0bc-2a855811807a",
+    "firstName": "FirstName",
+    "lastName": "LastName",
+    "email": "email@sample.com",
+    "culture": "en-US",
+    "language": "en",
+    "companyName": "companyName",
+    "defaultAddress": {
+        "country": "US",
+        "city": "Redmond",
+        "state": "WA",
+        "addressLine1": "One Microsoft Way",
+        "postalCode": "98052",
+        "firstName": "FirstName",
+        "lastName": "LastName",
+        "phoneNumber": "4255555555"
+    },
+    "links": {
+        "self": {
+            "uri": "/v1/customers/<customer-tenant-id>/profiles/billing",
+            "method": "GET",
+            "headers": []
+        }
+    },
+    "attributes": {
+        "etag": "<etag>",
+        "objectType": "CustomerBillingProfile"
+    }
+}
+
+
+```
+
+
 ## Get a customer's company profile
-获取
+根据客户的ID，获取客户的公司信息
+
+原文:[https://msdn.microsoft.com/en-us/library/partnercenter/mt634682.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634682.aspx)
+
+
+### 返回信息
+返回的信息包括公司名、地址、联系方式、以及客户信息的URL
+
+```
+{
+    "tenantId": "4d3cf487-70f4-4e1e-9ff1-b2bfce8d9f04",
+    "domain": "dtdemocspcustomer005.onmicrosoft.com",
+    "companyName": "DT Demo CSP Customer 005",
+    "address": {
+        "country": "US",
+        "region": "WA",
+        "city": "Redmond ",
+        "addressLine1": "1 Microsoft Way",
+        "postalCode": "98052",
+        "phoneNumber": "4155551212"
+    },
+    "email": "daniel@hotmail.com.tw",
+    "links": {
+        "self": {
+            "uri": "/customers/4d3cf487-70f4-4e1e-9ff1-b2bfce8d9f04/profiles/company",
+            "method": "GET",
+            "headers": []
+        }
+    },
+    "attributes": {
+        "objectType": "CustomerCompanyProfile"
+    }
+}
+
+
+```

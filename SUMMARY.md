@@ -108,6 +108,7 @@
 		* [autojump](linux/autojump.md)	
 		* [Linux或Mac修改motd,提供个性化login信息](linux/linux_motd.md)
 		* [Linux/Mac命令行快捷键](linux/linux_commandline_shortcut.md)
+		* [bash脚本文件中为什么以#!开头](Shell/bash_script_start_with.md)
 * [MAC OS](macos/README.md)
 	* [MacOS软件搜集](macos/macos_software.md)
 		* [Popclip以及插件开发](macos/popclip_tips.md)

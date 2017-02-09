@@ -68,3 +68,10 @@ The evaluate method in Groovy allows us to pass a  le containing Groovy code to 
 
 
 
+### CompilationConfiguration
+CompilationConfiguration gives us the ability to set a number of compilation attributes, including the classpath to be used and the PrintWriter object to be used as a standard output. It also provides a method CompilationConfiguration. setScripBaseClass(), which allows us to provide an alternative subclass of Script to be used for the base class of our script instance.
+
+```
+
+
+ #!/usr/bin/env groovy   import org.codehaus.groovy.control.*   String.metaClass.search = { Closure c ->      GeeTwitterScript.search(delegate,c)   }   if(args) {      def conf = new CompilerConfiguration()      conf.setScriptBaseClass("GeeTwitterScript")      def shell = new GroovyShell(conf)      shell.evaluate (new File(args[0]))} else      println "Usage: GeeTwitter <script>"```
