@@ -146,6 +146,7 @@
 		* [一分钟学会AB](test/ab_one_minute.md)
 * [VIM](vim/README.md)
 	* [Vim小窍门](vim/vim_tips.md)
+	* [vim移动](vim/vim_move.md)
 	* [Vimdiff小窍门](vim/vimdiff_tips.md)
 	* [Vim操作剪贴板](vim/vim_clipboard.md)
 	* [vim删除文本的命令](vim/vim_delete.md)
