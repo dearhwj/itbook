@@ -207,7 +207,7 @@
 	* [转载:开发团队的效率](tech_management/dev_team_efficiency.md)
 	* [转载:公司高速发展是对团队最好的管理](tech_management/high_speed_development_is_best_management.md)
 	* [严格是大爱](tech_management/strictness_is_big_love.md)
-* 胜读十年书
+* 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
 	* [百万富翁的生活习惯总结](beyondbook/millionaire_habits.md)
@@ -218,3 +218,4 @@
 	* [学习曲线与Hacking大脑](beyondbook/learning_curve_hacking_brain.md)
 	* [我们不能在创造问题的思维层面去思考解决方法](beyondbook/we_cannt_solve_problem.md)
 	* [乔布斯：遗失的访谈 ](beyondbook/losting_talking_of_jobs.md)
+	* [阅读笔记:iPhone问世10周年之际，在苹果干了17年的前员工有话对库克说](reading_notes/reading_note_what_is_problem_about_apple.md)
