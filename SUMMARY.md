@@ -137,6 +137,7 @@
 	* [CSRF跨站请求伪造](security/csrf.md)
 	* [获取用户Ip地址通用方法以及常见安全隐患](security/http_x_forward_inject.md)
 	* [OAuth 2.0](security/oauth2.md)
+	* [公钥加密算法](security/public_key_algorithm.md)
 * [软件测试](test/README.md)
 	* [性能测试基础知识—QPS和TPS](test/performance_test_qps_tps.md)
 	* [集成测试和单元测试](test/unit_test_integeration_test.md)
