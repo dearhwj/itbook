@@ -50,6 +50,7 @@
 返回[Customer](https://msdn.microsoft.com/en-us/library/partnercenter/dn974947.aspx) 对象
 
 
+创建客户的时候不用定义customerID(GUID)，response会把这个ID返回回来
 
 ## Request a reseller relationship
 请求一个reseller关系
@@ -91,7 +92,9 @@
 
 原文：[https://msdn.microsoft.com/en-us/library/partnercenter/mt634685.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634685.aspx)
 
-奇葩的方法设计居然只有一个参数一把取出来，也不弄个分页
+
+1. 奇葩的方法设计居然只有一个参数一把取出来，也不弄个分页。
+2. 返回的信息里面包含了客户的ID（微软是通过GUID生成的），也就是说把这个客户ID暴露出去问题也不大！
 
 
 ## Get a customer by company name or domain
@@ -174,7 +177,7 @@
 
 
 ## Update a customer's billing profile
-更新客户的billing profile
+更新客户的billing profile. API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634718.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634718.aspx)
 
 更新客户的profile信息，post的是一个很大的json字符串，看来是整个overwrite掉的。另外partner这边提供了更新客户billing profile的api，但没有提供更新客户company信息的api。billing profile包含了以下信息
 
@@ -252,3 +255,163 @@
 
 
 ```
+
+
+## Create user accounts for a customer
+创建一个客户账号（CustomerUser）。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt725328.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725328.aspx)
+
+###Request syntax
+| Method |	Request URI |
+| --- | --- |
+|POST	| {baseURL}/v1/customers/{customer-tenant-id}/users HTTP/1.1|
+
+```
+POST https://api.partnercenter.microsoft.com/v1/customers/<customer-tenant-id>/users HTTP/1.1
+Authorization: Bearer <token>
+Accept: application/json
+MS-RequestId: b1317092-f087-471e-a637-f66523b2b94c
+MS-CorrelationId: 8a53b025-d5be-4d98-ab20-229d1813de76
+{
+      "usageLocation": "country/region code",
+      "userPrincipalName": "userid@domain.onmicrosoft.com",
+      "firstName": "First",
+      "lastName": "Last",
+      "displayName": "User name",   
+      "passwordProfile":{
+                 password: "abCD123*",
+                 forceChangePassword: true
+      },
+      "attributes": {
+        "objectType": "CustomerUser"
+      }
+}
+
+
+
+```
+
+1. 用的是HTTPS所以网络通信上可以确保安全！密码是明文传播的，可以要求forceChangePassword=true
+2. 创建客户的时候不用定义ID(GUID)，response会把这个ID返回回来
+
+
+
+
+## Update user accounts for a customer
+更新customer的用户账号信息. API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt725337.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725337.aspx)
+
+| Method    | Request URI                                                                                                                         
+| ---- | --- |
+| **PATCH** | {baseURL}/v1/customers/{customer-tenant-id}/users/<user-id> HTTP/1.1 |
+
+1. 可以局部更新某些账号信息，只要提供需要修改的字段内容就行，response会返回全部的账号信息
+
+
+
+## Get a user account by ID
+根据客户账号ID获取账号信息。 API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt745139.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt745139.aspx)
+
+
+
+| Method  | Request URI    |
+| --- | --- |
+| **GET** | _{baseURL}_/v1/customers/{customer-tenant-id}/users/{user-id} HTTP/1.1 |
+
+
+
+## Get a list of all user accounts for a customer
+获取用户所有的客户账号。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt725330.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725330.aspx)
+
+**Request syntax**
+
+| Method  | Request URI  |                                                                                                              
+| ------- | ---- |
+**GET** | [{baseURL}/v1/customers/{customer-tenant-id}/users HTTP/1.1
+
+
+
+
+
+## Delete a user account for a customer
+删除一个客户账号(CustomerUser)，不是删除Customer。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt725329.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725329.aspx)
+
+**Request syntax**
+
+| Method     | Request URI                                                                                                                                   
+| --- | ---|
+**DELETE** | {baseURL}/v1/customers/{customer-tenant-id}/users/{user-id} HTTP/1.1|
+
+
+
+1. 微软的模型里面资源（Order、Subscription等等）都是挂在Customer下的，***微软的Partner Center没有提供删除Customer的API***,只有删除CustomerUser的API，删除CustomerUser是很简单的，只是删除客户的联系信息（参考Create user accounts for a customer）。
+2. 删除客户需要指定客户ID（GUID），这个可以通过客户账号的查询接口获取。
+
+
+## View deleted users for a customer
+获取客户(Customer)下已经删除的用户账号.API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt744323.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt744323.aspx)
+
+| Method  | Request URI        |
+| --- | --- |
+|**GET** | {baseURL}/v1/customers/{customer-tenant-id}/users? size={size}&filter={filter} HTTP/1.1
+
+1. 这个其实是一个统一的用户账号查询接口。需要查询参数配合{"Field":"UserStatus","Value":"Inactive","Operator":"equals"}.
+
+
+## Restore a deleted user for a customer
+恢复一个已经删除的Customer User.
+API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt744322.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt744322.aspx)
+
+
+Method    | Request URI                                                                                                                                    
+|--- | ---| 
+|**PATCH** | _{baseURL}_/v1/customers/{customer-tenant-id}/users/{user-id}  HTTP/1.1|
+
+1. delete用户的时候，用户状态变成inactive。保留30天，之后就不能恢复了！
+
+
+
+
+## Get a list of available licenses
+获取客户可用的订阅和许可证. API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt725331.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725331.aspx)
+
+
+**Request syntax**
+
+| Method  | Request URI |                                                                                                                                  
+| --- | --- |
+| **GET** | [_{baseURL}_](https://msdn.microsoft.com/en-us/library/partnercenter/mt490977.aspx)/v1/customers/{customer-tenant-id}/subscribedskus HTTP/1.1|
+
+
+## Get user roles for a customer
+获取用户(Customer)的角色信息。这是一组API，提供了以下几个API
+1. 获取某个账号(CustomerAccount)的拥有的角色和权限
+2. 获取客户（Customer）全部的角色
+3. 获取指定角色的用户列表
+
+API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt725334.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725334.aspx)
+
+**Request syntax**
+
+Method  | Request URI                                                                                                                                                  
+| --- | --- |
+| **GET** | {baseURL}/v1/customers/{customer-tenant-id}/users/{user-id}/directoryroles HTTP/1.1 |
+| **GET** | {baseURL}/v1/customers/{customer-tenant-id}/directoryroles HTTP/1.1 |               
+| **GET** | {baseURL}/v1/customers/{customer-tenant-id}/directoryroles/{role-ID}/usermembers  |
+
+
+备注
+1. 这个role 和权限怎么定义的呢？还没了解到
+
+
+
+## Remove a customer user from a role
+从角色中删除一个用户. API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt745131.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt745131.aspx)
+
+
+
+Method     | Request URI                                                                                                                                                                  
+| --- | --- | 
+| **DELETE** | {baseURL}/v1/customers/{customer-tenant-id}/directoryroles/{role-ID}/usermembers/{user-ID} HTTP/1.1|
+
+
+
+
