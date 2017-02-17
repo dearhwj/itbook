@@ -444,6 +444,8 @@ VI中的多行删除与复制
    	
 ```
 
+#### 切换模式
+C-o （在insert模式使用） 就是在insert模式中临时进入normal模式， 在insert模式，可以试试：C-o gg C-o dd C-o y ​​​​
 
 
 #### 键盘映射
