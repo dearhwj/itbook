@@ -413,5 +413,136 @@ Method     | Request URI
 | **DELETE** | {baseURL}/v1/customers/{customer-tenant-id}/directoryroles/{role-ID}/usermembers/{user-ID} HTTP/1.1|
 
 
+## Set user roles for a customer
+设置一个用户角色。API[https://msdn.microsoft.com/en-us/library/partnercenter/mt725336.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725336.aspx)
 
+
+Method   | Request URI                                                                                                                                                        
+| --- | --- |
+| **POST** | [_{baseURL}_](https://msdn.microsoft.com/en-us/library/partnercenter/mt490977.aspx)/v1/customers/{customer-tenant-id}/directoryroles/{role-ID}/usermembers HTTP/1.1|
+
+提交参数
+
+Name                  | Type       | Required | Description                           
+--------------------- | ---------- | -------- | --------------------------------------
+**Id**                | **string** | Y        | The Id of the user to add to the role.
+**DisplayName**       | **string** | Y        | The friendly display name of the user.
+**UserPrincipalName** | **string** | Y        | The name of the user principal.       
+**Attributes**        | **object** | Y        | Contains "ObjectType":"UserMember"   
+
+
+## Get a list of offer categories by market
+获取指定country/region的offer category列表。API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt634689.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634689.aspx)
+
+
+**Request syntax**
+
+Method  | Request URI                                                                                                                         
+| --- | --- |
+| **GET** | {baseURL}/v1/offercategories?country={country-id} HTTP/1.1 |
+
+Response example
+
+返回的对象如下，对象没太多的内容.
+
+```
+
+{
+    "totalCount": 4,
+    "items": [{
+        "id": "Enterprise_Key",
+        "name": "Enterprise",
+        "rank": 20,
+        "locale": "en-us",
+        "country": "US",
+        "attributes": {
+            "objectType": "OfferCategory"
+        }
+}        
+```
+## Get a list of offers for a market
+获取market下的商品。
+
+
+| Method  | Request URI                                                                                                                
+| --- | --- |
+**GET** | [_{baseURL}_](https://msdn.microsoft.com/en-us/library/partnercenter/mt490977.aspx)/v1/offers?country={country_id} HTTP/1.1 |
+
+
+返回的offer对象信息就比较多了. 包括了分类、产品、业务属性（是否自动续费、是否可购买）等信息
+
+Response example
+
+```
+{
+    "totalCount":12,"items":[{
+        "id":"E60E0348-1710-484B-992A-32B294D4CDE1",
+        "name":"Azure Rights Management Premium (Government Pricing)",
+        "description":"Microsoft Azure Rights Management Premium helps you protect confidential documents and email with strong encryption.
+                       Control the use of your information by specifying who can view, edit, print, save and share your data.
+                       Simple to use and integrated with Microsoft Office, SharePoint and Exchange.",
+        "minimumQuantity":1,
+        "maximumQuantity":10000000,
+        "rank":5,
+        "uri":"/3c95518e-8c37-41e3-9627-0ca339200f53/Offers/E60E0348-1710-484B-992A-32B294D4CDE1",
+        "locale":"EN-US",
+        "country":"US",
+        "category":{
+            "id":"Government_Key",
+            "name":"Government",
+            "rank":40,
+            "locale":"en-us",
+            "country":"US",
+            "attributes":{
+                "objectType":"OfferCategory"
+            }
+        },
+        "prerequisiteOffers":[],
+        "isAddOn":false,
+        "isAvailableForPurchase":true,
+        "billing":"license",
+        "isAutoRenewable":true,
+        "product":{
+            "id":"c52ea49f-fe5d-4e95-93ba-1de91d380f89",
+            "name":"Azure Rights Management Premium",
+            "unit":"Licenses"
+        },
+        "unitType":"Licenses",
+        "links":{
+            "learnMore":{
+                "uri":"http://g.microsoftonline.com/0BXPS00en/0000",
+                "method":"GET",
+                "headers":[]
+            },
+            "self":{
+                "uri":"/offers/E60E0348-1710-484B-992A-32B294D4CDE1",
+                "method":"GET",
+                "headers":[]
+            }
+        },
+        "attributes":{
+            "objectType":"Offer"
+        }
+    },
+    "links":{
+        "self":{
+            "uri":"/v1/offers?country={country_id}",
+            "method":"GET",
+            "headers":[]
+        },
+        "previous":{
+            "uri":"/v1/offers?country={country_id}",
+            "method":"GET",
+            "headers":[]
+        }
+    },
+    "attributes":{
+        "objectType":"Collection"
+    }
+}
+
+
+```
+
+ 
 
