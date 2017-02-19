@@ -167,7 +167,8 @@
 	* [ODPS](cloud_computing/odps_intro.md)
 	* [Azure消费数据API](cloud_computing/aliyun_vs_azure_billing_api.md)
 * [开发工具](tools/README.md)
-	* [IntelliJ IDEA](tools/idea_tips.md) 
+	* [IntelliJ IDEA快捷键](tools/idea_shortcuts.md) 
+	* [IntelliJ IDEA Tips](tools/idea_tips.md) 
 	* [Markdown](tools/markdown.md)
 	* [dot](tools/dot_drawing.md)
 	* [Git小窍门](tools/git_tips.md)
@@ -208,6 +209,7 @@
 	* [Boss和Leader的区别](tech_management/boss_vs_leader.md)
 	* [转载:开发团队的效率](tech_management/dev_team_efficiency.md)
 	* [转载:公司高速发展是对团队最好的管理](tech_management/high_speed_development_is_best_management.md)
+	* [团队管理思考NO1](tech_management/my_team_management_speech_01.md)
 	* [严格是大爱](tech_management/strictness_is_big_love.md)
 * 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
