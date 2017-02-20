@@ -36,6 +36,6 @@ test
 
 最后是两个比较炕爹的地方
 1. groovy的编译插件需要main/java和test/java下面至少存在一个java类才能work。所以在100% groovy的开发的项目里面，就不得不写了一个空的java类来跳过这个炕！
-![groovy_maven_comple_plugin.png](http://ata2-img.cn-hangzhou.img-pub.aliyun-inc.com/9f692068eddc81b796c5136411508306.png)
+![groovy_maven_comple_plugin.png](groovy_maven_comple_plugin.png)
 2. gmavenplus-plugin这个groovy的编译插件已经不维护了，需要迁移到本文介绍的方法！
 
