@@ -544,5 +544,5 @@ Response example
 
 ```
 
- 
+## Get an offer by ID 
 

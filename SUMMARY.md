@@ -50,6 +50,7 @@
 	* [Groovy元对象协议](groovy/groovy_mop.md)
 	* [Category和use块](groovy/groovy_category_use.md)
 	* [Groovy语言读取Properties文件怎么读](groovy/groovy_properties.md)
+	* [设置Groovy的maven编译环境](groovy/setup_groovy_maven_compile.md)
 * [Java](java/README.md)
 	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发资料](java/maven_plugin_dev_ref.md)
