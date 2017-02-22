@@ -75,3 +75,24 @@ CompilationConfiguration gives us the ability to set a number of compilation att
 
 
  #!/usr/bin/env groovy   import org.codehaus.groovy.control.*   String.metaClass.search = { Closure c ->      GeeTwitterScript.search(delegate,c)   }   if(args) {      def conf = new CompilerConfiguration()      conf.setScriptBaseClass("GeeTwitterScript")      def shell = new GroovyShell(conf)      shell.evaluate (new File(args[0]))} else      println "Usage: GeeTwitter <script>"```
+
+
+
+# Method pointers
+
+Groovy allows you to assign a method to a closure by using the & syntax. The closure returned is often referred to as a method pointer. Method pointers can be assigned by de-referencing the method name from any object instance
+
+```
+
+ def list = ["A", "B", "C"] def addit = list.&add addit "D" assert list ==  ["A", "B", "C", "D"]
+   
+```
+
+# Groovy Reflection shortcuts
+* String.package
+* Integer.fields
+* Object.methods
+
+# Expandos
+An Expando is a dynamic representation of a typical Groovy bean.
+参考[Groovy元对象协议#Expando类](groovy_mop.md)

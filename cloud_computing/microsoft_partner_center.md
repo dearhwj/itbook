@@ -469,7 +469,8 @@ Response example
 **GET** | [_{baseURL}_](https://msdn.microsoft.com/en-us/library/partnercenter/mt490977.aspx)/v1/offers?country={country_id} HTTP/1.1 |
 
 
-返回的offer对象信息就比较多了. 包括了分类、产品、业务属性（是否自动续费、是否可购买）等信息
+1. 返回的offer对象信息就比较多了. 包括了分类、产品、业务属性（是否自动续费、是否可购买）等信息
+
 
 Response example
 
@@ -544,5 +545,82 @@ Response example
 
 ```
 
+这个接口设计的比较“冗余”，跟offer相关的product和category都会被关联输出
+
 ## Get an offer by ID 
+跟据offerID获取offer信息。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634678.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634678.aspx)
+
+
+| Method  | Request URI |
+| --- | --- |
+| **GET** | _{baseURL}_/v1/offers/{offer-id}?country={country-id} HTTP/1.1 | 
+
+
+1. 返回的offer对象信息就比较多了. 包括了分类、产品、业务属性（是否自动续费、是否可购买）等信息
+2. 获取offer也要求输入marketId，从API的设定来看，offer是强依赖market的
+
+
+
+## Get an order by ID
+根据orderID获取Order。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634679.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634679.aspx)
+
+
+**Request syntax**
+
+| Method  | Request URI|
+| --- | --- | 
+| **GET** | _{baseURL}_/v1/customers/{customer-tenant-id}/orders/{id-for-order} HTTP/1.1 |
+
+
+1. 从返回的订单创建日期来看2015-10-08T10:42:36.54-07:00 ，这个也不是标准的UTC时间！
+
+
+## Purchase an add-on to a subscription
+在subscription中购买附加项。从API的定义上理解就是对现有的order增加附加项。从demo来看，订阅和订单是多对1的。
+实际上单个细的API是对订单进行操作的。
+
+```
+var subscriptionOperations = partnerOperations.Customers.ById(customerId).Subscriptions.ById(subscriptionId);
+var parentSubscription = subscriptionOperations.Get();
+var orderToUpdate = new Order()
+{
+    ReferenceCustomerId = customerId,
+    LineItems = new List<OrderLineItem>()
+    {
+        new OrderLineItem()
+        {
+            LineItemNumber = 0,
+            OfferId = addOnOfferId,
+            FriendlyName = "Some friendly name",
+            Quantity = 2,
+            ParentSubscriptionId = subscriptionId
+        }
+    }
+};
+Order updatedOrder = partnerOperations.Customers.ById(customerId).Orders.ById(parentSubscription.OrderId).Patch(orderToUpdate);
+
+```
+
+API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt778903.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt778903.aspx)
+
+
+**Request syntax**
+
+| Method    | Request URI  |
+|---- | ---- |
+| **PATCH** | _{baseURL}_/v1/customers/{customer-tenant-id}/orders/{order-id} HTTP/1.1|
+
+## Reactivate a suspended subscription
+把一个暂停的订阅重新激活。 API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634714.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634714.aspx)
+
+
+**Request syntax**
+
+| Method    | Request URI                                                                    |
+|--- | ----|
+| **PATCH** | _{baseURL}_/v1/customers/{customer-tenant-id}/subscriptions/{id-for-subscription}  HTTP/1.1|
+
+
+
+1. 这个其实是一个通用的订阅PAPI，是直接调整了订阅的状态！
 
