@@ -560,6 +560,47 @@ Response example
 2. 获取offer也要求输入marketId，从API的设定来看，offer是强依赖market的
 
 
+## Create an order
+创建一个订单。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634667.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634667.aspx)
+
+订单对象参考[https://msdn.microsoft.com/en-us/library/partnercenter/dn974958.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/dn974958.aspx)。 订单对象包含了订单行。订单行里面有商品ID
+
+
+| Method | RequestURI| 
+| ---- | ---- |
+| **POST** | _{baseURL}_/v1/customers/{customer-tenant-id}/orders HTTP/1.1 |
+
+
+
+
+
+```
+POST https://api.partnercenter.microsoft.com/v1/customers/<customer-tenant-id>/orders HTTP/1.1
+Authorization: Bearer <token> 
+Accept: application/json
+MS-RequestId: b2fa039a-329b-467c-9f91-a3831704d7ca
+MS-CorrelationId: 17b21d24-f39e-4dbf-af44-f0c7fb7f55fb
+Content-Type: application/json
+Content-Length: 345
+Expect: 100-continue
+
+{
+    "ReferenceCustomerId": "<customer-tenant-id>",
+    "LineItems": [{
+        "LineItemNumber": 0,
+        "OfferId": "0CCA44D6-68E9-4762-94EE-31ECE98783B9",
+        "FriendlyName": "Nickname",
+        "Quantity": 1,
+    }],
+    "Attributes": {
+        "ObjectType": "Order"
+    }
+}
+
+
+```
+
+
 
 ## Get an order by ID
 根据orderID获取Order。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634679.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634679.aspx)
@@ -623,4 +664,245 @@ API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt778903.aspx](
 
 
 1. 这个其实是一个通用的订阅PAPI，是直接调整了订阅的状态！
+
+
+## Suspend a subscription
+暂停客户订阅。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634716.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634716.aspx)
+
+Method    | Request URI                                                                                                                                                        
+|--- | --- |
+| **PATCH** | _{baseURL}_/v1/customers/{customer-tenant-id}/subscriptions/{id-for-subscription}  HTTP/1.1 |
+
+```
+
+PATCH https://api.partnercenter.microsoft.com/v1/customers/<customer-tenant-id>/subscriptions/<id-for-subscription> HTTP/1.1
+Authorization: Bearer <token>
+Accept: application/json
+MS-RequestId: ca7c39f7-1a80-43bc-90d8-ee7d1cad3831
+MS-CorrelationId: ec8f62e5-1d92-47e9-8d5d-1924af105f2c
+If-Match: <etag>
+Content-Type: application/json
+Content-Length: 1029
+Expect: 100-continue
+Connection: Keep-Alive
+
+{
+    "Id": "83ef9d05-4169-4ef9-9657-0e86b1eab1de",
+    "FriendlyName": "nickname",
+    "Quantity": 2,
+    "UnitType": "none",
+    "ParentSubscriptionId": null,
+    "CreationDate": "2015-11-25T06:41:12Z",
+    "EffectiveStartDate": "2015-11-24T08:00:00Z",
+    "CommitmentEndDate": "2016-12-12T08:00:00Z",
+    "Status": "suspended",
+    "AutoRenewEnabled": false,
+    "BillingType": "none",
+    "PartnerId": null,
+    "ContractType": "subscription",
+    "OrderId": "6183db3d-6318-4e52-877e-25806e4971be",
+    "Attributes": {
+        "Etag": "<etag>",
+        "ObjectType": "Subscription"
+    }
+}
+
+
+```
+
+1. 调用这个api的时候，需要提供OrderId。 
+
+
+## Transition a subscription
+升级客户的订阅到特定的目标订阅。先要获取客户现有的订阅，然后把需要升级的订阅再进行升级！API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt644395.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt644395.aspx)
+
+**Request syntax**
+
+|Method   | Request URI   |                                                                        
+| ---- | ---- |
+| **GET**  | _{baseURL}_/v1/customers/{customer-tenant-id}/subscriptions/{id-for-subscription}/upgrades HTTP/1.1 |
+| **POST** | _{baseURL}_/v1/customers/{customer-tenant-id}/subscriptions/{id-for-target}/upgrades HTTP/1.1      |
+
+```
+
+GET https://api.partnercenter.microsoft.com/v1/customers/{customer-tenant-id}/subscriptions/{id-for-subscription}/upgrades HTTP/1.1
+Authorization: Bearer <token>
+Accept: application/json
+MS-RequestId: 18752a69-1aa1-4ef7-8f9d-eb3681b2d70a
+MS-CorrelationId: 81b08ffe-4cf8-49cd-82db-5c2fb0a8e132
+X-Locale: en-US
+
+POST https://api.partnercenter.microsoft.com/v1/customers/{customer-tenant-id}/subscriptions/{id-for-target}/upgrades HTTP/1.1
+Authorization: Bearer <token>
+Accept: application/json
+MS-RequestId: 750fd5ea-904b-4c3e-b476-60d0feacab0d
+MS-CorrelationId: 81b08ffe-4cf8-49cd-82db-5c2fb0a8e132
+X-Locale: en-US
+Content-Type: application/json
+Content-Length: 1098
+Expect: 100-continue
+
+{
+    "TargetOffer":{
+        "Id":"796B6B5F-613C-4E24-A17C-EBA730D49C02",
+        "Name":"Office 365 Enterprise E3",
+        "Description":"The best plan for businesses that need full productivity, communication and collaboration tools with the familiar Office suite, including Office Online.",
+        "MinimumQuantity":1,
+        "MaximumQuantity":10000000,
+        "Rank":61,
+        "Uri":"/3c95518e-8c37-41e3-9627-0ca339200f53/Offers/796B6B5F-613C-4E24-A17C-EBA730D49C02",
+        "Locale":"en-us",
+        "Country":"US",
+        "Category":{
+            "Id":"Enterprise_Key",
+            "Name":"Enterprise",
+            "Rank":20,
+            "Locale":"en-us",
+            "Country":"US",
+            "Attributes":{
+                "ObjectType":"OfferCategory"
+            }
+        },
+        "PrerequisiteOffers":[],
+        "IsAddOn":false,
+        "IsAvailableForPurchase":true,
+        "Billing":"license",
+        "IsAutoRenewable":true,
+        "Product":{
+            "Id":"6fd2c87f-b296-42f0-b197-1e91e994b900",
+            "Name":"Office 365 Enterprise E3",
+            "Unit":"Licenses"
+        },
+        "UnitType":"Licenses",
+        "Links":{
+            "LearnMore":{
+                "Uri":"http://g.microsoftonline.com/0BXPS00en/1015",
+                "Method":"GET",
+                "Headers":[]
+            }
+        }
+        "Attributes":{
+            "ObjectType":"Offer"
+        }
+    },
+    "UpgradeType":1,
+    "IsEligible":true,
+    "Quantity":1,
+    "UpgradeErrors":[],
+    "Attributes":{
+        "ObjectType":"Upgrade"
+    }
+}
+
+```
+
+
+**Response**
+
+```
+
+HTTP/1.1 200 OK
+Content-Length: 138
+Content-Type: application/json
+MS-CorrelationId: 81b08ffe-4cf8-49cd-82db-5c2fb0a8e132
+MS-RequestId: 18752a69-1aa1-4ef7-8f9d-eb3681b2d70a
+Date: Fri, 29 Jan 2016 20:42:26 GMT
+
+{
+    "totalCount": 1,
+    "items": [{
+        "targetOffer": {
+            "id": "91FD106F-4B2C-4938-95AC-F54F74E9A239",
+            "name": "Office 365 Enterprise E1",
+            "description": "For businesses that need communication and collaboration tools and the ability to read and do lightweight editing of documents with Office Online.",
+            "minimumQuantity": 1,
+            "maximumQuantity": 10000000,
+            "rank": 48,
+            "uri": "/3c95518e-8c37-41e3-9627-0ca339200f53/Offers/91FD106F-4B2C-4938-95AC-F54F74E9A239",
+            "locale": "en-us",
+            "country": "US",
+            "category": {
+                "id": "Enterprise_Key",
+                "name": "Enterprise",
+                "rank": 20,
+                "locale": "en-us",
+                "country": "US",
+                "attributes": {
+                    "objectType": "OfferCategory"
+                }
+            },
+            "prerequisiteOffers": [],
+            "isAddOn": false,
+            "isAvailableForPurchase": true,
+            "billing": "license",
+            "isAutoRenewable": true,
+            "isInternal": false,
+            "conversionTargetOffers": [],
+            "partnerQualifications": ["none"],
+            "product": {
+                "id": "18181a46-0d4e-45cd-891e-60aabd171b4e",
+                "name": "Office 365 Enterprise E1",
+                "unit": "Licenses"
+            },
+            "unitType": "Licenses",
+            "links": {
+                "learnMore": {
+                    "uri": "http://g.microsoftonline.com/0BXPS00en/1013",
+                    "method": "GET",
+                    "headers": []
+                },
+                "self": {
+                    "uri": "/offers/91FD106F-4B2C-4938-95AC-F54F74E9A239?country=US",
+                    "method": "GET",
+                    "headers": []
+                }
+            },
+            "attributes": {
+                "objectType": "Offer"
+            }
+        },
+        "upgradeType": "upgrade_only",
+        "isEligible": false,
+        "quantity": 1,
+        "upgradeErrors": [{
+            "code": 2,
+            "description": "Subscription cannot be upgraded because the source subscription state is not active.  Additional Details contains the current source subscription state.",
+            "attributes": {
+                "objectType": "UpgradeError"
+            }
+        }],
+        "attributes": {
+            "objectType": "Upgrade"
+        }
+    }],
+    "attributes": {
+        "objectType": "Collection"
+    }
+}
+
+HTTP/1.1 200 OK
+Content-Length: 448
+Content-Type: application/json
+MS-CorrelationId: 81b08ffe-4cf8-49cd-82db-5c2fb0a8e132
+MS-RequestId: 750fd5ea-904b-4c3e-b476-60d0feacab0d
+MS-CV: RnK86LBbDkWP/w2R.0
+MS-ServerId: 102031201
+Date: Fri, 29 Jan 2016 20:44:21 GMT
+
+{
+    "sourceSubscriptionId":"896a2862-67e2-4f3d-bb3f-c50c42b5fad8",
+    "targetSubscriptionId":"2add8a55-454a-4ae5-a4c9-5107dc6e9768",
+    "upgradeType":1,
+    "upgradeErrors":[],
+    "licenseErrors":[],
+    "attributes":{
+        "objectType":"UpgradeResult"
+    }
+}
+
+
+```
+
+1. 请求挺复杂的，需要把之前的订阅取出来，然后更想是购买一个新的offer。通过demo没看出来原来的那个订阅如何处理？原来的服务退掉，新的服务启用，金额补差价？
+
 
