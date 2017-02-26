@@ -9,6 +9,10 @@
 
 以当nginx设置了keepalive等待下一次的请求时，同时也会设置一个最大等待时间，这个时间是通过选项keepalive_timeout来配置的，如果配置为0，则表示关掉keepalive，此时，http版本无论是1.1还是1.0，客户端的connection不管是close还是keepalive，都会强制为close。
 
+![](https_ssl_shake_hand_1.png)
+![](https_ssl_shake_hand_2.png)
+
+图一和图二明显的差别就是第二次intl.aliyun.com的链接过程中没有了建立链接的步骤。
 
 
 ### HTTP的KEEP-ALIVE
@@ -19,6 +23,9 @@
 ### HTTPS的KEEP-ALIVE
 1. https的连接如果保持keep-alive可以显著提升性能。因为可以减少ssl握手。
 2. 如果ssl session不能集群共享，由于load balance的存在，要么load blanace要提供SSL sticky或者 Session Affinity
+
+同样的图一和图二明显的差别就是第二次intl.aliyun.com的链接过程中没有了SSL握手的步骤。
+
 
 
 ### 参考资料
