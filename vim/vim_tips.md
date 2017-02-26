@@ -2,8 +2,17 @@
 
 
 
+
+
 ![image](http://img.blog.csdn.net/20130727160521968)
 
+
+## Mac自带的Vim怎么升级
+[https://www.zhihu.com/question/34113076](https://www.zhihu.com/question/34113076)
+
+	安装MacVim
+	打开终端，输入alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+	大功告成，输入vim --version会发现版本已更新
 
 ## VIM打开关闭文件
 [vim 快捷键技巧总结](http://blog.csdn.net/sunboy_2050/article/details/6002837)

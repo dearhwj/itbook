@@ -24,3 +24,7 @@
 	Your IdeaVim-specific Vim initialization commands
 	You can read your ~/.vimrc file from ~/.ideavimrc using this command:
 	source ~/.vimrc
+	
+[IntelliJ IDEA vim 插件配置文件 .ideavimrc 配置](http://blog.xiazhiri.com/IntelliJ-IDEA-ideavimrc.html)	
+
+	.ideavimrc 的配置文件应该是在 ~\.ideavimrc 文件编码为utf-8.

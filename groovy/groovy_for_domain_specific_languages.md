@@ -96,3 +96,8 @@ Groovy allows you to assign a method to a closure by using the & syntax. The clo
 # Expandos
 An Expando is a dynamic representation of a typical Groovy bean.
 参考[Groovy元对象协议#Expando类](groovy_mop.md)
+
+
+# Categories
+Adding a closure to an Expando to give a new method is a useful feature, but what if we need to add methods to an existing class on the  y? Groovy provides another useful feature—Categories—for this purpose. A Category can be added to any class at runtime, by using the use keyword.
+
