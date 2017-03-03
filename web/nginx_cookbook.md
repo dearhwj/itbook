@@ -1,5 +1,14 @@
 # nginx cookbook
 
+
+## Nginx常用命令
+
+启动： /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+验证nginx配置文件是否正确：./nginx -t
+重启Nginx服务：./nginx -s reload
+
+## 其他
+
 [如何查看nginx 安装了哪些模块]("http://justwinit.cn/post/2934/")
 
 	ngingx -V

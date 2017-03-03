@@ -101,3 +101,8 @@ An Expando is a dynamic representation of a typical Groovy bean.
 # Categories
 Adding a closure to an Expando to give a new method is a useful feature, but what if we need to add methods to an existing class on the  y? Groovy provides another useful feature—Categories—for this purpose. A Category can be added to any class at runtime, by using the use keyword.
 
+
+# Metaclass
+In addition to the regular Java Class object that we saw earlier when looking at re ection, each Groovy object also has an associated MetaClass Object. All Groovy classes secretly implement the groovy.lang.GroovyObject interface, which exposes a getMetaClass() method for each object.
+
+An important distinction between Java and Groovy is that in Groovy a method call never invokes a class method directly. A method invocation on an object is always dispatched in the  rst place to the GroovyObject.invokeMethod() of the object. In the default case, this is relayed onto the MetaClass.invokeMethod() for the class and the MetaClass is responsible for looking up the actual method. This indirect dispatching is the key to how a lot of Groovy power features work as it allows us to hook ourselves into the dispatching process in interesting ways.

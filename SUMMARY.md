@@ -51,6 +51,9 @@
 	* [Category和use块](groovy/groovy_category_use.md)
 	* [Groovy语言读取Properties文件怎么读](groovy/groovy_properties.md)
 	* [设置Groovy的maven编译环境](groovy/setup_groovy_maven_compile.md)
+* [Python](python/README.md)
+	* [转载:python判断指定的端口是否被占用](python/if_port_is_used.md) 
+	* [Python IDE设置](python/python_ide_environment.md)
 * [Java](java/README.md)
 	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发资料](java/maven_plugin_dev_ref.md)
@@ -236,4 +239,4 @@
 	* [学习曲线与Hacking大脑](beyondbook/learning_curve_hacking_brain.md)
 	* [我们不能在创造问题的思维层面去思考解决方法](beyondbook/we_cannt_solve_problem.md)
 	* [乔布斯：遗失的访谈 ](beyondbook/losting_talking_of_jobs.md)
-	* [阅读笔记:iPhone问世10周年之际，在苹果干了17年的前员工有话对库克说](reading_notes/reading_note_what_is_problem_about_apple.md)
+	* [阅读笔记:iPhone问世10周年之际，在苹果干了17年的前员工有话对库克说](reading_notes/reading_note_what_is_problem_about_apple.md)crh

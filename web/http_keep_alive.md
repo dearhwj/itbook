@@ -24,7 +24,7 @@
 1. https的连接如果保持keep-alive可以显著提升性能。因为可以减少ssl握手。
 2. 如果ssl session不能集群共享，由于load balance的存在，要么load blanace要提供SSL sticky或者 Session Affinity
 
-同样的图一和图二明显的差别就是第二次intl.aliyun.com的链接过程中没有了SSL握手的步骤。
+
 
 
 

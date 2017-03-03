@@ -10,11 +10,11 @@
 | Header                   | Description   | Value Type|
 | --- | --- | ---|
 | **Authorization:**       | Required. The authorization token in the form **Bearer** <token>.   | **string**|
-**Accept:**              | Specifies the request and response type, **"application/json"**.                                                                                                                                                                                                                                                                          | **string**
-**MS-RequestId:**        | A unique identifier for the call, used to ensure idempotency. In the case of a timeout, the retry call should include the same value. Upon receiving a response (success or business failure), the value should be reset for the next call.                                                                                               | **guid**  
-**MS-CorrelationId:**    | A unique identifier for the call, useful the logs and network traces for troubleshooting errors. The value should be reset for every call. All operations should include this header. For more information, see the Correlation ID information in [Test and debug](https://msdn.microsoft.com/en-us/library/partnercenter/mt634717.aspx). | **guid**  
-**MS-Contract-Version:** | Required. Specifies the version of the API requested; generally **api-version: v1** unless otherwise specified in the [Scenarios](https://msdn.microsoft.com/en-us/library/partnercenter/mt634715.aspx) section.                                                                                                                          | **string**
-**If-Match:**            | Used for concurrency control. Some API calls require passing the ETag via the **If-Match** header. The ETag is usually on the resource and therefore, requires **GET**-ting the latest. For more information, see the ETag information in [Test and debug](https://msdn.microsoft.com/en-us/library/partnercenter/mt634717.aspx).         | **string**
+| **Accept:**              | Specifies the request and response type, **"application/json"**.                                                                                                                                                                                                                                                                          | **string**
+| **MS-RequestId:**        | A unique identifier for the call, used to ensure idempotency. In the case of a timeout, the retry call should include the same value. Upon receiving a response (success or business failure), the value should be reset for the next call.                                                                                               | **guid**  
+| **MS-CorrelationId:**    | A unique identifier for the call, useful the logs and network traces for troubleshooting errors. The value should be reset for every call. All operations should include this header. For more information, see the Correlation ID information in [Test and debug](https://msdn.microsoft.com/en-us/library/partnercenter/mt634717.aspx). | **guid**  
+| **MS-Contract-Version:** | Required. Specifies the version of the API requested; generally **api-version: v1** unless otherwise specified in the [Scenarios](https://msdn.microsoft.com/en-us/library/partnercenter/mt634715.aspx) section.                                                                                                                          | **string**
+|**If-Match:**            | Used for concurrency control. Some API calls require passing the ETag via the **If-Match** header. The ETag is usually on the resource and therefore, requires **GET**-ting the latest. For more information, see the ETag information in [Test and debug](https://msdn.microsoft.com/en-us/library/partnercenter/mt634717.aspx).         | **string**
 **X-Locale:**            | Optional. Specifies the language in which the rates are returned. Default is "en-US".                                                                                                                                                                                                                                                     | **string**
 
 #### 总结
@@ -28,7 +28,9 @@
 
 
 
-## Create a Customer(创建一个客户)
+
+## 客户管理
+### Create a Customer(创建一个客户)
 
 原文地址:[https://msdn.microsoft.com/en-us/library/partnercenter/mt634668.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634668.aspx)
 创建一个新的Customer，做为一个CSP Pantner，你可以代替这个Customer下单。这API也创建了以下内容：
@@ -37,22 +39,14 @@
 3. 注册了一个User做为这个customer的admin用户
 
 
-### 入参
 
-|参数|说明|
-| --- | --- |
-| BillingProfile | billing相关的profile|
-| CompanyProfile|公司相关的profile|
-
-
-### 返回
 
 返回[Customer](https://msdn.microsoft.com/en-us/library/partnercenter/dn974947.aspx) 对象
 
 
 创建客户的时候不用定义customerID(GUID)，response会把这个ID返回回来
 
-## Request a reseller relationship
+### Request a reseller relationship
 请求一个reseller关系
 
 原文地址:[https://msdn.microsoft.com/en-us/library/partnercenter/mt712736.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt712736.aspx)
@@ -65,7 +59,7 @@
 3. 客户可以删除合作伙伴的代理admin权限。删除以后，客户的账号和商业关系继续保留。如果客户需要帮助，合作伙伴必须call微软的客户支持来代替客户创建一个服务请求。
 
 
-## Get a customer by ID
+### Get a customer by ID
 
 
 根据客户ID获取客户信息，返回的客户信息包括了客户的billing信息、company信息、以及和reseller的关系（reseller或none）
@@ -80,14 +74,14 @@
 
 
 
-## Get a list of customers
+### Get a list of customers
 
 查询客户列表，不支持查询参数
 
 
 | Method  | Request URI  |               
 | --- | ---|
-**GET** | _{baseURL}_/v1/customers?size={size} HTTP/1.1
+| **GET** | _{baseURL}_/v1/customers?size={size} HTTP/1.1
 
 
 原文：[https://msdn.microsoft.com/en-us/library/partnercenter/mt634685.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634685.aspx)
@@ -97,7 +91,7 @@
 2. 返回的信息里面包含了客户的ID（微软是通过GUID生成的），也就是说把这个客户ID暴露出去问题也不大！
 
 
-## Get a customer by company name or domain
+### Get a customer by company name or domain
 查询客户信息。支持查询参数
 
 原文[https://msdn.microsoft.com/en-us/library/partnercenter/mt634681.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634681.aspx)
@@ -105,7 +99,7 @@
 这个地方从API的层面看不出来，filter参数到底支持哪几种过滤参数，难道是全支持，后面是一个搜索引擎吗？
 
 
-## Get a customer's orders 
+### Get a customer's orders 
 获取一个客户的所有订单，不支持查询参数
 
 原文[https://msdn.microsoft.com/en-us/library/partnercenter/mt634671.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634671.aspx)
@@ -121,21 +115,21 @@
 
 
 
-## Get a customer's subscriptions
+### Get a customer's subscriptions
 获取一个客户所有的subscription。Azure中Subscription被分为License based subscription和Usage based subscription
 
 原文:[https://msdn.microsoft.com/en-us/library/partnercenter/mt634673.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634673.aspx)
 
-| Method  | Request URI  |                                                                                                                               
+| Method  | Request URI  |
 | ------- | --- |
 | **GET** | {baseURL}/v1/customers/{customer-tenant-id}/subscriptions HTTP/1.1|
 
-## Update the nickname for a subscription
+### Update the nickname for a subscription
 更新subscription的nickname，就是给客户的subscription取一个别名
 原文:[https://msdn.microsoft.com/en-us/library/partnercenter/mt634726.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634726.aspx)
 
 
-## Get a customer's billing profile
+### Get a customer's billing profile
 获取一个客户的billing信息。
 
 原文：[https://msdn.microsoft.com/en-us/library/partnercenter/mt634670.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634670.aspx)
@@ -176,7 +170,7 @@
 ```
 
 
-## Update a customer's billing profile
+###Update a customer's billing profile
 更新客户的billing profile. API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634718.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634718.aspx)
 
 更新客户的profile信息，post的是一个很大的json字符串，看来是整个overwrite掉的。另外partner这边提供了更新客户billing profile的api，但没有提供更新客户company信息的api。billing profile包含了以下信息
@@ -218,13 +212,13 @@
 ```
 
 
-## Get a customer's company profile
+### Get a customer's company profile
 根据客户的ID，获取客户的公司信息
 
 原文:[https://msdn.microsoft.com/en-us/library/partnercenter/mt634682.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634682.aspx)
 
 
-### 返回信息
+返回信息
 返回的信息包括公司名、地址、联系方式、以及客户信息的URL
 
 ```
@@ -257,7 +251,7 @@
 ```
 
 
-## Create user accounts for a customer
+### Create user accounts for a customer
 创建一个客户账号（CustomerUser）。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt725328.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725328.aspx)
 
 ###Request syntax
@@ -296,10 +290,10 @@ MS-CorrelationId: 8a53b025-d5be-4d98-ab20-229d1813de76
 
 
 
-## Update user accounts for a customer
+### Update user accounts for a customer
 更新customer的用户账号信息. API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt725337.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725337.aspx)
 
-| Method    | Request URI                                                                                                                         
+| Method    | Request URI|
 | ---- | --- |
 | **PATCH** | {baseURL}/v1/customers/{customer-tenant-id}/users/<user-id> HTTP/1.1 |
 
@@ -307,7 +301,7 @@ MS-CorrelationId: 8a53b025-d5be-4d98-ab20-229d1813de76
 
 
 
-## Get a user account by ID
+### Get a user account by ID
 根据客户账号ID获取账号信息。 API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt745139.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt745139.aspx)
 
 
@@ -318,27 +312,27 @@ MS-CorrelationId: 8a53b025-d5be-4d98-ab20-229d1813de76
 
 
 
-## Get a list of all user accounts for a customer
+### Get a list of all user accounts for a customer
 获取用户所有的客户账号。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt725330.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725330.aspx)
 
 **Request syntax**
 
-| Method  | Request URI  |                                                                                                              
+| Method  | Request URI | 
 | ------- | ---- |
-**GET** | [{baseURL}/v1/customers/{customer-tenant-id}/users HTTP/1.1
+| **GET** | [{baseURL}/v1/customers/{customer-tenant-id}/users HTTP/1.1
 
 
 
 
 
-## Delete a user account for a customer
+### Delete a user account for a customer
 删除一个客户账号(CustomerUser)，不是删除Customer。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt725329.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725329.aspx)
 
 **Request syntax**
 
-| Method     | Request URI                                                                                                                                   
+| Method     | Request URI|
 | --- | ---|
-**DELETE** | {baseURL}/v1/customers/{customer-tenant-id}/users/{user-id} HTTP/1.1|
+| **DELETE** | {baseURL}/v1/customers/{customer-tenant-id}/users/{user-id} HTTP/1.1|
 
 
 
@@ -346,7 +340,7 @@ MS-CorrelationId: 8a53b025-d5be-4d98-ab20-229d1813de76
 2. 删除客户需要指定客户ID（GUID），这个可以通过客户账号的查询接口获取。
 
 
-## View deleted users for a customer
+### View deleted users for a customer
 获取客户(Customer)下已经删除的用户账号.API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt744323.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt744323.aspx)
 
 | Method  | Request URI        |
@@ -356,32 +350,31 @@ MS-CorrelationId: 8a53b025-d5be-4d98-ab20-229d1813de76
 1. 这个其实是一个统一的用户账号查询接口。需要查询参数配合{"Field":"UserStatus","Value":"Inactive","Operator":"equals"}.
 
 
-## Restore a deleted user for a customer
+### Restore a deleted user for a customer
 恢复一个已经删除的Customer User.
 API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt744322.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt744322.aspx)
 
 
-Method    | Request URI                                                                                                                                    
-|--- | ---| 
+| Method    | Request URI|
+|--- | --- | 
 |**PATCH** | _{baseURL}_/v1/customers/{customer-tenant-id}/users/{user-id}  HTTP/1.1|
 
 1. delete用户的时候，用户状态变成inactive。保留30天，之后就不能恢复了！
 
 
 
-
-## Get a list of available licenses
+### Get a list of available licenses
 获取客户可用的订阅和许可证. API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt725331.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725331.aspx)
 
 
 **Request syntax**
 
-| Method  | Request URI |                                                                                                                                  
+| Method  | Request URI |
 | --- | --- |
 | **GET** | [_{baseURL}_](https://msdn.microsoft.com/en-us/library/partnercenter/mt490977.aspx)/v1/customers/{customer-tenant-id}/subscribedskus HTTP/1.1|
 
 
-## Get user roles for a customer
+### Get user roles for a customer
 获取用户(Customer)的角色信息。这是一组API，提供了以下几个API
 1. 获取某个账号(CustomerAccount)的拥有的角色和权限
 2. 获取客户（Customer）全部的角色
@@ -391,7 +384,7 @@ API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt725334.aspx](
 
 **Request syntax**
 
-Method  | Request URI                                                                                                                                                  
+|Method  | Request URI|
 | --- | --- |
 | **GET** | {baseURL}/v1/customers/{customer-tenant-id}/users/{user-id}/directoryroles HTTP/1.1 |
 | **GET** | {baseURL}/v1/customers/{customer-tenant-id}/directoryroles HTTP/1.1 |               
@@ -403,21 +396,21 @@ Method  | Request URI
 
 
 
-## Remove a customer user from a role
+### Remove a customer user from a role
 从角色中删除一个用户. API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt745131.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt745131.aspx)
 
 
 
-Method     | Request URI                                                                                                                                                                  
+|Method     | Request URI|
 | --- | --- | 
 | **DELETE** | {baseURL}/v1/customers/{customer-tenant-id}/directoryroles/{role-ID}/usermembers/{user-ID} HTTP/1.1|
 
 
-## Set user roles for a customer
+### Set user roles for a customer
 设置一个用户角色。API[https://msdn.microsoft.com/en-us/library/partnercenter/mt725336.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt725336.aspx)
 
 
-Method   | Request URI                                                                                                                                                        
+| Method   | Request URI|
 | --- | --- |
 | **POST** | [_{baseURL}_](https://msdn.microsoft.com/en-us/library/partnercenter/mt490977.aspx)/v1/customers/{customer-tenant-id}/directoryroles/{role-ID}/usermembers HTTP/1.1|
 
@@ -430,14 +423,15 @@ Name                  | Type       | Required | Description
 **UserPrincipalName** | **string** | Y        | The name of the user principal.       
 **Attributes**        | **object** | Y        | Contains "ObjectType":"UserMember"   
 
+## 订单管理
 
-## Get a list of offer categories by market
+### Get a list of offer categories by market
 获取指定country/region的offer category列表。API定义[https://msdn.microsoft.com/en-us/library/partnercenter/mt634689.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634689.aspx)
 
 
 **Request syntax**
 
-Method  | Request URI                                                                                                                         
+|Method  | Request URI|
 | --- | --- |
 | **GET** | {baseURL}/v1/offercategories?country={country-id} HTTP/1.1 |
 
@@ -460,13 +454,14 @@ Response example
         }
 }        
 ```
-## Get a list of offers for a market
+
+### Get a list of offers for a market
 获取market下的商品。
 
 
-| Method  | Request URI                                                                                                                
+| Method  | Request URI|
 | --- | --- |
-**GET** | [_{baseURL}_](https://msdn.microsoft.com/en-us/library/partnercenter/mt490977.aspx)/v1/offers?country={country_id} HTTP/1.1 |
+|**GET** | [_{baseURL}_](https://msdn.microsoft.com/en-us/library/partnercenter/mt490977.aspx)/v1/offers?country={country_id} HTTP/1.1 |
 
 
 1. 返回的offer对象信息就比较多了. 包括了分类、产品、业务属性（是否自动续费、是否可购买）等信息
@@ -547,7 +542,7 @@ Response example
 
 这个接口设计的比较“冗余”，跟offer相关的product和category都会被关联输出
 
-## Get an offer by ID 
+### Get an offer by ID 
 跟据offerID获取offer信息。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634678.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634678.aspx)
 
 
@@ -560,7 +555,7 @@ Response example
 2. 获取offer也要求输入marketId，从API的设定来看，offer是强依赖market的
 
 
-## Create an order
+### Create an order
 创建一个订单。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634667.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634667.aspx)
 
 订单对象参考[https://msdn.microsoft.com/en-us/library/partnercenter/dn974958.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/dn974958.aspx)。 订单对象包含了订单行。订单行里面有商品ID
@@ -602,7 +597,7 @@ Expect: 100-continue
 
 
 
-## Get an order by ID
+### Get an order by ID
 根据orderID获取Order。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634679.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634679.aspx)
 
 
@@ -616,7 +611,7 @@ Expect: 100-continue
 1. 从返回的订单创建日期来看2015-10-08T10:42:36.54-07:00 ，这个也不是标准的UTC时间！
 
 
-## Purchase an add-on to a subscription
+### Purchase an add-on to a subscription
 在subscription中购买附加项。从API的定义上理解就是对现有的order增加附加项。从demo来看，订阅和订单是多对1的。
 实际上单个细的API是对订单进行操作的。
 
@@ -651,7 +646,7 @@ API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt778903.aspx](
 |---- | ---- |
 | **PATCH** | _{baseURL}_/v1/customers/{customer-tenant-id}/orders/{order-id} HTTP/1.1|
 
-## Reactivate a suspended subscription
+### Reactivate a suspended subscription
 把一个暂停的订阅重新激活。 API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634714.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634714.aspx)
 
 
@@ -666,10 +661,10 @@ API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt778903.aspx](
 1. 这个其实是一个通用的订阅PAPI，是直接调整了订阅的状态！
 
 
-## Suspend a subscription
+### Suspend a subscription
 暂停客户订阅。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt634716.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt634716.aspx)
 
-Method    | Request URI                                                                                                                                                        
+|Method    | Request URI|
 |--- | --- |
 | **PATCH** | _{baseURL}_/v1/customers/{customer-tenant-id}/subscriptions/{id-for-subscription}  HTTP/1.1 |
 
@@ -713,12 +708,12 @@ Connection: Keep-Alive
 1. 调用这个api的时候，需要提供OrderId。 
 
 
-## Transition a subscription
+### Transition a subscription
 升级客户的订阅到特定的目标订阅。先要获取客户现有的订阅，然后把需要升级的订阅再进行升级！API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt644395.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt644395.aspx)
 
 **Request syntax**
 
-|Method   | Request URI   |                                                                        
+|Method   | Request URI   |
 | ---- | ---- |
 | **GET**  | _{baseURL}_/v1/customers/{customer-tenant-id}/subscriptions/{id-for-subscription}/upgrades HTTP/1.1 |
 | **POST** | _{baseURL}_/v1/customers/{customer-tenant-id}/subscriptions/{id-for-target}/upgrades HTTP/1.1      |
@@ -904,5 +899,217 @@ Date: Fri, 29 Jan 2016 20:44:21 GMT
 ```
 
 1. 请求挺复杂的，需要把之前的订阅取出来，然后更想是购买一个新的offer。通过demo没看出来原来的那个订阅如何处理？原来的服务退掉，新的服务启用，金额补差价？
+
+
+
+### Get prices for Microsoft Azure
+获取Azure的价格。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt774619.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt774619.aspx)
+
+**Request syntax**
+
+| Method  | Request URI   |
+| ---- | --- |
+| **GET** | _{baseURL}_/v1/ratecards/azure&currency={currency}&region={region} |
+
+
+
+**URI parameters** 
+
+| Name         | Type      |  Required |  Description|
+| --- | --- | --- | --- |
+|**currency** | **string** | No        | Optional three letter ISO code for the currency in which the resource rates will be provided (e.g. "EUR"). The default is the currency associated with the market in the partner profile. |
+|**region**   | **string** | No        | Optional two-letter ISO country/region code that indicates the market where the offer is purchased (e.g. "FR"). The default is the country/region code set in the partner profile.|
+
+
+1. 通过这个接口可以获取指定market下的商品。或者跟合作伙伴绑定的。
+2. 这个接口不支持商品版本
+
+## 账单管理
+
+### Get a collection of invoices
+获取合作伙伴的发票。 [https://msdn.microsoft.com/en-us/library/partnercenter/mt712730.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt712730.aspx)
+
+
+**Request syntax**
+
+| Method  | Request URI     |
+| --- | ---- |
+| **GET** | _{baseURL}_/v1/invoices HTTP/1.1 |
+
+
+### Get invoice line items
+获取发票内容。API地址[https://msdn.microsoft.com/en-us/library/partnercenter/mt712733.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt712733.aspx)
+
+**Request syntax**
+
+Use the first syntax to return a full list of every line item for the given invoice. For large invoices, use the second syntax with a specified size and 0-based offset to return a paged list of line items.
+
+|Method  | Request URI|
+|--- | --- |
+| **GET** | _{baseURL}_/v1/invoices/{invoice-id}/lineitems/{billing-provider}/{invoice-line-item-type} HTTP/1.1 |
+|**GET** | _{baseURL}_/v1/invoices/{invoice-id}/lineitems/{billing-provider}/{invoice-line-item-type}?size={size}&offset=0 HTTP/1.1|
+
+
+### Get invoice by ID
+
+根据ID获取发票信息
+
+**Request syntax**
+
+| Method  | Request URI|
+| ------ | ----|
+| **GET** | [_{baseURL}_](https://msdn.microsoft.com/en-us/library/partnercenter/mt490977.aspx)/v1/invoices/{invoice-id} HTTP/1.1
+
+
+
+### Get a customer's utilization records for Azure
+API文档 [https://msdn.microsoft.com/en-us/library/partnercenter/mt791774.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt791774.aspx)
+
+
+**Request syntax**
+
+| Method  | Request URI |
+| ---- | ---- | 
+| **GET** | _{baseURL}_/v1/customers/{customer-tenant-id}/subscriptions/{subscription-id}/utilizations/azure?start_time={start-time}&end_time={end-time}&granularity={granularity}&show_details={True|False}&size={page-size} |
+
+
+1. azure的reseller api  ，没有提供statement的能力给reseller ，只提供了客户的计量和询价的服务给reseller ，就是说reseller需要自己取到客户的计量数据 自己去批价，算出钱
+
+
+### Get a subscription's resource usage information
+根据客户订阅获取订阅相关的使用信息。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt651646.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt651646.aspx)
+
+**Request syntax**
+
+|Method  | Request URI|
+| ------- | ------ |
+| **GET** | _{baseURL}_/v1/customers/{customer-tenant-id}/subscriptions/{id-for-subscription}/usagerecords/resources HTTP/1.1|
+
+
+### Get usage summary for all of a customer's subscriptions
+获取当前计费周期里面的客户的Azure服务使用。API地址[https://msdn.microsoft.com/en-us/library/partnercenter/mt651643.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt651643.aspx)
+
+**Request syntax**
+
+|Method  | Request URI|
+|------- | ----- |
+|**GET** | _{baseURL}_/v1/customers/{customer-tenant-id}/usagesummary HTTP/1.1|
+
+
+### Get the reseller's current account balance
+
+获取reseller当前的账户余额。API文档[https://msdn.microsoft.com/en-us/library/partnercenter/mt712732.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt712732.aspx)
+
+
+**Request syntax**
+
+| Method  | Request URI|
+| ------- | ---|
+|**GET** | _{baseURL}_/v1/invoices/summary HTTP/1.1 |
+
+
+## Provide support（服务支持）
+
+
+### Get the managed services for a customer by ID
+
+获取用户的管理服务信息。换句话说，获取你所有有代理和admin权限的订阅，reseller可以依据这些链接提供支持。API文档地址[https://msdn.microsoft.com/en-us/library/partnercenter/mt614220.aspx](https://msdn.microsoft.com/en-us/library/partnercenter/mt614220.aspx)
+
+**Request syntax**
+
+| Method  | Request URI |
+| ---- | ---- |
+|**GET** | [_{baseURL}_](https://msdn.microsoft.com/en-us/library/partnercenter/mt490977.aspx)/v1/customers/{customer-tenant-id}/managedservices HTTP/1.1 |
+
+
+### Create a service request
+为客户创建一个服务需求。这个意思就是以客户的名义创建工单！
+
+| Method   | Request URI|
+| ---- | --- |
+| **POST** | _{baseURL}_/v1/servicerequests/{agent-locale} HTTP/1.1 |
+
+
+**Request body**
+
+请求参数.
+
+|Name             | Type      |   Required | Description|
+|---------------- | -------------------------- | -------- | --- |
+|Title            | string                                                                                                                        | Y        | The service request title.|
+|Description      | string                                                                                                                        | Y        | The description.|
+|Severity         | string                                                                                                                        | Y        | The severity: "unknown", "critical", "moderate", or "minimal".|
+|SupportTopicId   | string                                                                                                                        | Y        | The id of the support topic.|
+|SupportTopicName | string                                                                                                                        | N        | The name of the support topic.|
+|Id               | string                                                                                                                        | N        | The id of the service request.|
+|Status           | string                                                                                                                        | N        | The status of the service request: "none", "open", "closed", or "attention_needed".|
+|Organization     | [ServiceRequestOrganization](https://msdn.microsoft.com/en-us/library/partnercenter/mt734227.aspx#ServiceRequestOrganization) | N        | Organization for which the service request is created.|
+|PrimaryContact   | [ServiceRequestContact](https://msdn.microsoft.com/en-us/library/partnercenter/mt734227.aspx#ServiceRequestContact)           | N        | Primary Contact on the service request.|
+|LastUpdatedBy    | [ServiceRequestContact](https://msdn.microsoft.com/en-us/library/partnercenter/mt734227.aspx#ServiceRequestContact)           | N        |  "Last Updated By" contact for changes to the service request.
+|ProductName      | string                                                                                                                        | N        | The name of the product that corresponds to the service request.
+|ProductId        | string                                                                                                                        | N        | The id of the product.
+|CreatedDate      | date                                                                                                                          | N        | The date of the service request's creation.
+|LastModifiedDate | date                                                                                                                          | N        | The date that the service request was last modified.
+|LastClosedDate   | date                                                                                                                          | N        | The date that the service request was last closed.
+|FileLinks        | array of [FileInfo](https://msdn.microsoft.com/en-us/library/partnercenter/mt735172.aspx#FileInfo) resources                  | N        | The collection of File Links that pertain to the service request.
+|NewNote          | [ServiceRequestNote](https://msdn.microsoft.com/en-us/library/partnercenter/mt734227.aspx#ServiceRequestNote)                 | N        | A note can be added to an existing service request.|
+|Notes            | array of [ServiceRequestNotes](https://msdn.microsoft.com/en-us/library/partnercenter/mt734227.aspx#ServiceRequestNote)       | N        | A collection of notes added to the service request.|
+|CountryCode      | string                                                                                                                        | N        | The country corresponding to the service request.|
+|Attributes       | object                                                                                                                        | N        | Contains "ObjectType": "ServiceRequest".|
+
+
+1. 这个地方是提工单必须有提供服务的地点（agent-locale），那如何解决工单垮区域流转的问题？
+
+### Get service request support topics
+
+获取服务请求的topic。
+
+
+|Method  | Request URI|
+| ---- | --- |
+|**GET** | _{baseURL}_/v1/servicerequests/supporttopics HTTP/1.1|
+
+
+
+### Get all service requests for a customer
+
+获取客户所有的服务请求
+
+|Method  | Request URI|
+|------- | ---- |
+|**GET** | _{baseURL}_/v1/customers/{customer-tenant-id}/servicerequests HTTP/1.1 |
+
+
+返回结果
+
+```
+{
+    "totalCount": 1,
+    "items": [{
+        "title": "Test",
+        "severity": 0,
+        "id": "615112491169010",
+        "status": 1,
+        "primaryContact": {
+            "lastName": "LastName",
+            "firstName": "FirstName"
+        },
+        "createdDate": "2015-11-24T01:07:00.863",
+        "lastModifiedDate": "2015-11-24T01:17:10.61",
+        "lastClosedDate": "0001-01-01T00:00:00",
+        "attributes": {
+            "objectType": "ServiceRequest"
+        }
+    }],
+    "attributes": {
+        "objectType": "Collection"
+    }
+}
+
+
+```
+
+1. 从返回的结果来看，并没有返回全部的服务请求的全部内容
+
 
 
