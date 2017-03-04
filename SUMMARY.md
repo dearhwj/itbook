@@ -196,7 +196,8 @@
 	* [Lynx纯文字终端网页浏览器](tools/lynx_brower.md)
 	* [终端分屏软件tmux教程](tools/tmux_manual.md)
 	* [Idea的Mybatis插件](tools/idea_mybatis_plugin.md)
-	* [ccat——上色的cat命令](tools/ccat.md)	
+	* [ccat——上色的cat命令](tools/ccat.md)
+	* [一行命令搞定下载脚本并本地运行](tools/download_web_script_run.md)
 * 程序猿宝典
 	* [值得程序员关注的微信公众号](programmer/wx_public.md)
 	* [程序员鄙视链](programmer/dev_down.md)
