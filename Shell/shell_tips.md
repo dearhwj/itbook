@@ -1,4 +1,11 @@
 # Shell Tips
+[Shell中获取当前IP地址](http://www.cnblogs.com/wangkangluo1/archive/2012/04/13/2446163.html)
+
+```
+LC_ALL=C ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1' |
+cut -d: -f2 | awk '{ print $1}'
+
+```
 [shell 中获取当前工作路径和命令文件所在绝对路径](http://blog.csdn.net/samxx8/article/details/51254546)
 	
 	basepath=$(cd `dirname $0`; pwd)
