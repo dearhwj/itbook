@@ -1112,4 +1112,14 @@ API文档 [https://msdn.microsoft.com/en-us/library/partnercenter/mt791774.aspx]
 1. 从返回的结果来看，并没有返回全部的服务请求的全部内容
 
 
+### Update a service request
+更新服务请求。
+
+**Request syntax**
+
+| Method    | Request URI|         
+| --------- | ----- |
+| **PATCH** | _{baseURL}_]/v1/servicerequests/{servicerequest-id} HTTP/1.1|
+
+
 
