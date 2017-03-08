@@ -8,7 +8,8 @@ Groovy has a special handling for methods whose last parameter is a closure. Whe
 flintstones.each() { println "hello, ${it}" }
 
 
-def flintstones = ["Fred","Barney", "Wilma"]println flintstones.findIndexOf(0) { it == "Wilma" }
+def flintstones = ["Fred","Barney", "Wilma"]
+println flintstones.findIndexOf(0) { it == "Wilma" }
      
 ```
 
@@ -60,7 +61,14 @@ A closure can have explicit return statements. If a return statement is encounte
 ### Adding a command-line interface
 
 ```
-#!/usr/bin/env groovyString.metaClass.search = { Closure c ->     GeeTwitter.search(delegate, c)}if (args)    evaluate(new File(args[0]))else    println "Usage: GeeTwitter <script>"
+#!/usr/bin/env groovy
+String.metaClass.search = { Closure c ->
+     GeeTwitter.search(delegate, c)
+}
+if (args)
+    evaluate(new File(args[0]))
+else
+    println "Usage: GeeTwitter <script>"
             
 ```
 
@@ -74,7 +82,21 @@ CompilationConfiguration gives us the ability to set a number of compilation att
 ```
 
 
- #!/usr/bin/env groovy   import org.codehaus.groovy.control.*   String.metaClass.search = { Closure c ->      GeeTwitterScript.search(delegate,c)   }   if(args) {      def conf = new CompilerConfiguration()      conf.setScriptBaseClass("GeeTwitterScript")      def shell = new GroovyShell(conf)      shell.evaluate (new File(args[0]))} else      println "Usage: GeeTwitter <script>"```
+ #!/usr/bin/env groovy
+   import org.codehaus.groovy.control.*
+   String.metaClass.search = { Closure c ->
+      GeeTwitterScript.search(delegate,c)
+   }
+   if(args) {
+      def conf = new CompilerConfiguration()
+      conf.setScriptBaseClass("GeeTwitterScript")
+      def shell = new GroovyShell(conf)
+      shell.evaluate (new File(args[0]))
+} else
+      println "Usage: GeeTwitter <script>"
+
+
+```
 
 
 
@@ -84,7 +106,10 @@ Groovy allows you to assign a method to a closure by using the & syntax. The clo
 
 ```
 
- def list = ["A", "B", "C"] def addit = list.&add addit "D" assert list ==  ["A", "B", "C", "D"]
+ def list = ["A", "B", "C"]
+ def addit = list.&add
+ addit "D"
+ assert list ==  ["A", "B", "C", "D"]
    
 ```
 
@@ -106,3 +131,24 @@ Adding a closure to an Expando to give a new method is a useful feature, but wha
 In addition to the regular Java Class object that we saw earlier when looking at re ection, each Groovy object also has an associated MetaClass Object. All Groovy classes secretly implement the groovy.lang.GroovyObject interface, which exposes a getMetaClass() method for each object.
 
 An important distinction between Java and Groovy is that in Groovy a method call never invokes a class method directly. A method invocation on an object is always dispatched in the  rst place to the GroovyObject.invokeMethod() of the object. In the default case, this is relayed onto the MetaClass.invokeMethod() for the class and the MetaClass is responsible for looking up the actual method. This indirect dispatching is the key to how a lot of Groovy power features work as it allows us to hook ourselves into the dispatching process in interesting ways.
+
+# BuildSupport
+Nodes are created from the top down. The createNode hook for the parent is called  rst. The createNode hook for a child is called next, and setParent is called for each individual child after both the parent and the child have been created. The nodeCompleted hook is called only after all of the children have been created and their parent-child relations set.
+参考文档:[ [groovy]通过builder了解groovy的动态性（转） ](http://blog.itpub.net/12467/viewspace-148283/)
+
+四种形式的createNode方法，groovy会根据你使用的形式自动调用相应的方法
+
+|col 1      | col 2                                     | col 3       |
+|---------- | ----------------------------------------- | ------------|
+|方法名        | 参数形式                                      | 使用样例 |
+|createNode | Object name                               | foo()       |
+|createNode | Object name, Object value                 | foo('x') |
+|createNode | Object name, Map attributes               | foo(a:1)  |
+|createNode | Object name, Map attributes, Object value | foo(a:1, 'x')|
+
+
+void setParent(Object parent, Object child)
+设置树状继承层次，当你创建子元素的时候，该方法就会被调用
+
+void nodeCompleted(Object parent, Object node)
+在子元素定义完毕后，该方法也会被自动调用。
