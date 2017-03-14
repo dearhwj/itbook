@@ -45,3 +45,20 @@
 
 	<img src='//myimagehosting.com/images/myphoto.jpg' />
 	这行代码如果放在HTTP的网页上，那么请求的资源就是HTTP://myimagehosting.com/images/myphoto.jpg，如果放在HTTPS上，则访问的资源就是HTTPS的。这样一来我们就无需为HTTP和HTTPS各自准备不同的网页了。
+
+[canonical 标签介绍](http://www.chinaz.com/web/2011/0630/192530.shtml)
+
+	rel=”canonical” 这个标签已经推出很久了，canonical 是 Google、雅虎、微软等搜索引擎一起推出的一个标签，它的主要作用是用来解决由于网址形式不同内容相同而造成的内容重复问题。这个标签对搜索引擎作用非常大，简单的说它可以让搜索引擎只抓取你想要强调的内容。
+
+	举个简单的例子，来看下如下的网址：
+
+	http://www.yzznl.cn/archives/2011-snow.html
+	http://www.yzznl.cn/archives/2011-snow.html?comments=true
+	http://www.yzznl.cn/archives/2011-snow.html?postcomment=true
+
+	这三个网址形式不同，第一个才是我们想显示给搜索引擎和用户的网址，但是打开它们网站的内容却是相同的。一般像这种状况搜索引擎是很难分辨出来哪个才是网站主想要强调的网址，这样会直接造成搜索引擎在你的站里面收录到大量重复的内容，现在我们通过 canonical 标签就可以解决这些棘手的问题了。
+
+	像上面的状况，我们只需要在网址的 head 区域添加如下代码：
+
+	<link rel='canonical' href='http://www.yzznl.cn/archives/2011-snow.html' />
+	这样的话 Google 等搜索引擎最终都会只收录 canonical 标签指定的这个网址，搜索引擎会将其它页面作为重复内容，这些重复的内容不再参与页面的权重分配（如 Google 的 PR 值）。

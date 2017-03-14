@@ -53,6 +53,7 @@
 	* [Category和use块](groovy/groovy_category_use.md)
 	* [Groovy语言读取Properties文件怎么读](groovy/groovy_properties.md)
 	* [设置Groovy的maven编译环境](groovy/setup_groovy_maven_compile.md)
+    * [“*.”操作符-连foreach都省了](groovy/groovy_star_dot_operation.md)
 * [Python](python/README.md)
 	* [转载:python判断指定的端口是否被占用](python/if_port_is_used.md) 
 	* [Python IDE设置](python/python_ide_environment.md)
@@ -182,6 +183,7 @@
 	* [几个大型网站提供的IP API接口调用方法](web/ip_query.md)
 	* [HTTPS的设计过程](web/https_process.md)
 	* [HTTPS知识储备](web/https_required_security_knowledge.md)
+    * [RESTFUL API HTTP STATUS CODE整理](web/restful_api_http_status_code.md)
 * [云计算]
 	* [ODPS](cloud_computing/odps_intro.md)
 	* [Azure消费数据API](cloud_computing/aliyun_vs_azure_billing_api.md)

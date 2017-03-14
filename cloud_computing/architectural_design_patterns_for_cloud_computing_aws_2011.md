@@ -48,7 +48,7 @@
 
 
 
-###Build Security in every layer（Design with Security in mind）
+### Build Security in every layer（Design with Security in mind）
 1. Create distinct Security Groups for each Amazon EC2 cluster 
 2. Use group-based rules for controlling access between layers Restrict external access to specific IP ranges
 3. Encrypt data “at-rest” in Amazon S3
@@ -56,3 +56,18 @@
 5. Consider encrypted file systems in EC2 for sensitive data 
 6. Rotate your AWS Credentials, Pass in as arguments encrypted 
 7. Use MultiFactor Authentication
+
+###  Don't fear constraints(Re-think architectural constraints)
+1. More RAM? Distribute load across machines Shared distributed cache
+2. Better IOPS on my database? Multiple read-only / sharding / DB clustering
+3. Hardware Config does not match? Implement Elasticity
+4. Your hardware failed or messed up config?simply throw it away and switch to new hardware with no additional cost
+5. Performance: Caching at different levels (Page, Render, DB)
+
+### Think Parallel(Serial and Sequential is now history)
+1. Experiment different architectures in parallel
+2. Multi-threading and Concurrent requests to cloud services
+3. Run parallel MapReduce Jobs
+4. Use Elastic Load Balancing to distribute load across multiple servers Decompose a Job into its simplest form – and with “shared nothing”
+5. The beauty of the cloud shines when you combine elasticity and parallelization
+  
