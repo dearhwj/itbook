@@ -26,6 +26,7 @@
 	* [蔡学镛的软件架构设计方法论](architecture/architecture_design_caixueyong.md)
 	* [简单之道](architecture/the_zen_of_simple.md)
     * [《Google首席架构师谈Java的命运》阅读笔记](architecture/google_java_architecture_java_fate.md)
+    * [软件设计的原则整理](architecture/software_design_principles.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)

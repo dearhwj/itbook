@@ -152,3 +152,14 @@ void setParent(Object parent, Object child)
 
 void nodeCompleted(Object parent, Object node)
 在子元素定义完毕后，该方法也会被自动调用。
+
+# Groovy bindings
+The binding is where instances of variables referenced within the script are stored. The binding is an instance of the class groovy.lang.Binding, and we can access it in any script by referencing the built-in variable binding
+
+```
+def Binding binding = new Binding()
+binding.message = "Hello, World"
+shell = new GroovyShell(binding)
+shell.evaluate("println message")
+   
+```

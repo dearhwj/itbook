@@ -27,3 +27,9 @@
 21. Content Negotiation-内容协商。如果你想支持资源的多种表达形式，你能使用内容协商，比如accept头或者不同的URL(例如?format=json)
 22. URI Templates -[URI Templates](http://tools.ietf.org/html/rfc6570)向客户端提供URL组合能力,或者说明你的URL访问模式给你的最终用户
 23. Design for Intent-面向内部设计。不要只是通过API暴露你内部业务对象。设计API要有语义，而且满足用户的使用场景。
+24. Versioning-API支持版本
+25. Authorization-授权
+26. Bulk Operations-支持批量操作
+27. Pagination-支持分页。
+28. Unicode-URL里支持Unicode
+29. Error Logging-可以把客户输入导致的错误和系统导致的错误输出到两个不同的文件中。
