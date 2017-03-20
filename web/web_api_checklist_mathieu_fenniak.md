@@ -27,3 +27,32 @@
 21. Content Negotiation-内容协商。如果你想支持资源的多种表达形式，你能使用内容协商，比如accept头或者不同的URL(例如?format=json)
 22. URI Templates -[URI Templates](http://tools.ietf.org/html/rfc6570)向客户端提供URL组合能力,或者说明你的URL访问模式给你的最终用户
 23. Design for Intent-面向内部设计。不要只是通过API暴露你内部业务对象。设计API要有语义，而且满足用户的使用场景。
+24. Versioning-API支持版本
+25. Authorization-授权
+26. Bulk Operations-支持批量操作
+27. Pagination-支持分页。
+28. Unicode-URL里支持Unicode
+29. Error Logging-可以把客户输入导致的错误和系统导致的错误输出到两个不同的文件中。
+
+## Content
+30. Content Types-
+31. HATEOAS((Hypermedia as the Engine of Application State)
+32. Date/time-你需要在API里面提供date/time需要包含时区信息,可以参考[RFC3339](http://tools.ietf.org/html/rfc3339)
+
+## 安全
+33. SSL –考虑是不是API只支持HTTPS
+34. Cross-site Request Forgery (CSRF)-防止APICSRF攻击。参考[protecting APIs from CSRF attacks](https://mathieu.fenniak.net/is-your-web-api-susceptible-to-a-csrf-exploit/)
+35. Throttling-限流，如果API的调用超过阈值，返回503，并且在头部返回 [Retry-After header.](https://tools.ietf.org/html/rfc2616#section-14.37)
+36. Subtle Denial of Service -限流可以保护一些你的API被简单攻击打垮。但有[Slowloris](http://en.wikipedia.org/wiki/Slowloris), [Billion laughs](http://en.wikipedia.org/wiki/Billion_laughs), and [ReDoS](http://en.wikipedia.org/wiki/Regular_expression_Denial_of_Service) 这类攻击方案不需要太多的资源就可以发起DoS攻击。
+
+
+## Client
+37. Connection Keep-Alive
+38. 401 before Authorization-
+39. Expect: 100-continue
+
+## Other Stuff
+40. Documentation
+41. Design with a Customer-Design for Intent
+42. Feedback 
+43. Automated Testing
