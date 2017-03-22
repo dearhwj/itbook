@@ -9,8 +9,11 @@
 	* [Twitter的分布式自增ID算法Snowflake](algorithm/snowflake.md)
 	* [LCS 最大公共序列算法](algorithm/longest_common_subsequence_problem.md)
 	* [其他算法](algorithm/other_algorithms.md)
-* [硬件](hardware/README.md)
-	* [这几个数字每个程序员都应该知道](hardware/numbers_everyone_should_know.md)
+* [编程]
+	* [并发编程]
+		* [Preshing on Programming笔记](programming/parallel/preshing_on_programming_reading.md)
+		* [Read-Copy Update](programming/parallel/read_copy_update.md)
+	* [这几个数字每个程序员都应该知道](hardware/numbers_everyone_should_know.md) 
 * [架构](architecture/README.md)
 	* [REST](architecture/rest.md)
 	* [亚马逊的架构](architecture/aws_architecture_collection.md)
@@ -27,6 +30,7 @@
 	* [简单之道](architecture/the_zen_of_simple.md)
     * [《Google首席架构师谈Java的命运》阅读笔记](architecture/google_java_architecture_java_fate.md)
     * [软件设计的原则整理](architecture/software_design_principles.md)
+    * [分布式事务处理](architecture/distributed_transaction.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)
