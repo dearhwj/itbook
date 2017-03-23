@@ -256,4 +256,5 @@
 	* [学习曲线与Hacking大脑](beyondbook/learning_curve_hacking_brain.md)
 	* [我们不能在创造问题的思维层面去思考解决方法](beyondbook/we_cannt_solve_problem.md)
 	* [乔布斯：遗失的访谈 ](beyondbook/losting_talking_of_jobs.md)
-	* [阅读笔记:iPhone问世10周年之际，在苹果干了17年的前员工有话对库克说](reading_notes/reading_note_what_is_problem_about_apple.md)crh
+	* [阅读笔记:iPhone问世10周年之际，在苹果干了17年的前员工有话对库克说](reading_notes/reading_note_what_is_problem_about_apple.md)
+	* [各种效应大全](beyondbook/effects.md)
