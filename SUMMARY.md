@@ -13,7 +13,7 @@
 	* [并发编程]
 		* [Preshing on Programming笔记](programming/parallel/preshing_on_programming_reading.md)
 		* [Read-Copy Update](programming/parallel/read_copy_update.md)
-	* [这几个数字每个程序员都应该知道](hardware/numbers_everyone_should_know.md) 
+	* [这几个数字每个程序员都应该知道](programming/numbers_everyone_should_know.md) 
 * [架构](architecture/README.md)
 	* [REST](architecture/rest.md)
 	* [亚马逊的架构](architecture/aws_architecture_collection.md)
