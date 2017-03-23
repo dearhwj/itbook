@@ -76,6 +76,7 @@
 	* [System.Properties和System.getenv区别](java/system_getenv_vs_getproperty.md)
 	* [Java spi机制浅谈](java/java_spi_mechanism.md)
 	* [用命令行编译整个java工程](java/compile_whole_java_project.md)
+	* [BitSet的使用以及源代码分析](java/bitset.md)
 	* [WEBX](webx/README.md)
 		* [WEBX Tips](java/webx/webx_tips.md)
 	* [Spring](spring/README.md)
