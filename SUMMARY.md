@@ -60,6 +60,7 @@
 	* [Groovy语言读取Properties文件怎么读](groovy/groovy_properties.md)
 	* [设置Groovy的maven编译环境](groovy/setup_groovy_maven_compile.md)
     * [“*.”操作符-连foreach都省了](groovy/groovy_star_dot_operation.md)
+    * [Groovy左移位操作符](groovy/groovy_shift_left_operation.md)
 * [Python](python/README.md)
 	* [转载:python判断指定的端口是否被占用](python/if_port_is_used.md) 
 	* [Python IDE设置](python/python_ide_environment.md)
