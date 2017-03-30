@@ -36,4 +36,4 @@ memcached有所采用，不过性能好像不是很好，主要是expand hashtab
 
 
 ### 参考资料
-[http://chuansong.me/n/2035214](http://chuansong.me/n/2035214)
+[从证券交易所的需求来谈谈HashTable](http://chuansong.me/n/2035214)
