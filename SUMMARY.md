@@ -86,6 +86,7 @@
 		* [WEBX Tips](java/webx/webx_tips.md)
 	* [Spring](spring/README.md)
 		* [Spring小窍门](java/spring/spring_tips.md)
+	* [JAVA并发编程](java/java_parallel_programming.md)
 * [Javascript](Javascript/README.md)
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)
@@ -197,6 +198,7 @@
 	* [HTTPS的设计过程](web/https_process.md)
 	* [HTTPS知识储备](web/https_required_security_knowledge.md)
     * [RESTFUL API HTTP STATUS CODE整理](web/restful_api_http_status_code.md)
+    * [面向资源的体系架构](web/restful_roa.md)
     * [翻译：The Web API Checklist](web/web_api_checklist_mathieu_fenniak.md)
 * [云计算]
 	* [ODPS](cloud_computing/odps_intro.md)

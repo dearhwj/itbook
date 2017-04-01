@@ -49,9 +49,12 @@ z 将光标所在行移动到屏幕顶端
 
 zz 把光标下的文字置于屏幕中央
 
-zz 将光标所在行移动到屏幕中间
 
 z- 将光标所在行移动到屏幕低端
+
+zt 将当前行置于屏幕顶端
+
+zb 将当前行置于屏幕底端
 
 
 ## 在屏幕中移动
@@ -128,3 +131,6 @@ advanced commands in Vim: t,f,m,e,J
 CTRL+e 移动光标所在行的位置，比如我光标在第10行，我想光标不动，但是所在行向上移
 
 CTRL+y 同上，但是向下移
+
+% match of next brace, bracket, comment
+
