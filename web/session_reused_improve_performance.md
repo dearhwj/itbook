@@ -4,6 +4,8 @@
 ## Session ID重用
 
 　　重用一个加密的会话是很容易，前提是客户端和服务器端都保存了会话key，通过每个连接给出的唯一标识，服务器知道一个进来的连接是否已经在之前创建过，如果服务器在会话中也已经有会话key，它就能重用。Session ID需要服务器保存会话状态如会话key等，这样下次连接才能复用，这就需要服务器保存很多状态信息，耗费了大量内存。Session ID共享复用在Apache中可以通过SSLSessionCache 配置，在nginx可以通过ssl_session_cache设置。
+　　
+　　TLS连接时可以复用Session ID，可以减少一个来回的过程。服务器使用了负载均衡，一个域名对应了多个ip，会根据服务器的负载情况动态调整。Session ID A是保存在服务器A上的，服务器B没有Session ID A的记录。就导致了Session ID复用的失效。可以考虑在使用负载均衡时Session ID由一台服务器统一创建，并分发到其他服务器，这样就不会导致复用失效的问题。
 
 ## Session ticket重用
 
@@ -22,3 +24,10 @@
 [重用Session提高https性能](http://www.jdon.com/performance/speeding-up-https-with-session-resumption.html)
 
 [How often should TLS Session Ticket Keys be rotated?](https://security.stackexchange.com/questions/97303/how-often-should-tls-session-ticket-keys-be-rotated)
+
+
+[TLS False Start究竟是如何加速网站的](https://segmentfault.com/a/1190000004003319)
+
+[Nginx的Session-sticky技术的软件负载均衡方案原理](https://wenku.baidu.com/view/19b6774fa2161479171128e0.html)
+
+[HTTPS重用Session ID与负载均衡](http://blog.csdn.net/myzlhh/article/details/50179229)

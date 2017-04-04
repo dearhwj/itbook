@@ -200,6 +200,7 @@
     * [RESTFUL API HTTP STATUS CODE整理](web/restful_api_http_status_code.md)
     * [面向资源的体系架构](web/restful_roa.md)
     * [翻译：The Web API Checklist](web/web_api_checklist_mathieu_fenniak.md)
+    * [重用Session提高https性能](web/session_reused_improve_performance.md)
 * [云计算]
 	* [ODPS](cloud_computing/odps_intro.md)
 	* [Azure消费数据API](cloud_computing/aliyun_vs_azure_billing_api.md)
