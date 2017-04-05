@@ -16,7 +16,9 @@
 		* [Read-Copy Update](programming/parallel/read_copy_update.md)
 		* [CAS(Compare And Swap)原理](programming/parallel/cas.md)
 		* [读写锁](programming/parallel/read_write_lock.md)
-	* [这几个数字每个程序员都应该知道](programming/numbers_everyone_should_know.md) 
+    * [硬件] 
+		* [这几个数字每个程序员都应该知道](programming/hardware/numbers_everyone_should_know.md)
+		* [cpu cache line 原理](programming/hardware/cpu_cache_line.md)
 * [架构](architecture/README.md)
 	* [REST](architecture/rest.md)
 	* [亚马逊的架构](architecture/aws_architecture_collection.md)
