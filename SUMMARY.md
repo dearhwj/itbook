@@ -19,6 +19,7 @@
     * [硬件] 
 		* [这几个数字每个程序员都应该知道](programming/hardware/numbers_everyone_should_know.md)
 		* [cpu cache line 原理](programming/hardware/cpu_cache_line.md)
+		* [CPU Cache和内存一致性](programming/hardware/cpu_cache_memory.md)
 * [架构](architecture/README.md)
 	* [REST](architecture/rest.md)
 	* [亚马逊的架构](architecture/aws_architecture_collection.md)
@@ -255,6 +256,7 @@
 	* [团队管理思考NO1](tech_management/my_team_management_speech_01.md)
 	* [严格是大爱](tech_management/strictness_is_big_love.md)
 	* [Amazon的核心价值观](tech_management/amazon_kernal_values.md)
+	* [《大教堂和市集》阅读笔记](tech_management/the_cathedral_and_the_bazaar.md)
 * 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
