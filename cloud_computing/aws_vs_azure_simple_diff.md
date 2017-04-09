@@ -1,4 +1,4 @@
-# AWS & Azure API比较
+# AWS & Azure简单对比
 ## 账号和订阅
 
 Azure的 subscription（订阅）是计费和权限管控的组。AWS是把所有的资源都跟AWS的的账号直接关联的。而订阅是独立于它们的owner账号，可以重新分配给新的owner。
@@ -28,7 +28,9 @@ Azure提供了不同的管理界面。Web interface、Command Line、PowerShell�
 在Azure，容错域( fault domain)指的是共享了同一个物理电源和网络交换机。你可以利用可用集(availability sets )把多个VM分配到多个容错区。如果实例安排到同一个可用集里面，Azure会把他们均匀地分配到几个容错域。在一个容错区里面出现的电力和网络的故障不会影响到其他的容错区。
 ![](https://docs.microsoft.com/en-us/azure/architecture/aws-professional/images/zone-fault-domains.png)
 
+在Azure，可以使用“配对region”(paired regions)来实现跨2个预定义的物理region的冗余，以确保当整个region都不可用的时候，你的服务也是可以用的。不同于AWS的可用区，AWS的可用区是物理上分离但相隔比较近的数据中心。Azure的paired regions通常至少相隔300英里。这么做的目的是确保当出现了大规模的灾难的时候，只会影响配对region里面的其中一个。配对region间保证数据库和存储服务数据的同步，并且同一时间内配对region中只有其中一个会进行平台升级。
 
+Azure的异地冗余存储服务会自动备份到相应的配对region。
 
 ### 参考资料
 

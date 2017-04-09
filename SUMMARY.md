@@ -207,6 +207,7 @@
 * [云计算]
 	* [ODPS](cloud_computing/odps_intro.md)
 	* [Azure消费数据API](cloud_computing/aliyun_vs_azure_billing_api.md)
+	* [AWS & Azure简单对比](cloud_computing/aws_vs_azure_simple_diff.md)
 * [开发工具](tools/README.md)
 	* [IntelliJ IDEA快捷键](tools/idea_shortcuts.md) 
 	* [IntelliJ IDEA Tips](tools/idea_tips.md) 
