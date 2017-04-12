@@ -1,5 +1,5 @@
 # AWS & Azure简单对比
-## 账号和订阅
+## 账号 vs 订阅
 
 Azure的 subscription（订阅）是计费和权限管控的组。AWS是把所有的资源都跟AWS的的账号直接关联的。而Azure的订阅是独立于它们的owner账号，可以重新分配给新的owner。
 
