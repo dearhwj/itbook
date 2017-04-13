@@ -258,6 +258,7 @@
 	* [严格是大爱](tech_management/strictness_is_big_love.md)
 	* [Amazon的核心价值观](tech_management/amazon_kernal_values.md)
 	* [《大教堂和市集》阅读笔记](tech_management/the_cathedral_and_the_bazaar.md)
+	* [Linus Trovalds谈Linux内核开发管理风格](tech_management/linus_kernel_development_management_sytle.md)
 * 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
