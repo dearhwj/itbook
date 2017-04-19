@@ -16,6 +16,7 @@
 		* [Read-Copy Update](programming/parallel/read_copy_update.md)
 		* [CAS(Compare And Swap)原理](programming/parallel/cas.md)
 		* [读写锁](programming/parallel/read_write_lock.md)
+		* [AutoResetEvent和ManualResetEvent的区别](programming/autoresetevent_manualresetevent.md)
     * [硬件] 
 		* [这几个数字每个程序员都应该知道](programming/hardware/numbers_everyone_should_know.md)
 		* [cpu cache line 原理](programming/hardware/cpu_cache_line.md)
