@@ -265,6 +265,7 @@
 	* [知乎：如何让公司员工达到群体性努力](tech_management/team_hard_work.md)
 * 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
+	* [Why、What、How的策略运用](beyondbook/why_how_what.md)
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
 	* [百万富翁的生活习惯总结](beyondbook/millionaire_habits.md)
 	* [你的生活逃不出这25张图](beyondbook/your_life_25_sentence.md)

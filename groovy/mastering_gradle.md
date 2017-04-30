@@ -41,3 +41,20 @@ Gradle还提供了-P命令行参数来设置Property，比如：
 
 我们知道，在java中，我们可以通过-D参数定义JVM的系统参数，然后在代码中可以可以通过System.getProperty()进行获取。在Gradle中，我们也可以通过-D的方式向Project传入Property，只是此时我们需要遵循一些约定：每一个通过-D方式声明的Property都需要以“org.gradle.project”为前缀	
 
+### task的执行顺序
+被依赖的任务先执行，任务之间没依赖的话，按字母顺序表进行。
+另外，提供了3个规则来控制
+
+* shouldRunAfter
+* mustRunAfter
+* finalyzedBy (more strict in nature)
+
+
+The difference between mustRunAfter and shouldRunAfter is that mustRunAfter is strict ordering, whereas shouldRunAfter is lenient ordering.
+
+
+### task任务执行条件
+prodTask.onlyIf {project.hasProperty('environment') && project.environment=='prod' }
+
+
+### Task rules
