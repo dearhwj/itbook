@@ -39,6 +39,7 @@
     * [《Google首席架构师谈Java的命运》阅读笔记](architecture/google_java_architecture_java_fate.md)
     * [软件设计的原则整理](architecture/software_design_principles.md)
     * [分布式事务处理](architecture/distributed_transaction.md)
+    * [缓存处理](architecture/cache_handle.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)

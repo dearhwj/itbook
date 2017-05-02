@@ -54,7 +54,16 @@ The difference between mustRunAfter and shouldRunAfter is that mustRunAfter is s
 
 
 ### task任务执行条件
-prodTask.onlyIf {project.hasProperty('environment') && project.environment=='prod' }
+
+	prodTask.onlyIf {project.hasProperty('environment') && project.environment=='prod' }
 
 
 ### Task rules
+
+
+### Custom tasks
+
+Gradle provides different ways to add custom tasks in the build script:• The build file• The buildSrc directory inside the project directory• Create a standalone Groovy project
+
+
+A custom task is a Java or Groovy class that extends from DefaultTask. We can use the @TaskAction annotation to de ne the task actions. You can add multiple actions in a single task. They will execute in the order they are de ned. 
