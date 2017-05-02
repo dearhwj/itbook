@@ -178,6 +178,7 @@
 	* [Jenkins二次开发](test/jenkins_dev.md)
 	* [如何进行故障分析](test/how_write_bug_analysis_report.md)
 	* [How deep are your unit tests](test/how_deep_are_your_unit_tests.md)
+	* [转载:浅谈TDD、BDD与ATDD软件开发](test/tdd_bdd_atdd.md)
 	* [压力测试](test/pressure_test.md)
 		* [一分钟学会AB](test/ab_one_minute.md)
 * [VIM](vim/README.md)
