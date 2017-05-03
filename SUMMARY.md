@@ -18,6 +18,7 @@
 		* [读写锁](programming/parallel/read_write_lock.md)
 		* [AutoResetEvent和ManualResetEvent的区别](programming/parallel/autoresetevent_manualresetevent.md)
 		* [自旋锁](programming/parallel/spin_lock.md)
+		* [Hazelcast教程](programming/parallel/hazelcast.md)
     * [硬件] 
 		* [这几个数字每个程序员都应该知道](programming/hardware/numbers_everyone_should_know.md)
 		* [cpu cache line 原理](programming/hardware/cpu_cache_line.md)
