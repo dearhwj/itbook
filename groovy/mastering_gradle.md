@@ -66,4 +66,15 @@ The difference between mustRunAfter and shouldRunAfter is that mustRunAfter is s
 Gradle provides different ways to add custom tasks in the build script:• The build file• The buildSrc directory inside the project directory• Create a standalone Groovy project
 
 
-A custom task is a Java or Groovy class that extends from DefaultTask. We can use the @TaskAction annotation to de ne the task actions. You can add multiple actions in a single task. They will execute in the order they are de ned. 
+A custom task is a Java or Groovy class that extends from DefaultTask. We can use the @TaskAction annotation to de ne the task actions. You can add multiple actions in a single task. They will execute in the order they are defined. 
+
+
+### Gradle's in-built plugins
+
+* The Java plugin* The Groovy plugin* The Scala plugin* The War plugin
+* The Checkstyle plugin* The FindBugs plugin* The Sonar plugin* The Sonar Runner plugin* The PMD plugin
+* The Eclipse plugin* The IDEA plugin### Dependency management  
+
+
+
+[https://plugins.gradle.org/](https://plugins.gradle.org/)

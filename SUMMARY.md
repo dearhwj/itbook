@@ -49,6 +49,7 @@
 * [数据库](database/README.md)
 	* [Mysql小技巧](database/mysql_tips.md)
 	* [SQL小技巧](database/sql_tips.md)
+	* [转载:MySQL中Cardinality值的介绍](database/mysql_cardinality.md)
 * [Groovy](groovy/README.md)
 	* [Groovy小技巧](groovy/groovy.md)	
 	* [Groovy环境配置](groovy/groovy_environment.md) 
