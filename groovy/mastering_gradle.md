@@ -74,7 +74,61 @@ A custom task is a Java or Groovy class that extends from DefaultTask. We can us
 * The Java plugin* The Groovy plugin* The Scala plugin* The War plugin
 * The Checkstyle plugin* The FindBugs plugin* The Sonar plugin* The Sonar Runner plugin* The PMD plugin
 * The Eclipse plugin* The IDEA plugin### Dependency management  
+ Gradle provides a very easy and systematic way to de ne dependencies of the project using the dependencies closure in the following way:
 
+```    compile group: 'log4j', name: 'log4j', version: '1.2.16'
+	compile 'log4j:log4j:1.2.16','junit:junit:4.10'   
+	compile ('log4j:log4j:1.2.16') ) {           // extra configurations	}
+```
+
+
+* compile
+* runtime
+* testCompile
+* testRuntime
+* archives
+* default
+
+
+dependencies{     compile('commons-httpclient:commons-httpclient:3.1') {
+	exclude group:'commons-codec' // exclude by group  	// exclude group:'commons-codec',module:'commons-codec'
+
+
+### Version conficts
+Gradle supports different strategies to resolve the version con icts scenarios, they are as follows:
+* Latest version: By default Gradle applies the get latest strategy to resolve version conflicts issues if it finds different versions of the same JAR file. In the preceding scenario, it will skip version 1.1 and download the commons- codec JAR of version 1.2.
+* fail on conflict: The Get latest strategy might not work always.Sometimes, rather than getting the latest version, you might want thebuild to fail for further investigation. To enable this, you apply the failOnVersionConflict() configuration by adding the following closure:
+
+	```
+		configurations.all {       resolutionStrategy {         failOnVersionConflict()       }		}
+	```
+* Force specific version: In conflict situations, another alternative could be, rather than failing the build, you can download specific version of a JAR. This can be achieved by using force flag:
+	```        dependencies {         compile group:'commons-httpclient', name:'commons-       httpclient', version:'3.1'         compile group:'commons-codec',name:'commons-codec',       version:'1.1', force:true       }
+	```
+	
+### Repositories conguration
+For dependencies listed in the dependencies closure, Gradle searches repositories in sequential order. If it  nds a library or a dependency in one of the repositories (if multiple repositories are con gured), it skips searching other repositories. In the next section, we will learn how to con gure different repositories.
+
+```
+repositories {         mavenCentral()
+         jcenter()
+         mavenLocal()
+         
+         ivy {           url "http://<ivyrepositorylocation>"           layout "ivy"  // valid values are maven, gradle, ivy         }
+         
+         
+         
+         }```
+
+1. mavenCentral:Maven Central repository
+1. jcenter:Maven JCenter repository
+1. mavenLocal:Maven local Repository
+2. ivy:Ivy repositoryTo use your organization's private repository, you can configure the Repositories location in the following format
+
+```
+repositories {         maven {           url "http://private.repository/path"           credentials {             username 'guest'             password '123123'           }         }         ivy { // For Ivy repositories         url "http://private.repository/path"         }}
+
+```
 
 
 [https://plugins.gradle.org/](https://plugins.gradle.org/)

@@ -282,3 +282,4 @@
 	* [乔布斯：遗失的访谈 ](beyondbook/losting_talking_of_jobs.md)
 	* [阅读笔记:iPhone问世10周年之际，在苹果干了17年的前员工有话对库克说](reading_notes/reading_note_what_is_problem_about_apple.md)
 	* [各种效应大全](beyondbook/effects.md)
+	* [如何提高演讲能力](beyondboom/how_to_improve_your_speech.md)
