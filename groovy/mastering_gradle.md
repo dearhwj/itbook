@@ -106,6 +106,16 @@ Gradle supports different strategies to resolve the version con icts scenarios, 
 	```        dependencies {         compile group:'commons-httpclient', name:'commons-       httpclient', version:'3.1'         compile group:'commons-codec',name:'commons-codec',       version:'1.1', force:true       }
 	```
 	
+* Dynamic dependency：To make the build  exible on the jar version, you can use the latest.integration placeholder, or you can de ne a version range such as 1.+.
+   ```
+    compile group:'commons-codec',name:'commons-codec', version:   'latest.integration'
+   ```
+   
+* Replacing transitive dependencies:  If you do not want to download the existing transitive dependencies and want to replace them with your customized transitive dependencies, Gradle provides the following way
+	```   dependencies {     compile module(group:'commons-httpclient', name:'commons-       httpclient', version:'3.1') {       dependencies "commons-codec:commons-codec:1.1@jar"     }	}
+	```
+	 	
+	
 ### Repositories conguration
 For dependencies listed in the dependencies closure, Gradle searches repositories in sequential order. If it  nds a library or a dependency in one of the repositories (if multiple repositories are con gured), it skips searching other repositories. In the next section, we will learn how to con gure different repositories.
 

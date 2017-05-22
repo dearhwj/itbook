@@ -98,16 +98,17 @@ Now, s1 and s2 will end up in the same partition because they share the same par
 If @ is used in the name of a partitioned DistributedObject, such as the IMap or IExecutorService, then Hazelcast keeps using the full String as the name of the DistributedObject, but ignores the partition key. This is because for these types, a partition key does not have any meaning.
 
 
-### IAtomicLong
+###  Distributed Primitives
+#### IAtomicLong
 	
 Replication: the IAtomicLong has 1 synchronous backup and zero asynchronous backups and is not configurable.
 
-### IdGenerator
+#### IdGenerator
 
 If the cluster restarts, then the IdGenerator is reset and starts from 0 because the IdGenerator doesn’t persist its state using, for example, a database. If you need this, you could create your own IdGenerator based on the same implementation mechanism the IdGenerator uses, but you persist the updates to the IAtomicLong.
 
 
-### ILock
+#### ILock
 
 * Hazelcast lock is reentrant, so you can acquire it multiple times in a single thread without causing a deadlock. Of course, you need to release it as many times as you have acquired it to make it available to other threads.
 
@@ -138,7 +139,7 @@ If the cluster restarts, then the IdGenerator is reset and starts from 0 because
 * A lock is not automatically garbage collected. So if you create new locks over time, make sure to destroy them. If you don’t, you can run into an OutOfMemoryError.
 
 
-### ICondition
+#### ICondition
 * Just as with the normal Condition, the ICondition can suffer from spurious wakeups. That is why the condition always needs to be checked inside a loop, instead of an if statement.
 
 * You can choose to signal only a single thread instead of all threads by calling the ICondition.signal() method instead of the ICondition.signalAll() method.
@@ -149,7 +150,7 @@ If the cluster restarts, then the IdGenerator is reset and starts from 0 because
 
 * Replication: the ICondition has 1 synchronous backup and zero asynchronous backups and is not configurable.
 
-### ISemaphore
+#### ISemaphore
 
 Hazelcast provides replication support for the ISemaphore: if a member goes and replication is enabled (by default it is), then another member takes over the semaphore without permit information getting lost. This can be done by synchronous and asynchronous replication, which can be configured using the backup-count and async-backup-count properties:
 
@@ -171,7 +172,45 @@ The initial-permits is allowed to be negative, indicating that there is a shorta
 
 
 
-### ICountDownLatch
+#### ICountDownLatch
+The ICountDownLatch is a very useful synchronization aid, it probably isn’t the one you will use on a daily basis. Unlike Java’s implementation, Hazelcast’s ICountDownLatch count can be reset after a countdown has finished, but it cannot be reset during an active count.
+the ICountDownLatch has 1 synchronous backup and zero asynchronous backups and is not configurable.
+
+#### IQueue
+
+It is important to understand that the IQueue is not a partitioned data structure like the IMap, so the content of the IQueue will not be spread over the members in the cluster. A single member in the cluster will be responsible for keeping the complete content of the IQueue in memory
+
+If you want increased high availability, you can either increase the backup-count or the async-backup-count. If you want to have improved performance, you can set the backup-count to 0, but at the cost of potentially losing entries on failure.
+
+
+### Distributed Collections
+
+
+#### IList
+
+A List is a collection where every element only occurs once and where the order of the elements does matter. 
+
+#### ISet
+A Set is a collection where every element only occurs once and where the order of the elements doesn’t matter. The Hazelcast com.hazelcast.core.ISet implements the java.util.Set.
+
+Just as with normal HashSet, the hashcode() and equals() methods of the object are used and not the equals/hash of the byte array version of that object.
+
+In Hazelcast, the ISet (and the IList) is implemented as a collection within the MultiMap, where the ID of the Set is the key in the MultiMap and the value is the collection. This means that the ISet is not partitioned, so you can’t scale beyond the capacity of a single machine and you cannot control the partition where data from a Set is going to be stored. If you want to have a distributed Set that behaves more like the distributed Map, you can implement a Set based on a Map where the value is some bogus value. It is not possible to rely on the Map.keySet for returning a usable distributed Set, since it will return a non-distributed snapshot of the keys.
+
+
+#### Collection ItemListener
+The IList, ISet and IQueue interfaces extend the com.hazelcast.core.ICollection interface. Hazelcast enriches the existing collections API with the ability to listen to changes in the collections using the com.hazelcast.core.ItemListener. The ItemListener receives the ItemEvent which potentially contains the item, the member where the change is happened, and the type of event (add or remove).
+
+
+### Distributed Map
+
+Internally, Hazelcast divides the map into partitions and it distributes the partitions evenly among the members in the cluster. The partition of a map entry is based on the key of that entry; each key belongs to a single partition. By default, Hazelcast uses 271 partitions for all partitioned data structures. This value can be changed with the hazelcast.map.partition.count property.
+
+When a new member is added, the oldest member in the cluster decides which partitions are going to be moved to that new member. Once the partitions are moved, the new member will take its share in the load. Thus, to scale up a cluster, just add new members to the cluster.
+
+When a member is removed, all the partitions that member owned are moved to other members. So scaling down a cluster is simple, just remove members from the cluster. Apart from a ’soft’ removal of the member, there can be a ’hard’ removal, for example, if the member crashes or gets disconnected from the cluster due to network issues. Luckily, Hazelcast provides various degrees of failover to deal with this situation. By default there will be one synchronous backup, so the failure of a single member will not lead to loss of data because a replica of that data is available on another member.
+
+
 
 
 ### 参考资料
