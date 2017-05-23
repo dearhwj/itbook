@@ -1,19 +1,7 @@
 # 转：基于局部敏感哈希的协同过滤算法之simHash算法
 原文地址:[http://www.cnblogs.com/hxsyl/p/4456001.html](http://www.cnblogs.com/hxsyl/p/4456001.html)
 
-搜集了快一个月的资料，虽然不完全懂，但还是先慢慢写着吧，说不定就有思路了呢。
 
-开源的最大好处是会让作者对脏乱臭的代码有羞耻感。
-
-当一个做推荐系统的部门开始重视【数据清理，数据标柱，效果评测，数据统计，数据分析】这些所谓的脏活累活，这样的推荐系统才会有救。
-
-求教GitHub的使用。
-
-简单不等于傻逼。
-
-我为什么说累：我又是一个习惯在聊天中思考前因后果的人，所以整个大脑高负荷运转。不过这样真不好，学习学成傻逼了。
-
-研一的最大收获是让我明白原来以前仰慕的各种国家自然基金项目，原来都是可以浑水摸鱼忽悠过去的，效率不高不说，还有可能有很多错误，哎，我就不说了。
 
 # 一、问题来源
 
@@ -97,3 +85,8 @@ http://grunt1223.iteye.com/blog/964564
 http://blog.csdn.net/lgnlgn/article/details/6008498
 
 http://blog.sina.com.cn/s/blog_81e6c30b0101cpvu.html
+
+
+#六 搜索引擎判断原创的指纹算法 
+
+参考地址[http://blog.sina.com.cn/s/blog_c206a2c30101edg1.html](http://blog.sina.com.cn/s/blog_c206a2c30101edg1.html)

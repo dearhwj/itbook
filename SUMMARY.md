@@ -9,7 +9,7 @@
 	* [Twitter的分布式自增ID算法Snowflake](algorithm/snowflake.md)
 	* [LCS 最大公共序列算法](algorithm/longest_common_subsequence_problem.md)
 	* [哈希表](algorithm/hashtable.md)
-	* [基于局部敏感哈希的协同过滤算法之simHash算法](algorithm/simhash.md)
+	* [转:基于局部敏感哈希的协同过滤算法之simHash算法](algorithm/simhash.md)
 	* [其他算法](algorithm/other_algorithms.md)
 * [编程]
 	* [并发编程]
@@ -284,4 +284,5 @@
 	* [乔布斯：遗失的访谈 ](beyondbook/losting_talking_of_jobs.md)
 	* [阅读笔记:iPhone问世10周年之际，在苹果干了17年的前员工有话对库克说](reading_notes/reading_note_what_is_problem_about_apple.md)
 	* [各种效应大全](beyondbook/effects.md)
-	* [如何提高演讲能力](beyondboom/how_to_improve_your_speech.md)
+	* [如何提高演讲能力](beyondbook/how_to_improve_your_speech.md)
+	* [转:看《十二怒汉》学沟通](beyondbook/12_angry_man.md)
