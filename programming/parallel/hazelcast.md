@@ -211,6 +211,26 @@ When a new member is added, the oldest member in the cluster decides which parti
 When a member is removed, all the partitions that member owned are moved to other members. So scaling down a cluster is simple, just remove members from the cluster. Apart from a ’soft’ removal of the member, there can be a ’hard’ removal, for example, if the member crashes or gets disconnected from the cluster due to network issues. Luckily, Hazelcast provides various degrees of failover to deal with this situation. By default there will be one synchronous backup, so the failure of a single member will not lead to loss of data because a replica of that data is available on another member.
 
 
+#### Partition Control
+Collocating data in a single partition often needs to be combined with sending the functionality to the partition that contains the collocated data. For example, if an invoice needs to be created for the orders of a customer, a Callable that creates the Invoice could be sent using the IExecutorService.executeOnKeyOwner(invoiceCallable, customerId) method. If you do not send the function to the correct partition, collocating data is not useful since a remote call is done for every piece of data. 
+
+####  High Availability
+
+By default, Hazelcast provides sequential consistency; when a Map entry is read, the most recent written value is seen. This is accomplished by routing the get request to the member that owns the key. Therefore, there will be no out-of-sync copies. But sequential consistency comes at a price: if the value is read on an arbitrary cluster member, then Hazelcast needs to do a remote call to the member that owns the partition for that key. Hazelcast provides the option to increase performance by reducing consistency. This is done by allowing reads to potentially see stale data. This feature is available only when there is at least 1 backup (synchronous or asynchronous). You can enable it by setting the read-backup-data property
+
+
+#### Eviction 
+By default, all the Map entries that are put in the Map will remain in that Map. You can delete them manually, but you can also rely on an eviction policy that deletes items automatically. This feature enables Hazelcast to be used as a distributed cache since hot data is kept in memory and cold data is evicted.
+
+#### Near Cache
+
+Hazelcast’s solution to this problem is the near cache. Near cache makes map entries locally available by adding a local cache attached to the map. Imagine a web shop where articles can be ordered and where these articles are stored in a Hazelcast map. 
+
+
+
+#### Concurrency Control
+1.  Pessimistic Locking
+2. Optimistic Locking
 
 
 ### 参考资料

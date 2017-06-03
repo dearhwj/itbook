@@ -140,5 +140,29 @@ repositories {         maven {           url "http://private.repository/path"
 
 ```
 
+### Publishing artifacts
 
+```
+
+
+	apply plugin: 'java'   archivesBaseName="MySample" // to customize Jar Name   version=1.0   repositories {     mavenCentral()   }   def confFile = file('configurations.xml') // artifact2   artifacts {      archives confFile	}uploadArchives {
+repositories {   flatDir {dirs "./tempRepo"}} }
+
+
+
+ gradle uploadArchives
+ 
+```
+maven-publish plugins
+
+```
+apply plugin: 'java'   apply plugin: 'maven-publish'publishing {  publications {
+  
+  mavenJava(MavenPublication) {         from components.java         groupId 'org.mygroup'         artifactId 'MySampleProj'         version '1.0'} }}
+```  
+
+
+### Working with Gradle
+#### The War plugin
+War plugin extends the Java plugin and helps to create the war archives. The war plugin automatically applies the Java plugin to the build  le. During the build process, the plugin creates a war  le instead of a jar  le. The war plugin disables the jar task of the Java plugin and adds a default war archive task. By default, the content of the war  le will be compiled classes from src/main/java; content from src/main/webapp and all the runtime dependencies. The content can be customized using the war closure as well.
 [https://plugins.gradle.org/](https://plugins.gradle.org/)
