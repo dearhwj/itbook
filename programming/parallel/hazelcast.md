@@ -233,6 +233,25 @@ Hazelcast’s solution to this problem is the near cache. Near cache makes map e
 2. Optimistic Locking
 
 
+#### EntryProcessor
+One of the new features of Hazelcast 3.0 is the EntryProcessor. It allows you to send a function, the EntryProcessor, to a particular key or to all keys in an IMap. Once the EntryProcessor is completed, it is discarded, so it is not a durable mechanism like the EntryListener or the MapInterceptor.
+
+The EntryProcessor was added to Hazelcast to address cases like this. The EntryProcessor captures the logic that should be executed on a map entry. Hazelcast will send the EntryProcessor to each member in the cluster, and then each member will, in parallel, apply the EntryProcessor to all map entries. This means that the EntryProcessor is scalable; the more machines you add, the faster the processing will be completed. Another important feature of the EntryProcessor is that it will deal with race problems by acquiring exclusive access to the map entry when it is processing.
+
+Entry processors can be used with predicates. Predicates help to process a subset of data by selecting eligible entries. This selection can happen either by doing a full-table scan or by using indexes. To accelerate entry selection step, you can consider to add indexes. If indexes are there, entry processor will automatically use them.
+
+
+InMemoryFormat: If you are often using the EntryProcessor or queries, it might be a good idea to use the InMemoryFormat.OBJECT. The OBJECT in-memory format in Hazelcast will not serialize/deserialize the entry, so you are able to apply the EntryProcessor without serialization cost. The value instance that is stored is passed to the EntryProcessor, and that instance will also be stored in the map entry (unless you create a new instance). For more information, see InMemoryFormat.
+
+
+#### MapListener
+
+To correctly use the MapListener, you must understand the threading model. Unlike the EntryProcessor, the MapListener doesn’t run on the partition threads. MapListener runs on event threads, the same threads that are used by other collection listeners and by ITopic message listeners. The MapListener is allowed to access other partitions. Just like other logic that runs on an event thread, you need to watch out for long running tasks because it could lead to starvation of other event listeners since they don’t get a thread. It can also lead to OOME because of events being queued quicker than they are being processed.
+
+
+A MapListener that is registered using a predicate. This makes it possible to listen to the changes made to specific map entries.Filtered at the source: The predicate of the continuous query is registered at the source; it is registered on each member that generates an event for a given partition. This means that if a predicate filters out an event, the event will not be sent over the line to the listener.
+
+
 ### 参考资料
 
 [https://hazelcast.org/features/](https://hazelcast.org/features/)

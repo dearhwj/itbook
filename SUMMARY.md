@@ -43,6 +43,7 @@
     * [软件设计的原则整理](architecture/software_design_principles.md)
     * [分布式事务处理](architecture/distributed_transaction.md)
     * [缓存处理](architecture/cache_handle.md)
+    * [分布式系统架构](architecture/distributed_system_architecture.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)

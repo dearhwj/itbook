@@ -165,4 +165,8 @@ apply plugin: 'java'   apply plugin: 'maven-publish'publishing {  publication
 ### Working with Gradle
 #### The War plugin
 War plugin extends the Java plugin and helps to create the war archives. The war plugin automatically applies the Java plugin to the build  le. During the build process, the plugin creates a war  le instead of a jar  le. The war plugin disables the jar task of the Java plugin and adds a default war archive task. By default, the content of the war  le will be compiled classes from src/main/java; content from src/main/webapp and all the runtime dependencies. The content can be customized using the war closure as well.
-[https://plugins.gradle.org/](https://plugins.gradle.org/)
+
+
+#### Logging
+
+* ERROR：This is used to show error messages* QUIET：This is used to show limited useful information* WARNING：This is used to show warning messages* LIFECYCLE：This is used to show the progress (default level)* INFO：This is used to show information messages* DEBUG：This is used to show debug messages (all logs* -q:This will show logs up to the quiet level. It will include error and quiet messages* -i:This will show logs up to the info level. It will include error, quiet, warning, lifecycle and info messages.* -s:This prints out the stacktrace for all exceptions.* -d:This prints out all logs and debug information. This is most expressive log level, which will also print all the minor details.
