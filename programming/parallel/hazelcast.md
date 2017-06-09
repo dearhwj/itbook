@@ -251,6 +251,17 @@ To correctly use the MapListener, you must understand the threading model. Unlik
 
 A MapListener that is registered using a predicate. This makes it possible to listen to the changes made to specific map entries.Filtered at the source: The predicate of the continuous query is registered at the source; it is registered on each member that generates an event for a given partition. This means that if a predicate filters out an event, the event will not be sent over the line to the listener.
 
+####  Distributed Queries
+Hazelcast provides two APIs for distributed queries.
+
+1. Criteria API
+2. Distributed SQL Query
+
+#### MapReduce
+MapReduce is a software framework for processing large amounts of data in a distributed way. Therefore, the processing is normally spread over several machines. The basic idea behind MapReduce is to map your source data into a collection of key-value pairs and reducing those pairs, grouped by key, in a second step towards the final result.
+The main idea can be summarized as first reading the source data, then mapping the data to one or multiple key-value pairs, and finally reducing all pairs with the same key.
+
+The best known examples for MapReduce algorithms are text processing tools, such as counting the word frequency in large texts or websites. Apart from that, there are more interesting examples of use cases such as log analysis, data querying, aggregation and summing, distributed sort, and fraud detection.
 
 ### 参考资料
 
