@@ -263,6 +263,15 @@ The main idea can be summarized as first reading the source data, then mapping t
 
 The best known examples for MapReduce algorithms are text processing tools, such as counting the word frequency in large texts or websites. Apart from that, there are more interesting examples of use cases such as log analysis, data querying, aggregation and summing, distributed sort, and fraud detection.
 
+#### Fast-Aggregations
+Aggregators are ready-to-use data aggregations that are based on the Hazelcast MapReduce framework. They can be used for typical operations like summing up values, finding minimum or maximum values, calculating averages, and other operations that you would expect in the relational database world. Being the successor of the Hazelcast Aggregators, Fast-Aggregations are equivalent to the MapReduce Aggregators in most of the use cases and they run on the Query infrastructure.
+
+#### Projections
+Instead of sending all the data returned by a query, you may want to transform each result object in order to avoid redundant network traffic. For example, you select all employees based on some criteria, but you just want to return their name instead of the whole Employee object. It is easily doable with the Projection API 
+
+#### Indexes
+The Hazelcast map supports indexes to speed up queries, just like in databases. Using an index prevents iterating over all values. In database terms, this is called a full table scan, but it directly jumps to the interesting ones. There are two types of indexes:
+
 ### 参考资料
 
 [https://hazelcast.org/features/](https://hazelcast.org/features/)
