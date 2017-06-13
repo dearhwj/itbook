@@ -148,6 +148,7 @@
 		* [转:bash设置成vim命令模式](Shell/bash_vim_mode.md)
 		* [免密码登录linux服务器](Shell/free_password_login_linux.md)
 		* [#!/usr/bin/env python与#!/usr/bin/python的区别](Shell/difference_between_binenv_binpython.md)
+		* [通过ping解析域名IP](Shell/resolve_domain_ip_by_ping.md)
 * [MAC OS](macos/README.md)
 	* [MacOS软件搜集](macos/macos_software.md)
 		* [Popclip以及插件开发](macos/popclip_tips.md)

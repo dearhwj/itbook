@@ -272,6 +272,18 @@ Instead of sending all the data returned by a query, you may want to transform e
 #### Indexes
 The Hazelcast map supports indexes to speed up queries, just like in databases. Using an index prevents iterating over all values. In database terms, this is called a full table scan, but it directly jumps to the interesting ones. There are two types of indexes:
 
+1. Ordered. For example, a numeric field where you want to do range searches like "bigger than."
+2. Unordered. For example, a name field.
+
+#### MultiMap
+In some cases you need to store multiple values for a single key. You could use a normal collection as value and store the real values in this collection. This will work fine if everything is done in the memory, but in a distributed and concurrent environment it isn’t that easy. One problem with this approach is that the whole collection needs to be deserialized for an operation such as add. Imagine a collection of 100 elements; then 100 elements need to be deserialized when the value is read, and 101 items are serialized when the value is written, for a total of 201 elements. Hazelcast provides a MultiMap where multiple values can be stored under a single key.
+
+
+#### Replicated Map
+There may be some cases where you have an application which has mostly read operations and you do not need to read the latest up-to-date data. To have fast access to those data, you can use Hazelcast’s Replicated Map, which is a distributed key-value data structure where the data is copied to all members of your cluster.
+
+
+
 ### 参考资料
 
 [https://hazelcast.org/features/](https://hazelcast.org/features/)

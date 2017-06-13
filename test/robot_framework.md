@@ -51,10 +51,11 @@ Robot Framework has its own variables that can be used as scalars, lists or dict
 1. 测试库(Test libraries)包含最低级的关键字(keywords)2. 资源文件(Resource files)包含变量和更高层次的用户自定义关键字   
 3. 变量文件(Variable files)可以提供比资源文件更灵活的方式创建变量
 
-### Initialization files
+### 初始化文件
 A test suite created from a directory can have similar settings as a suite created from a test case file. Because a directory alone cannot have that kind of information, it must be placed into a special test suite initialization file. An initialization file name must always be of the format \__init__.ext, where the extension must be one of the supported file formats (for example, __init__.robot or __init__.html). The name format is borrowed from Python, where files named in this manner denote that a directory is a module.
 
 Initialization files have the same structure and syntax as test case files, except that they cannot have test case tables and not all settings are supported. Variables and keywords created or imported in initialization files are not available in the lower level test suites. If you need to share variables or keywords, you can put them into resource files that can be imported both by initialization and test case files.
+在初始文件中引入或创建的变量和关键字在低级 的测试集中是不可用的，如果引入的资源文件需要在低 级 的测试集中共享的话，资源文件是可以使用的。
 
 The main usage for initialization files is specifying test suite related settings similarly as in test case files, but setting some test case related settings is also possible. 
 
@@ -75,6 +76,13 @@ Do Something
     Another Keyword
 
 ```
+
+### 资源文件
+资源文件是在设置表格中被引入的。资源文件的路径放在设置名称的后面。假如使用绝对路径，资源文件可以被直接使用。否则，首先是在导入该资源的文件的所在目录去搜索相关 的路径，假如没找到，然后在 PYTHONPATH 路径下搜索。这个路径可以包 变量，建议使用操作系统无 关的路径(例如:${RESOURCES}/login_resources.html 或${RESOURCE_PATH})。这样，路径中的斜杠(/) 在 Windows 中自动转变为反斜杠(\)。
+
+资源文件的高层架构同测试用例文件是相同的，但是，它不包括测试用例表格。资源文件中的设置表格可以仅引入设置((Library, Resource, Variables)和注释。变量表格和关键字表格同测试用例文件中一样使用。假如多个资源文件包 多个相同名称的用户关键字，则他们的使用必须在关键字前面加上资源文件名称(例 如:myresources.Some Keyword 和 common.Some Keyword)。而且，假如资源文件包 相同的变量，则第一 个引入的将被使用。
+
+
 ### Setups and teardowns
 
 1. Test Setup
