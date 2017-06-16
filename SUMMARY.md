@@ -108,6 +108,7 @@
 	* [Scala入门](scala/scala_basic.md)
 * [Linux](linux/README.md)
 	* [linux内核](linux/linux_kernal.md)
+	* [如何在Ubuntu获取最新NVIDIA Inte显卡驱动程序](linux/ubuntu_install_nvidia_driver.md)
 	* [Linux Performance Analysis and Tools](linux/linux_performance_analysis_and_tools.md)
 	* [linux命令](linux/linux_command.md)
 		* [ls小窍门](linux/ls_tips.md)

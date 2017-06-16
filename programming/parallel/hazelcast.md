@@ -284,6 +284,26 @@ There may be some cases where you have an application which has mostly read oper
 
 
 
+### Distributed Executor Service
+####  Routing
+Until now, we didn’t care which member did the actual processing of the task, as long as a member picks it up. But in some cases you want to have that control. For this purpose, the IExecutorService provides different ways to route tasks.
+
+Any member. This is the default configuration.
+
+A specific member.
+
+The member hosting a specific key.
+
+All or subset of the members.
+
+#### Executing on Key Owner
+When an operation is executed in a distributed system, that operation often needs to access distributed resources. If these resources are hosted on a different member than where the task is running, scalability and performance may suffer due to remoting overhead. This problem can be solved by improving locality of reference.In Hazelcast this can be done by placing the resources for a task in a partition and sending the task to the member that owns that partition. When you design a distributed system, perhaps the most fundamental step is designing the partitioning scheme.
+
+#### Executing on All or Subset of Members
+
+#### Futures
+The Executor interface only exposes a single void execute(Runnable) method that can be called to have a Runnable asynchronously executed. However, in some cases you need to synchronize on results, such as when you use a Callable or you just want to wait till a task completes.
+
 ### 参考资料
 
 [https://hazelcast.org/features/](https://hazelcast.org/features/)
