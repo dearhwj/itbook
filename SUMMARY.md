@@ -110,6 +110,7 @@
 	* [linux内核](linux/linux_kernal.md)
 	* [Ubuntu](ubuntu/README.MD) 
 	   * [ubuntu下修改键盘映射](linux/ubuntu/modify_keyboard_mapping.mkd)
+	   * [Windows下安装Ubuntu双系统](linux/ubuntu/install_ubuntu_on_windows.md)
 	* [Linux Performance Analysis and Tools](linux/linux_performance_analysis_and_tools.md)
 	* [linux命令](linux/linux_command.md)
 		* [ls小窍门](linux/ls_tips.md)
@@ -262,7 +263,6 @@
 	* [【知乎：为什么很多产品经理都不愿意做后台阅读笔记】](programmer/how_hard_backend_product_manager.md)
 	* [程序员应该了解的GitHub](programmer/programmer_need_know_about_github.md)
 	* [YAML语言教程](programmer/yaml.md)
-	* [Windows下安装Ubuntu双系统](programmer/install_ubuntu_on_windows.md)
 * 技术管理
 	* [转载:技术团队管理不仅仅是管理](tech_management/tech_team_management.md) 
 	* [转载:业务和商业才是技术的驱动力](tech_management/business_drive_tech.md)

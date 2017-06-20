@@ -6,7 +6,7 @@ Hazelcast是一个用Java编写的基于内存的数据网格管理平台（open
 
 #### Distributed Caching
 1. AtomicLong
-2. AtomicReference
+2. AtomicReference 
 3. CountDownLatch
 4. IdGenerator
 5. List
@@ -303,6 +303,19 @@ When an operation is executed in a distributed system, that operation often need
 
 #### Futures
 The Executor interface only exposes a single void execute(Runnable) method that can be called to have a Runnable asynchronously executed. However, in some cases you need to synchronize on results, such as when you use a Callable or you just want to wait till a task completes.
+
+####  Durable Executor Service
+Introduced with Hazelcast 3.7, this new data structure has been developed to provide a fault tolerant executor service, i.e., it is the durable implementation of Hazelcast’s IExecutor. The primary goal is not loosing any tasks or task responses when a member/task submitter goes down at any time including the times where a task is being executed. Durable executor service achieves this goal by storing an execution task both on the executing Hazelcast member and its backups, if configured.
+
+
+#### Scheduled Executor Service
+Hazelcast’s scheduled executor service implements the java.util.concurrent.ScheduledExecutorService. It allows the scheduling of a single future execution and/or at a fixed rate execution but not at a fixed delay.
+
+### Distributed Topic
+
+#### Message Ordering
+Hazelcast provides certain ordering guarantees on the delivery of messages. If a cluster member publishes a sequence of messages, Hazelcast guarantees that each MessageListener will receive these messages in the order they were published by that member
+
 
 ### 参考资料
 
