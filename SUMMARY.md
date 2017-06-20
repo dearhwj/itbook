@@ -11,6 +11,7 @@
 	* [LCS 最大公共序列算法](algorithm/longest_common_subsequence_problem.md)
 	* [哈希表](algorithm/hashtable.md)
 	* [转:基于局部敏感哈希的协同过滤算法之simHash算法](algorithm/simhash.md)
+	* [一致性hash算法](algorithm/consistent_hashing.md)
 	* [其他算法](algorithm/other_algorithms.md)
 * [编程]
 	* [并发编程]
