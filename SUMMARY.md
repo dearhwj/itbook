@@ -112,6 +112,7 @@
 	* [Ubuntu](ubuntu/README.MD) 
 	   * [ubuntu下修改键盘映射](linux/ubuntu/modify_keyboard_mapping.mkd)
 	   * [Windows下安装Ubuntu双系统](linux/ubuntu/install_ubuntu_on_windows.md)
+	   * [在Ubuntu下设置默认编辑器](linux/ubuntu/ubuntu_default_editor.md)
 	* [Linux Performance Analysis and Tools](linux/linux_performance_analysis_and_tools.md)
 	* [linux命令](linux/linux_command.md)
 		* [ls小窍门](linux/ls_tips.md)
