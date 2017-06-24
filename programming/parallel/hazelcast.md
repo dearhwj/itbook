@@ -317,8 +317,27 @@ Hazelcast’s scheduled executor service implements the java.util.concurrent.Sch
 Hazelcast provides certain ordering guarantees on the delivery of messages. If a cluster member publishes a sequence of messages, Hazelcast guarantees that each MessageListener will receive these messages in the order they were published by that member
 
 
+### Hazelcast Clients
+A client allows you to connect to the cluster and not have any of the responsibilities a normal cluster member has. When a Hazelcast operation is performed by a client, the operation is forwarded to a cluster member where it will be processed. 
+
+#### Client Config
+Hazelcast will use the following sequence of steps to determine the client configuration file to use.
+
+Check if there is a system property hazelcast.client.config. If it exists, it is used. This means that you can set the configuration from the command line using -Dhazelcast.client.config=/foo/bar/client.xml. You can also refer to a classpath resource using -Dhazelcast.client.config=classpath:client.xml. This makes it possible to bundle multiple configurations in your JAR and select one on startup.
+
+1. Check if there is a file called hazelcast-client.xml in the working directory.
+
+2. Check if there is a file called hazelcast-client.xml on the classpath.
+
+3. Default to hazelcast-client-default.xml, which is provided by Hazelcast.
+
+
+####  Reusing the Client
+A client is designed to be shared between threads. You want to prevent creating an instance per request because clients are heavy objects.
+A client contains a thread pool that is used for internal administration like heartbeat checking, scheduling of refreshing partitions, firing events when members are added and removed, etc.A client has a single connection to the cluster for communication, just like cluster members have among each other. This connection is an expensive resource and it is best to reuse it.In most cases, it is best to create the client in the beginning and keep reusing it throughout the lifecycle of the client application.
+
 ### 参考资料
 
 [https://hazelcast.org/features/](https://hazelcast.org/features/)
 
-[Mastering Hazelcast IMDG](https://hazelcast.org/mastering-hazelcast/)
+[Mastering Hazelcast IMDG](https://hazelcast.org/mastering-hazelcast/)` `
