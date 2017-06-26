@@ -112,7 +112,7 @@
 * [Linux](linux/README.md)
 	* [linux内核](linux/linux_kernal.md)
 	* [Ubuntu](ubuntu/README.MD) 
-	   * [ubuntu下修改键盘映射](linux/ubuntu/modify_keyboard_mapping.mkd)
+	   * [ubuntu下修改键盘映射](linux/ubuntu/modify_keyboard_mapping.md)
 	   * [Windows下安装Ubuntu双系统](linux/ubuntu/install_ubuntu_on_windows.md)
 	   * [在Ubuntu下设置默认编辑器](linux/ubuntu/ubuntu_default_editor.md)
 	   * [ubuntu默认编辑器vim tiny换成vim full版本](linux/ubuntu/ubuntu_default_editor.md)
