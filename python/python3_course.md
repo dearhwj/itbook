@@ -387,3 +387,67 @@ private函数和变量“不应该”被直接引用，而不是“不能”被�
 
 
 ### 安装第三方模块
+当试图加载一个模块时，Python会在指定的路径下搜索对应的.py文件，如果找不到，就会报错。默认情况下，Python解释器会搜索当前目录、所有已安装的内置模块和第三方模块，搜索路径存放在sys模块的path变量中
+
+```
+>>> import sys
+>>> sys.path
+
+```
+
+如果我们要添加自己的搜索目录，有两种方法：
+
+* 一是直接修改sys.path，添加要搜索的目录；这种方法是在运行时修改，运行结束后失效。
+* 第二种方法是设置环境变量PYTHONPATH，该环境变量的内容会被自动添加到模块搜索路径中。设置方式与设置Path环境变量类似。注意只需要添加你自己的搜索路径，Python自己本身的搜索路径不受影响。
+
+
+
+### 类
+在Python中，定义类是通过class关键字：
+
+```
+class Student(object):
+    pass
+ 
+```
+
+class后面紧接着是类名，即Student，类名通常是大写开头的单词，紧接着是(object)，表示该类是从哪个类继承下来的，继承的概念我们后面再讲，通常，如果没有合适的继承类，就使用object类，这是所有类最终都会继承的类。
+
+
+定义好了Student类，就可以根据Student类创建出Student的实例，创建实例是通过类名+()实现的：
+
+```
+>>> bart = Student()
+>>> bart
+<__main__.Student object at 0x10a67a590>
+>>> Student
+<class '__main__.Student'>
+```
+
+
+把一些我们认为必须绑定的属性强制填写进去。通过定义一个特殊的__init__方法，在创建实例的时候，就把name，score等属性绑上去：
+
+```
+class Student(object):
+
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+```
+ 
+ 注意：特殊方法“init”前后有两个下划线！！！
+注意到__init__方法的第一个参数永远是self，表示创建的实例本身，因此，在__init__方法内部，就可以把各种属性绑定到self，因为self就指向创建的实例本身。
+
+有了__init__方法，在创建实例的时候，就不能传入空的参数了，必须传入与__init__方法匹配的参数，但self不需要传，Python解释器自己会把实例变量传进去：
+
+```
+>>> bart = Student('Bart Simpson', 59)
+>>> bart.name
+'Bart Simpson'
+>>> bart.score
+59
+
+```
+
+
+要定义一个方法，除了第一个参数是self外，其他和普通函数一样。要调用一个方法，只需要在实例变量上直接调用，除了self不用传递，其他参数正常传入
