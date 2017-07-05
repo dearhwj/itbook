@@ -451,3 +451,108 @@ class Student(object):
 
 
 要定义一个方法，除了第一个参数是self外，其他和普通函数一样。要调用一个方法，只需要在实例变量上直接调用，除了self不用传递，其他参数正常传入
+
+
+如果要让内部属性不被外部访问，可以把属性的名称前加上两个下划线__，在Python中，实例的变量名如果以__开头，就变成了一个私有变量（private），只有内部可以访问，外部不能访问
+
+继承
+```
+class Dog(Animal):
+    pass
+
+class Cat(Animal):
+    pass
+```
+
+
+#### 获取对象信息
+使用type()来判断对象类型
+
+```
+>>> type(123)==type(456)
+True
+>>> type(123)==int
+True
+```
+
+
+判断基本数据类型可以直接写int，str等，但如果要判断一个对象是否是函数怎么办？可以使用types模块中定义的常量：
+
+```
+>>> type(fn)==types.FunctionType
+True
+```
+
+
+isinstance()就可以告诉我们，一个对象是否是某种类型
+
+```
+>>> isinstance(3,int)
+>>> True
+```
+
+
+使用dir()函数返回一个包含字符串的list，比如，获得一个对象的所有属性和方法
+
+配合getattr()、setattr()以及hasattr()，我们可以直接操作一个对象的状态：
+
+```
+>>> hasattr(obj, 'x') # 有属性'x'吗？
+True
+>>> obj.x
+9
+>>> hasattr(obj, 'y') # 有属性'y'吗？
+False
+>>> setattr(obj, 'y', 19) # 设置一个属性'y'
+>>> hasattr(obj, 'y') # 有属性'y'吗？
+True
+>>> getattr(obj, 'y') # 获取属性'y'
+19
+>>> obj.y # 获取属性'y'
+19**
+```
+
+
+#### 实例属性和类属性
+
+给实例绑定属性的方法是通过实例变量，或者通过self变量：
+
+```
+class Student(object):
+    def __init__(self, name):
+        self.name = name
+
+s = Student('Bob')
+s.score = 90
+
+```
+
+如果Student类本身需要绑定一个属性呢？可以直接在class中定义属性，这种属性是类属性，归Student类所有：
+
+```
+class Student(object):
+    name = 'Student'
+```
+
+
+#### 使用__slots__    
+
+为了达到限制的目的，Python允许在定义class的时候，定义一个特殊的__slots__变量，来限制该class实例能添加的属性：
+
+```
+class Student(object):
+    __slots__ = ('name', 'age') # 用tuple定义允许绑定的属性名称
+```
+然后，我们试试：
+
+```
+>>> s = Student() # 创建新的实例
+>>> s.name = 'Michael' # 绑定属性'name'
+>>> s.age = 25 # 绑定属性'age'
+>>> s.score = 99 # 绑定属性'score'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Student' object has no attribute 'score'
+```
+由于'score'没有被放到__slots__中，所以不能绑定score属性，试图绑定score将得到AttributeError的错误。
+
