@@ -102,6 +102,7 @@
 		* [Spring小窍门](java/spring/spring_tips.md)
 	* [JAVA并发编程](java/java_parallel_programming.md)
 	* [转：从Java视角理解CPU缓存(CPU Cache)](java/java_cpu_cache.md)
+	* [JAVA虚拟机关闭钩子](java/java_shutdown_hook.md)
 * [Javascript](Javascript/README.md)
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)

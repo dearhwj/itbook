@@ -336,8 +336,12 @@ Check if there is a system property hazelcast.client.config. If it exists, it is
 A client is designed to be shared between threads. You want to prevent creating an instance per request because clients are heavy objects.
 A client contains a thread pool that is used for internal administration like heartbeat checking, scheduling of refreshing partitions, firing events when members are added and removed, etc.A client has a single connection to the cluster for communication, just like cluster members have among each other. This connection is an expensive resource and it is best to reuse it.In most cases, it is best to create the client in the beginning and keep reusing it throughout the lifecycle of the client application.
 
+
+### Serialization
+One of the problems with DataSerializable is that it uses reflection to create an instance of the class. One of the new features of Hazelcast 3 is the IdentifiedDataSerializable. It relies on a factory to create the instance and therefore is faster when deserializing, since deserialization relies on creating new instances.
+
 ### 参考资料
 
 [https://hazelcast.org/features/](https://hazelcast.org/features/)
 
-[Mastering Hazelcast IMDG](https://hazelcast.org/mastering-hazelcast/)` `
+[Mastering Hazelcast IMDG](https://hazelcast.org/mastering-hazelcast/)` 
