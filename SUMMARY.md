@@ -285,6 +285,7 @@
 	* [《大教堂和市集》阅读笔记](tech_management/the_cathedral_and_the_bazaar.md)
 	* [Linus Trovalds谈Linux内核开发管理风格](tech_management/linus_kernel_development_management_sytle.md)
 	* [知乎：如何让公司员工达到群体性努力](tech_management/team_hard_work.md)
+	* [7个步骤让你做好公司的团队管理](tech_management/7_steps_help_you_team_management.md)
 * 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [Why、What、How的策略运用](beyondbook/why_how_what.md)
