@@ -83,6 +83,7 @@
 	* [Python IDE设置](python/python_ide_environment.md)
 	* [Python FAQ](python/python_faq.md)
 	* [python的setup.py文件及其常用命令](python/python_setup.md)
+	* [PIP](python/pip.md)
 * [Java](java/README.md)
 	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发资料](java/maven_plugin_dev_ref.md)
