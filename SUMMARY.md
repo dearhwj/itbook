@@ -305,3 +305,4 @@
 	* [如何提高演讲能力](beyondbook/how_to_improve_your_speech.md)
 	* [转:看《十二怒汉》学沟通](beyondbook/12_angry_man.md)
 	* [比尔盖茨哈佛毕业演讲稿](beyondbook/bill_gates_harvard_speech.md)
+	* [设计师，你是做什么的？](beyondbook/designer_what_do_you_do.md)
