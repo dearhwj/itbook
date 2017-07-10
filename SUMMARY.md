@@ -84,6 +84,7 @@
 	* [Python FAQ](python/python_faq.md)
 	* [python的setup.py文件及其常用命令](python/python_setup.md)
 	* [PIP](python/pip.md)
+	* [Python中yield与with的配合](python/python_with.md)
 * [Java](java/README.md)
 	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发资料](java/maven_plugin_dev_ref.md)
