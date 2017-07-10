@@ -1,5 +1,9 @@
 # PIP
 
+## 参考资料
+[https://pip.pypa.io/en/stable/](https://pip.pypa.io/en/stable/)
+
+[Python Packaging User Guide](https://packaging.python.org/)
 
 ## Python的包管理
 Python的包管理工具常见的有easy_install, setuptools, 还有pip, distribute可以看到distribute是setuptools的替代方案，pip是easy_install的替代方案. 而setuptools 和 easy_install 已经越来越不被维护了，所以建议大家试用他们的替代版, 而如果要说 distribute 和 pip 的区别，那么就是pip 的底层实现调用了 distribute 或者 setuptools
