@@ -45,7 +45,7 @@ if x:
 只要x是非零数值、非空字符串、非空list等，就判断为True，否则为False。
 
 
-## ~~~~dict
+## dict
 Python内置了字典：dict的支持，dict全称dictionary，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。
 
 如果key不存在，dict就会报错：
