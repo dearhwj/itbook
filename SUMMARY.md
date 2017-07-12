@@ -89,6 +89,7 @@
 	* [Python \__init\__.py详解](python/python_init_py.md)
 	* [Python元组(tuple)](python/python_tuple.md)
 	* [Python namedtuple用法](python/python_namedtuple.md)
+	* [pass的作用](python/python_pass.md)
 * [Java](java/README.md)
 	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发资料](java/maven_plugin_dev_ref.md)
