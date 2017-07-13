@@ -577,3 +577,44 @@ class Student(object):
 ```
         
 @property的实现比较复杂，我们先考察如何使用。把一个getter方法变成属性，只需要加上@property就可以了，此时，@property本身又创建了另一个装饰器@score.setter，负责把一个setter方法变成属性赋值
+
+#### metaclass
+metaclass允许你创建类或者修改类。换句话说，你可以把类看成是metaclass创建出来的“实例”。
+
+定义ListMetaclass，按照默认习惯，metaclass的类名总是以Metaclass结尾，以便清楚地表示这是一个metaclass：
+
+```
+# metaclass是类的模板，所以必须从`type`类型派生：
+class ListMetaclass(type):
+    def __new__(cls, name, bases, attrs):
+        attrs['add'] = lambda self, value: self.append(value)
+        return type.__new__(cls, name, bases, attrs)
+
+```
+有了ListMetaclass，我们在定义类的时候还要指示使用ListMetaclass来定制类，传入关键字参数metaclass：
+
+```
+class MyList(list, metaclass=ListMetaclass):
+    pass
+
+```
+当我们传入关键字参数metaclass时，魔术就生效了，它指示Python解释器在创建MyList时，要通过ListMetaclass.\__new\__()来创建，在此，我们可以修改类的定义，比如，加上新的方法，然后，返回修改后的定义。
+
+\__new\__()方法接收到的参数依次是：
+
+1. 当前准备创建的类的对象；
+
+1. 类的名字；
+
+2. 类继承的父类集合；
+
+3. 类的方法集合。
+
+测试一下MyList是否可以调用add()方法：
+
+```
+>>> L = MyList()
+>>> L.add(1)
+>> L
+[1]
+```
