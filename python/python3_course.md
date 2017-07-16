@@ -618,3 +618,233 @@ class MyList(list, metaclass=ListMetaclass):
 >> L
 [1]
 ```
+
+
+### 错误处理
+
+
+Python所有的错误都是从`BaseException`类派生的，常见的错误类型和继承关系看这里：
+
+[https://docs.python.org/3/library/exceptions.html#exception-hierarchy](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+
+```
+try:
+    foo()
+except ValueError as e:
+    print('ValueError')
+except UnicodeError as e:
+    print('UnicodeError')
+    
+```
+
+
+### 文件处理
+
+Python引入了with语句来自动帮我们调用close()方法：
+
+```
+with open('/path/to/file', 'r') as f:
+    print(f.read())
+``` 
+
+
+要读取二进制文件，比如图片、视频等等，用'rb'模式打开文件即可：
+
+```
+>>> f = open('/Users/michael/test.jpg', 'rb')
+>>> f.read()
+b'\xff\xd8\xff\xe1\x00\x18Exif\x00\x00...' # 十六进制表示的字节
+```
+ 
+ 要读取非UTF-8编码的文本文件，需要给open()函数传入encoding参数，例如，读取GBK编码的文件：
+
+```
+>>> f = open('/Users/michael/gbk.txt', 'r', encoding='gbk')
+>>> f.read()
+
+```
+
+
+写文件和读文件是一样的，唯一区别是调用open()函数时，传入标识符'w'或者'wb'表示写文本文件或写二进制文件：
+
+```
+>>> f = open('/Users/michael/test.txt', 'w')
+>>> f.write('Hello, world!')
+>>> f.close()
+```
+
+你可以反复调用write()来写入文件，但是务必要调用f.close()来关闭文件。当我们写文件时，操作系统往往不会立刻把数据写入磁盘，而是放到内存缓存起来，空闲的时候再慢慢写入。只有调用close()方法时，操作系统才保证把没有写入的数据全部写入磁盘。忘记调用close()的后果是数据可能只写了一部分到磁盘，剩下的丢失了。所以，还是用with语句来得保险：
+
+with open('/Users/michael/test.txt', 'w') as f:
+    f.write('Hello, world!')
+要写入特定编码的文本文件，请给open()函数传入encoding参数，将字符串自动转换成指定编码。
+
+
+### StringIO和BytesIO
+StringIO顾名思义就是在内存中读写str。
+
+要把str写入StringIO，我们需要先创建一个StringIO，然后，像文件一样写入即可：
+
+```
+>>> from io import StringIO
+>>> f = StringIO()
+>>> f.write('hello')
+5
+>>> f.write(' ')
+1
+>>> f.write('world!')
+6
+>>> print(f.getvalue())
+hello world!
+
+```
+
+
+要读取StringIO，可以用一个str初始化StringIO，然后，像读文件一样读取：
+
+```
+>>> from io import StringIO
+>>> f = StringIO('Hello!\nHi!\nGoodbye!')
+>>> while True:
+...     s = f.readline()
+...     if s == '':
+...         break
+...     print(s.strip())
+...
+Hello!
+Hi!
+Goodbye!
+```
+
+
+BytesIO实现了在内存中读写bytes，我们创建一个BytesIO，然后写入一些bytes：
+
+```
+>>> from io import BytesIO
+>>> f = BytesIO()
+>>> f.write('中文'.encode('utf-8'))
+6
+>>> print(f.getvalue())
+b'\xe4\xb8\xad\xe6\x96\x87'
+
+
+```
+请注意，写入的不是str，而是经过UTF-8编码的bytes。
+
+和StringIO类似，可以用一个bytes初始化BytesIO，然后，像读文件一样读取：
+
+
+```
+>>> from io import BytesIO
+>>> f = BytesIO(b'\xe4\xb8\xad\xe6\x96\x87')
+>>> f.read()
+b'\xe4\xb8\xad\xe6\x96\x87'
+```
+
+### JSON序列化
+Python内置的json模块提供了非常完善的Python对象到JSON格式的转换。我们先看看如何把Python对象变成一个JSON：
+
+```
+>>> import json
+>>> d = dict(name='Bob', age=20, score=88)
+>>> json.dumps(d)
+'{"age": 20, "score": 88, "name": "Bob"}'
+
+```
+
+dumps()方法返回一个str，内容就是标准的JSON。类似的，dump()方法可以直接把JSON写入一个file-like Object。
+
+要把JSON反序列化为Python对象，用loads()或者对应的load()方法，前者把JSON的字符串反序列化，后者从file-like Object中读取字符串并反序列化：
+
+```
+>>> json_str = '{"age": 20, "score": 88, "name": "Bob"}'
+>>> json.loads(json_str)
+{'age': 20, 'score': 88, 'name': 'Bob'}
+
+```
+
+由于JSON标准规定JSON编码是UTF-8，所以我们总是能正确地在Python的str与JSON的字符串之间转换。
+
+```
+def student2dict(std):
+    return {
+        'name': std.name,
+        'age': std.age,
+        'score': std.score
+    }
+```
+
+这样，Student实例首先被student2dict()函数转换成dict，然后再被顺利序列化为JSON：
+
+```
+>>> print(json.dumps(s, default=student2dict))
+{"age": 20, "name": "Bob", "score": 88}
+
+```
+
+不过，下次如果遇到一个Teacher类的实例，照样无法序列化为JSON。我们可以偷个懒，把任意class的实例变为dict：
+
+print(json.dumps(s, default=lambda obj: obj.__dict__))
+
+
+
+
+如果我们要把JSON反序列化为一个Student对象实例，loads()方法首先转换出一个dict对象，然后，我们传入的object_hook函数负责把dict转换为Student实例：
+
+```
+def dict2student(d):
+    return Student(d['name'], d['age'], d['score'])
+运行结果如下：
+
+>>> json_str = '{"age": 20, "score": 88, "name": "Bob"}'
+>>> print(json.loads(json_str, object_hook=dict2student))
+<__main__.Student object at 0x10cd3c190>
+
+```
+
+打印出的是反序列化的Student实例对象。
+
+
+## 常用模块
+### 日期处理
+
+#### str转换为datetime
+
+很多时候，用户输入的日期和时间是字符串，要处理日期和时间，首先必须把str转换为datetime。转换方法是通过datetime.strptime()实现，需要一个日期和时间的格式化字符串：
+
+```
+>>> from datetime import datetime
+>>> cday = datetime.strptime('2015-6-1 18:19:59', '%Y-%m-%d %H:%M:%S')
+>>> print(cday)
+2015-06-01 18:19:59
+
+```
+
+字符串'%Y-%m-%d %H:%M:%S'规定了日期和时间部分的格式。详细的说明请参考Python文档。
+
+注意转换后的datetime是没有时区信息的。
+
+
+#### datetime转换为str
+
+如果已经有了datetime对象，要把它格式化为字符串显示给用户，就需要转换为str，转换方法是通过strftime()实现的，同样需要一个日期和时间的格式化字符串：
+
+```
+>>> from datetime import datetime
+>>> now = datetime.now()
+>>> print(now.strftime('%a, %b %d %H:%M'))
+Mon, May 05 16:28****
+
+```
+
+[格式参考文档](https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior)
+
+
+
+### Collction
+
+* namedtuple是一个函数，它用来创建一个自定义的tuple对象，并且规定了tuple元素的个数，并可以用属性而不是索引来引用tuple的某个元素。
+* deque除了实现list的append()和pop()外，还支持appendleft()和popleft()，这样就可以非常高效地往头部添加或删除元素。
+* defaultdict 使用dict时，如果引用的Key不存在，就会抛出KeyError。如果希望key不存在时，返回一个默认值，就可以用defaultdict
+* OrderedDict: 使用dict时，Key是无序的。在对dict做迭代时，我们无法确定Key的顺序。如果要保持Key的顺序，可以用OrderedDict。OrderedDict的Key会按照插入的顺序排列，不是Key本身排序。OrderedDict可以实现一个FIFO（先进先出）的dict，当容量超出限制时，先删除最早添加的Key
+* Counter：Counter是一个简单的计数器，例如，统计字符出现的个数
