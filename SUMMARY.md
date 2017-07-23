@@ -90,6 +90,7 @@
 	* [Python元组(tuple)](python/python_tuple.md)
 	* [Python namedtuple用法](python/python_namedtuple.md)
 	* [pass的作用](python/python_pass.md)
+	* [Python 字典(Dictionary) fromkeys方法](python/python_fromkeys.md)
 * [Java](java/README.md)
 	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发资料](java/maven_plugin_dev_ref.md)
