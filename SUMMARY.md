@@ -91,6 +91,7 @@
 	* [Python namedtuple用法](python/python_namedtuple.md)
 	* [pass的作用](python/python_pass.md)
 	* [Python 字典(Dictionary) fromkeys方法](python/python_fromkeys.md)
+	* [Python \__getattr\__/\__setattr\__](python/python_getattr_setattr.md)
 * [Java](java/README.md)
 	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发资料](java/maven_plugin_dev_ref.md)
@@ -297,6 +298,7 @@
 	* [知乎：如何让公司员工达到群体性努力](tech_management/team_hard_work.md)
 	* [7个步骤让你做好公司的团队管理](tech_management/7_steps_help_you_team_management.md)
 	* [阿里老话-经典语录](tech_management/ali_old_words.md)
+	* [如何成为一个优秀的工程师](tech_management/how_to_be_excellent_engineer.md)
 * 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [Why、What、How的策略运用](beyondbook/why_how_what.md)
