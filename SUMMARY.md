@@ -298,7 +298,8 @@
 	* [知乎：如何让公司员工达到群体性努力](tech_management/team_hard_work.md)
 	* [7个步骤让你做好公司的团队管理](tech_management/7_steps_help_you_team_management.md)
 	* [阿里老话-经典语录](tech_management/ali_old_words.md)
-	* [如何成为一个优秀的工程师](tech_management/how_to_be_excellent_engineer.md)
+	* [陆奇：如何成为一个优秀的工程师](tech_management/how_to_be_excellent_engineer.md)
+	* [管理者误区：用“聪明”“不聪明”来评判员工，却忽略了真正的“团队毒瘤”](tech_management/management_mistakes_clever_not_clever.md)
 * 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [Why、What、How的策略运用](beyondbook/why_how_what.md)
