@@ -11,3 +11,11 @@ keysym Caps_Lock = Control_L
 add Lock = Caps_Lock
 add Control = Control_L
 ```
+
+
+[Ubuntu互换ctrl和caps lock按键位置](http://www.jianshu.com/p/af0bc1eff569)
+
+```
+在shell终端输入：setxkbmap -option "ctrl:swapcaps"
+
+```
