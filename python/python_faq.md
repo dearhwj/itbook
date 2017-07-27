@@ -61,6 +61,16 @@ usage()
 在交互模式下运行python时，一个下划线字符(_)是特殊标识符，它保留了表达式的最后一个计算结果。
 
 
+
+### 【Python】KeyError解决方法
+原文:[http://blog.csdn.net/investchina/article/details/21177333](http://blog.csdn.net/investchina/article/details/21177333)
+如果不知道dict中是否有key的值  
+  
+dict.get(key)  
+  
+#如果用 dict[key] 读取会报KeyError异常  
+
+
 _就是一个变量，换成a也是可以的，没有特别的意思，不过一般用_表示的变量好像都是没什么用的一个临时变量，大概是一个编程习惯吧。
 
 
