@@ -321,3 +321,4 @@
 	* [比尔盖茨哈佛毕业演讲稿](beyondbook/bill_gates_harvard_speech.md)
 	* [设计师，你是做什么的？](beyondbook/designer_what_do_you_do.md)
 	* [杰夫·贝佐斯：善良比聪明更重要](beyondbook/kindness_vs_smart.md)
+	* [转载：厉害的人，都有一个赚钱机器](beyondbook/great_people_has_a_money_machine.md)
