@@ -114,6 +114,7 @@
 	* [JAVA并发编程](java/java_parallel_programming.md)
 	* [转：从Java视角理解CPU缓存(CPU Cache)](java/java_cpu_cache.md)
 	* [JAVA虚拟机关闭钩子](java/java_shutdown_hook.md)
+	* [HSF泛化调用](java/hsf_generic_invoke.md)
 * [Javascript](Javascript/README.md)
 	* [Javascript小窍门](Javascript/javascript_tips.md)
 	* [Javascript正则表达式](Javascript/javascript_regular_expression.md)
@@ -319,3 +320,4 @@
 	* [转:看《十二怒汉》学沟通](beyondbook/12_angry_man.md)
 	* [比尔盖茨哈佛毕业演讲稿](beyondbook/bill_gates_harvard_speech.md)
 	* [设计师，你是做什么的？](beyondbook/designer_what_do_you_do.md)
+	* [杰夫·贝佐斯：善良比聪明更重要](beyondbook/kindness_vs_smart.md)
