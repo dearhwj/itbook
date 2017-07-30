@@ -1,5 +1,7 @@
 # Python之禅
 
+原文参考[http://blog.csdn.net/zhoudaxia/article/details/23605263](http://blog.csdn.net/zhoudaxia/article/details/23605263)
+
 ## 原文
 ```
 >>> import this  
