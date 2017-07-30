@@ -5,6 +5,47 @@
 
 ## 变量
 ### 定义变量
+
+3种变量类型
+
+* 标量scalars - ${SCALAR}
+* 列表lists - @{LIST}
+* 字典dictionaries - &{DICT}
+
+另外，环境变量可以直接使用语法 %{ENV_VAR} 进行访问
+
+变量和关键字一样，大小写敏感;空格和下划线会被忽略
+
+
+建议:
+* 全局变量使用大写，如${PATH} or ${TWO WORDS}
+* 只在某用例或关键字中使用的变量使用小写，如 ${my var} or ${myVar}
+
+
+标量
+
+* 标量变量${EXAMPLE}， 值以"as-is"的方式被直接使用
+
+
+列表
+
+* @{NAME}[index]访问列表中的单个元素
+* 列表变量@{EXAMPLE}, 单个的list item被分别传递给关键字
+
+字典
+
+* 字典变量&{EXAMPLE}, 单个的dict item被分别以命名参数形式()传递给关键字
+* &{NAME}[key]访问字典中的单个元素
+
+环境变量
+
+* %{ENV_VAR_NAME}直接访问环境变量
+* 环境变量都被认为为字符串
+* 环境变量在测试执行之前，在操作系统中被设置，在执行过程中一直可用
+* 环境变量是全局的，在一个用例中被设置，后续执行的用例都可以使用
+* 对于环境变量的改变，在测试结束后将失效
+
+
 Syntax for variable definition is quite simple, as seen in this variable table:
 
 ```

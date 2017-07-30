@@ -1,4 +1,5 @@
-# python的setup.py文件及其常用命令
+# Python的安装包
+## python的setup.py文件及其常用命令
 编写setup.py文件，获取帮助：python setup.py --help-commands
 
 ```
@@ -74,6 +75,9 @@ install_requires=['...','...']
 
 件中列举的所有引用。 [www.2cto.com](http://www.2cto.com/kf/201209/153517.html)
 
+
+
+
 4.develop:编译并且在适当的位置安装包，然后添加一个简单的链接到python site-packages文
 
 件夹中，可以使用显式的-u选项删除包，例如：  
@@ -85,3 +89,7 @@ python setup.py develop -u
 ...entry_points='''  
 [distutils.commands]  
 my_command=my.command.module.Class
+
+### 参考资料
+[Python深入：Distutils发布Python模块](http://blog.csdn.net/gqtcgq/article/details/49255995)
+[ 关于python中的setup.py](http://blog.csdn.net/xluren/article/details/41114779)

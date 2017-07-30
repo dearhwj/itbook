@@ -60,14 +60,42 @@ usage()
 但是通常python的变成习惯以下划线开头的标识符是有特殊意义的。以单下划线开头（_foo）的代表不能直接访问的类属性，需通过类提供的接口进行访问，不能用“from xxx import *”而导入；以双下划线开头的（__foo）代表类的私有成员；以双下划线开头和结尾的（__foo__）代表python里特殊方法专用的标识，如__init__（）代表类的构造函数。
 在交互模式下运行python时，一个下划线字符(_)是特殊标识符，它保留了表达式的最后一个计算结果。
 
-
 _就是一个变量，换成a也是可以的，没有特别的意思，不过一般用_表示的变量好像都是没什么用的一个临时变量，大概是一个编程习惯吧。
 
 
+### Converting Python dict to kwargs?
+
+Use the double-star (aka double-splat?) operator:
+
+```
+func(**{'type':'Event'})
+is equivalent to
+
+func(type='Event')
+```
+
+### 【Python】KeyError解决方法
+原文:[http://blog.csdn.net/investchina/article/details/21177333](http://blog.csdn.net/investchina/article/details/21177333)
+如果不知道dict中是否有key的值  
+
+```  
+dict.get(key)  
+  
+#如果用 dict[key] 读取会报KeyError异常  
+
+```
+
+
+
 ### 日期格式化
+[格式参考](http://www.cnblogs.com/65702708/archive/2011/04/17/2018936.html)
 
 ```
 >>> datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S');
 '2013-09-17 08:06:17'
 
 ```
+
+
+### \__file\__属性
+
