@@ -79,6 +79,7 @@
     * [Groovy左移位操作符](groovy/groovy_shift_left_operation.md)
     * [Mastering Gradle阅读笔记](groovy/mastering_gradle.md)
 * [Python](python/README.md)
+	* [转：Python之禅](python/python_zen.md)
 	* [转载:python判断指定的端口是否被占用](python/if_port_is_used.md) 
 	* [Python IDE设置](python/python_ide_environment.md)
 	* [Python FAQ](python/python_faq.md)
