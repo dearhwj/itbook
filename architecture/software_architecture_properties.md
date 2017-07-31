@@ -5,14 +5,14 @@
 
 |软件质量属性对用户最重要的属性  |对开发者最重要的属性|
 | --- | --- |
-|有效性（a v a i l a b i l i t y）  |可维护性( m a i n t a i n a b i l i t y )    |
-|高效性( e fficiency)   |可移植性( p o r t a b i l i t y )|
-| 灵活性( f l e x i b i l i t y )  |可重用性( r e u s a b i l i t y )|
-|完整性(integrity)  |可测试性( t e s t a b i l i t y )|
-|互操作性( i n t e r o p e r a b i l i t y )||
-|可靠性( r e l i a b i l i t y )||
-|健壮性( r o b u s t n e s s )||
-|可用性( u s a b i l i t||
+|有效性（availability）  |可维护性(maintainability)    |
+|高效性(efficiency)   |可移植性(portability)|
+| 灵活性(flexibility)  |可重用性(reusability)|
+|完整性(integrity)  |可测试性(testability)|
+|互操作性(interoperability)||
+|可靠性(reliability)||
+|健壮性(robustness)||
+|可用性(usability)||
 
 
 * 有效性：有效性指的是在预定的启动时间中，系统真正可用并且完全运行时间所占的百分比。更正式地说，有效性等于系统的平均故障时间（M T T F）除以平均故障时间与故障修复时间之和。一个有效性需求可能这样说明：“工作日期间，在当地时间早上6点到午夜，系统的有效性至少达到9 9 . 5 %，在下午4点到6点，系统的有效性至少可达到9 9 . 9 5 %“
