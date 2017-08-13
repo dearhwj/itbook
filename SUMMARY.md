@@ -48,6 +48,7 @@
     * [缓存处理](architecture/cache_handle.md)
     * [分布式系统架构](architecture/distributed_system_architecture.md)
     * [软件质量属性](architecture/software_architecture_properties.md)
+    * [软件架构风格](architecture/architecture_styles.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)
