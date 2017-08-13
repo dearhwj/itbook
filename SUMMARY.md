@@ -49,6 +49,7 @@
     * [分布式系统架构](architecture/distributed_system_architecture.md)
     * [软件质量属性](architecture/software_architecture_properties.md)
     * [软件架构风格](architecture/architecture_styles.md)
+    * [笔记：架构风格与基于网络的软件架构设计](architecture/architectural_styles_and_the_design_of_network_based_software_architectures.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)
