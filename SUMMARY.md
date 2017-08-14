@@ -308,6 +308,7 @@
 	* [陆奇：如何成为一个优秀的工程师](tech_management/how_to_be_excellent_engineer.md)
 	* [管理者误区：用“聪明”“不聪明”来评判员工，却忽略了真正的“团队毒瘤”](tech_management/management_mistakes_clever_not_clever.md)
 	* [转：7个方法快速提升你的技术领导力](tech_management/sevent_ways_to_improve_your_tech_leadership.md)
+	* [转:湖畔大学彭蕾剖析阿里人才观：聪明、皮实、乐观、自省](tech_management/ali_talented_people_viewpoint.md)
 * 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [Why、What、How的策略运用](beyondbook/why_how_what.md)
