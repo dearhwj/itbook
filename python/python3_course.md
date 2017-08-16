@@ -19,6 +19,12 @@ UTF-8编码有一个额外的好处，就是ASCII编码实际上可以被看成�
 
 ##　list和tuple
 *　list：Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。
+		* del motorcycles[0]  删除list对象
+		*  motorcycles.insert(0, 'ducati') 插入对象
+		*  motorcycles.append('honda')   尾部增加
+		* motorcycles[0] = 'ducati' 修改list中的对像
+		* motorcycles.pop(0)  弹出对象
+		* motorcycles.remove('ducati') 根据value删除 只删除第一个
 * tuple：另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改
 
 
