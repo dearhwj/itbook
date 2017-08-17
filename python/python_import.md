@@ -197,3 +197,5 @@ import lines, fill, text, ...
 sys.path包含了module的查找路径；
 sys.modules包含了当前所load的所有的modules的dict（其中包含了builtin的modules）；
  
+### 参考
+[Python 2和3在包内import时的语法差异问题](https://segmentfault.com/q/1010000000400151)

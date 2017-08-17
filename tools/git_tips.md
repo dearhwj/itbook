@@ -59,3 +59,16 @@
 	   通过git clone获取的远端git库，只包含了远端git库的当前工作分支。如果想获取其它分支信息，需要使用 “git branch –r” 来查看， 如果需要将远程的其它分支代码也获取过来，可以使用命令 “ git checkout -b 本地分支名 远程分支名”，其中，远程分支名为 “git branch –r” 所列出的分支名， 一般是诸如“origin/分支名”的样子。如果本地分支名已经存在， 则不需要“-b”参数。
 
 [Git紧急处理问题，需要切分支](http://www.cnblogs.com/wangkongming/p/5291513.html)
+
+
+[git切换/重新关联分支](http://blog.csdn.net/kittyboy0001/article/details/48102433)
+
+	如下的命令，使用场景是，本地有原代码，但是没有与远程Git做关联，或关联不正确，需要重新跟踪远程
+	直接修改 git remote origin set-url URL 
+	
+	先删除再添加	
+	git remote rm origin ; 
+	git remote add origin https://xxx.git 
+	git push -u origin yourbranch  
+
+	-u参数能够建立关联

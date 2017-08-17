@@ -94,6 +94,8 @@
 	* [Python import详解](python/python_import.md)
 	* [Python \__init\__.py详解](python/python_init_py.md)
 	* [Python元组(tuple)](python/python_tuple.md)
+	* [Python String操作](python/python_string.md)
+	* [Python中的比较](python/python_compare.md)
 	* [Python namedtuple用法](python/python_namedtuple.md)
 	* [pass的作用](python/python_pass.md)
 	* [Python 字典(Dictionary) fromkeys方法](python/python_fromkeys.md)
