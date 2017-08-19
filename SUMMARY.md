@@ -4,6 +4,8 @@
 	* [机器学习资源大全](ai/machine_learning_collection.md)
 	* [时间序列挖掘-预测算法-三次指数平滑法](ai/holt_winters.md)
 * [数学](math/README.md)
+	* [线性代数](math/linear_algebra.md) 
+* [业务](business/2c_2b.md)
 * [数据](data/README.md)
 	* [Gapminder](data/gapminder.md) 	
 * [算法和数据结构](algorithm/README.md)
@@ -196,8 +198,6 @@
 	* [bower使用入门](frontend/bower_getting_started.md)
 	* [Node小窍门](frontend/node_tips.md)
 	* [Mock2Easy](frontend/mock2easy.md)
-* [SEO](seo/README.md)
-	* [SEO小窍门](seo/seo_tips.md) 	
 * 安全
 	* [Web安全](security/web_security.md)
 	* [使用HttpOnly提升Cookie安全性](security/cookie_httponly.md)
@@ -248,6 +248,7 @@
     * [面向资源的体系架构](web/restful_roa.md)
     * [翻译：The Web API Checklist](web/web_api_checklist_mathieu_fenniak.md)
     * [重用Session提高https性能](web/session_reused_improve_performance.md)
+    * [SEO小窍门](web/seo_tips.md) 	
 * [云计算]
 	* [ODPS](cloud_computing/odps_intro.md)
 	* [Azure消费数据API](cloud_computing/aliyun_vs_azure_billing_api.md)
