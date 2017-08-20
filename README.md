@@ -1,5 +1,5 @@
 
-![image](https://blogimages.oss-cn-hangzhou.aliyuncs.com/cropped-Photo_20140225175851HBLM-e13944651686561.jpg)
+![image](cover.jpg)
 下面这首诗是陶渊明的《劝学》，也是我的座右铭，跟大家分享一下。
 ### 勤如春起之苗，不见其增，日有所长
 ### 辍如磨刀之石，不见其损，日有所亏。
