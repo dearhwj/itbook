@@ -56,6 +56,7 @@
     * [笔记：架构风格与基于网络的软件架构设计](architecture/architectural_styles_and_the_design_of_network_based_software_architectures.md)
     * [来自Google的高可用架构理念与实践](architecture/high_available_idea_from_google.md)
     * [平台VS工具](architecture/platform_vs_tool.md)
+    * [对系统耦合的思考](architecture/thinking_about_coupling.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)
