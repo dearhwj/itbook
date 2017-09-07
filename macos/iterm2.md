@@ -1,4 +1,4 @@
-# Iterm2 快捷键介绍
+# Iterm2使用介绍
 
 ### 标签
 
@@ -32,3 +32,7 @@
 8. 交换光标处文本：ctrl + t
 8. 清屏1：command + r
 8. 清屏2：ctrl + l
+
+
+### 配色
+设置半透明：preferences->profiles->window

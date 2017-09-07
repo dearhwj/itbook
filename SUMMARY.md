@@ -193,7 +193,7 @@
 		* [Dash](macos/dash.md)
 		* [窗口管理应用Sizeup](macos/sizeup.md)
 		* [应用切换工具Manico](macos/manico.md)
-		* [Iterm2 快捷键介绍](macos/iterm2.md)
+		* [Iterm2使用介绍](macos/iterm2.md)
 		* [几个有用的mac命令](macos/useful_macos_command.md)
 	* [MacOS小窍门](macos/macos_tips.md)
 	* [程序员如何优雅地使用Mac](macos/mac_dev.md)
