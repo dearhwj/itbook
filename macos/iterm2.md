@@ -17,6 +17,7 @@
 ### 其他
 1. 查看历史命令：command + ;
 2. 查看剪贴板历史：command + shift + h
+3. 光标去哪了？command+/
 
 ### Shell的常用快捷键
 1. 清除当前行：ctrl + u
