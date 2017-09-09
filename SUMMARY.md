@@ -6,7 +6,8 @@
 	* [Deap Learning必备基础](ai/deep_learning_basic.md)
 * [数学](math/README.md)
 	* [线性代数](math/linear_algebra.md) 
-* [业务](business/2c_2b.md)
+* [业务]
+	* [To B业务 VS To C业务](business/2c_2b.md)
 * [数据](data/README.md)
 	* [Gapminder](data/gapminder.md) 	
 * [算法和数据结构](algorithm/README.md)
