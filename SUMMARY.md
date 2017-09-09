@@ -141,6 +141,7 @@
 * [Linux](linux/README.md)
 	* [linux内核](linux/linux_kernal.md)
 	* [Ubuntu](ubuntu/README.MD) 
+	    *[管理Ubuntu开机启动项](linux/ubuntu/ubuntu_auto_service_management.md)
 	   * [ubuntu下修改键盘映射](linux/ubuntu/modify_keyboard_mapping.md)
 	   * [Windows下安装Ubuntu双系统](linux/ubuntu/install_ubuntu_on_windows.md)
 	   * [在Ubuntu下设置默认编辑器](linux/ubuntu/ubuntu_default_editor.md)
