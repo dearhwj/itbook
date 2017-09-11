@@ -112,6 +112,7 @@
 	* [Python 字典(Dictionary) fromkeys方法](python/python_fromkeys.md)
 	* [Python __getattr__/__setattr__](python/python_getattr_setattr.md)
 	* [Python List操作](python/python_list.md)
+	* [Python Deque操作](python/python_deque.md)
 * [Java](java/README.md)
 	* [Maven小窍门](java/maven_tips.md)	  
 	* [Maven插件开发资料](java/maven_plugin_dev_ref.md)
