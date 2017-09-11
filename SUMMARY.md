@@ -108,6 +108,7 @@
 	* [Python String操作](python/python_string.md)
 	* [Python中的比较](python/python_compare.md)
 	* [Python namedtuple用法](python/python_namedtuple.md)
+	* [Python父类构造函数初始化](python/python_super_class_constructor.md)
 	* [pass的作用](python/python_pass.md)
 	* [Python 字典(Dictionary) fromkeys方法](python/python_fromkeys.md)
 	* [Python __getattr__/__setattr__](python/python_getattr_setattr.md)
