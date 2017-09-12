@@ -5,7 +5,8 @@
 	* [时间序列挖掘-预测算法-三次指数平滑法](ai/holt_winters.md)
 	* [Deap Learning必备基础](ai/deep_learning_basic.md)
 * [数学](math/README.md)
-	* [线性代数](math/linear_algebra.md) 
+	* [漫画线性代数](math/linear_algebra.md) 
+	* [线性代数视频教程](math/linear_algebra_videos.md) 
 * [业务]
 	* [To B业务 VS To C业务](business/2c_2b.md)
 * [数据](data/README.md)
