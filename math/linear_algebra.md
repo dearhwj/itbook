@@ -150,3 +150,5 @@ f-1:X->Y
 
 ***3阶方阵的行列值***
 ![](three_order_square_order_matrix_determinate.png)
+
+

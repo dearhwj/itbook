@@ -1,9 +1,8 @@
 # Summary
-* [人工智能](ai/README.md)
-	* [决策树算法介绍及应用](ai/decision_tree.md) 
-	* [机器学习资源大全](ai/machine_learning_collection.md)
-	* [时间序列挖掘-预测算法-三次指数平滑法](ai/holt_winters.md)
-	* [Deap Learning必备基础](ai/deep_learning_basic.md)
+* [数据智能](di/README.md)
+	* [决策树算法介绍及应用](di/decision_tree.md) 
+	* [数据智能资源大全](di/di_learning_collection.md)
+	* [时间序列挖掘-预测算法-三次指数平滑法](di/holt_winters.md)
 * [数学](math/README.md)
 	* [漫画线性代数](math/linear_algebra.md) 
 	* [线性代数视频教程](math/linear_algebra_videos.md) 
