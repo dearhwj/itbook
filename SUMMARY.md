@@ -35,6 +35,7 @@
 * [架构](architecture/README.md)
 	* [企业应用结构](architecture/enterprise_architecture/)
 		* [TOGAF简介](architecture/enterprise_architecture/togaf_introduction.md) 
+		* [笔记：《从一个故事说起，谈谈企业应用架构的演变史》](architecture/enterprise_architecture/story_about_enterprise_architecture.md)
 	* [REST](architecture/rest.md)
 	* [转：解决方案与需求](architecture/solution_and_requirement.md)
 	* [亚马逊的架构](architecture/aws_architecture_collection.md)
