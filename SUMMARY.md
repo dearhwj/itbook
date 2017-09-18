@@ -261,6 +261,7 @@
 	* [解决provisional headers are shown的过程](web/provisional_headers_are_shown.md)
 	* [几个大型网站提供的IP API接口调用方法](web/ip_query.md)
 	* [HTTPS的设计过程](web/https_process.md)
+	* [CDN架构及原理](web/cdn_architecture_principle.md)
 	* [HTTPS知识储备](web/https_required_security_knowledge.md)
     * [RESTFUL API HTTP STATUS CODE整理](web/restful_api_http_status_code.md)
     * [面向资源的体系架构](web/restful_roa.md)
