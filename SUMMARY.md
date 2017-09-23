@@ -210,6 +210,7 @@
 	* [程序员如何优雅地使用Mac](macos/mac_dev.md)
 * 网络
 	* [快速诊断网络问题](network/network_diagnose.md) 
+	* [DNS如何实现全局负载均衡](dns_global_balance.md)
 * [前端](frontend/README.md)
 	* [Grunt小窍门](frontend/grunt_tips.md)
 	* [npm小窍门](frontend/npm_tips.md)
