@@ -8,6 +8,7 @@
 	* [线性代数视频教程](math/linear_algebra_videos.md) 
 * [业务]
 	* [To B业务 VS To C业务](business/2c_2b.md)
+	* [乔布斯苹果内部演讲谈营销](business/jobs_talking_about_marketing.md)
 * [数据](data/README.md)
 	* [Gapminder](data/gapminder.md) 	
 * [算法和数据结构](algorithm/README.md)
@@ -237,6 +238,7 @@
 	* [How deep are your unit tests](test/how_deep_are_your_unit_tests.md)
 	* [转载:浅谈TDD、BDD与ATDD软件开发](test/tdd_bdd_atdd.md)
 	* [翻译：编写可维护的自动化验收测试](test/writing_maintaintable_automated_acceptance_test.md)
+	* [什么是灰度测试和水桶测试](test/ab_testing_bucket_testing.md)
 	* [压力测试](test/pressure_test.md)
 		* [一分钟学会AB](test/ab_one_minute.md)
 * [VIM](vim/README.md)
