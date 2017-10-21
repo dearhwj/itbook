@@ -22,6 +22,7 @@
 	* [HUFFMAN编码压缩算法](algorithm/huffman_code.md)
 	* [Rsync的同步算法](algorithm/rsync_algorithm.md)
 	* [奇偶校验](algorithm/parity_check.md)
+	* [Luhn算法 (模10校验) ](algorithm/luhn_mod_10.md)
 	* [其他算法](algorithm/other_algorithms.md)
 * [编程]
 	* [并发编程]
