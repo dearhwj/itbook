@@ -21,6 +21,7 @@
 	* [一致性hash算法](algorithm/consistent_hashing.md)
 	* [HUFFMAN编码压缩算法](algorithm/huffman_code.md)
 	* [Rsync的同步算法](algorithm/rsync_algorithm.md)
+	* [奇偶校验](algorithm/parity_check.md)
 	* [其他算法](algorithm/other_algorithms.md)
 * [编程]
 	* [并发编程]
