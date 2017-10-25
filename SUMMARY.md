@@ -1,4 +1,6 @@
 # Summary
+* [企业文化](corporate_culture/README.md)
+	* [早期苹果员工胸牌背面写的11条“成功法则”](corporate_culture/apple_early_success_rules.jpg)
 * [数据智能](di/README.md)
 	* [决策树算法介绍及应用](di/decision_tree.md) 
 	* [数据智能资源大全](di/di_learning_collection.md)
