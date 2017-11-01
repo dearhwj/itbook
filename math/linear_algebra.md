@@ -115,10 +115,14 @@ f-1:X->Y
 * 倍数:单个数字 * 矩阵
 * 积
 ![](matrix_ product.png) 
+	* [矩阵乘法的本质是什么？](https://www.zhihu.com/question/21351965)
 	* 而且左边的矩阵和右边矩阵交换相乘的结果是不一致的
 	* 只有当左边矩阵的列数和右边矩阵的行数相等时，两个矩阵才能进行乘法运算
 
 	![](matrix_multiplication_process.png)
+	![](matrix_product_start.png) 
+	![](matrix_product_end.png)
+	向量(x,y)变换之后的结果，将是x乘以变换以后的i帽，加上y乘以变换以后的j帽。这就意味着只要记录下i帽和j帽变换后的位置，就能计算出一个坐标为(x,y)的向量变换后的坐标
 	
 * n阶方阵的p次幂
 
@@ -187,3 +191,11 @@ f-1:X->Y
 ![](linear_mapping.png)
 
 
+#### 点积
+在数学中，数量积（dot product; scalar product，也称为点积）是接受在实数R上的两个向量并返回一个实数值标量的二元运算。它是欧几里得空间的标准内积。[
+两个向量a = [a1, a2,…, an]和b = [b1, b2,…, bn]的点积定义为：
+a·b=a1b1+a2b2+……+anbn。
+使用矩阵乘法并把（纵列）向量当作n×1 矩阵，点积还可以写为：
+a·b=a^T*b，这里的a^T指示矩阵a的转置。
+
+![](dot_product.png)
