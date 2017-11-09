@@ -69,6 +69,8 @@
     * [平台VS工具](architecture/platform_vs_tool.md)
     * [对系统耦合的思考](architecture/thinking_about_coupling.md)
     * [转：StuQ 程序员技能图谱](architecture/skill-map.md)
+    * [类（对象）之间的四种关系](architecture/class_object_relations.md)
+    * [什么是高内聚低耦合](architeture/what_is_high_cohension_low_coupling.md)
 * [Chrome](chrome/README.md)
 	* [chrome插件](chrome/chrome_plugin.md)
 	* [chrome小技巧](chrome/chrome_tips.md)

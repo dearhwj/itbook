@@ -151,7 +151,10 @@ f-1:X->Y
 * 如果行列式的值不为0，那么该矩阵的逆矩阵就存在。
 * 求解行列式的值的方法因n的值的不同而有所不同
 
-[行列式的本质是什么？](https://www.zhihu.com/question/36966326/answer/70687817)
+[行列式的本质是什么？](https://www.zhihu.com/question/36966326/answer/70687817) 
+
+***行列式就是线性变换的放大率！***
+
 
 ***2阶方阵的行列值***
 ![](two_order_square_matrix_determinant.png)
