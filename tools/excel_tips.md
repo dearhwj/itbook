@@ -20,7 +20,15 @@
 
 [Excel的数据透视表](http://www.excel-easy.com/data-analysis/pivot-tables.html)
 
+[分组数据透视表](http://www.excel-easy.com/examples/group-pivot-table-items.html)
+
+[多级别的数据透视表](http://www.excel-easy.com/examples/multi-level-pivot-table.html)
+
 
 [Excel的数据透视图](http://www.excel-easy.com/examples/pivot-chart.html)
+
+[Excel条件格式化](http://www.excel-easy.com/data-analysis/conditional-formatting.html)
+
+
 
 
