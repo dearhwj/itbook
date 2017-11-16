@@ -16,3 +16,11 @@
 
 
 [excel表格的分段筛选怎么弄](https://zhidao.baidu.com/question/570880692.html)
+
+
+[Excel的数据透视表](http://www.excel-easy.com/data-analysis/pivot-tables.html)
+
+
+[Excel的数据透视图](http://www.excel-easy.com/examples/pivot-chart.html)
+
+

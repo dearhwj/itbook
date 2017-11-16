@@ -40,6 +40,7 @@
 		* [这几个数字每个程序员都应该知道](programming/hardware/numbers_everyone_should_know.md)
 		* [cpu cache line 原理](programming/hardware/cpu_cache_line.md)
 		* [CPU Cache和内存一致性](programming/hardware/cpu_cache_memory.md)
+		* [RAID详解](programming/hardware/raid.md)
 * [架构](architecture/README.md)
 	* [企业应用结构](architecture/enterprise_architecture/)
 		* [TOGAF简介](architecture/enterprise_architecture/togaf_introduction.md) 
