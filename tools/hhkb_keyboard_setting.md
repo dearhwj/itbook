@@ -1,0 +1,28 @@
+# HHKB键盘设置
+
+
+### MAC环境键盘配置
+* 调节hhkb的模式为Macintosh模式：011001 
+
+
+### hhkb组合键
+* 切换程序：cmd + tab  
+* 打开新程序：control + 空格 (如果安装了帽子的同学，可以alt+空格)
+* fn + tab :  切换大小写
+* cmd +  空格 ：切换输入法
+* fn + O : 光线变暗
+* fn + P :光线变亮
+* fn + [ : 上键
+* fn + " : 右键
+* fn + ? : 下键
+* fn + A : 声音降
+* fn + S : 声音升
+           
+           
+
+### 参考资料
+[如何评价 HHKB 新出的蓝牙机型](https://www.zhihu.com/question/46227340)
+
+[HHKB MAC 配置指南 操作指南 快捷键](https://www.cnblogs.com/cynthia-wuqian/p/5778218.html)
+
+[HHKB 纯小白入坑指南](http://yannisxu.farbox.com/post/hhkb-chun-xiao-bai-ru-keng-zhi-nan?utm_source=tuicool)
