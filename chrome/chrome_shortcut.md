@@ -110,3 +110,5 @@ chrome文字快捷键
 
 
 Shift+Delete 键	删除内容并将其复制到剪贴板 
+
+Mac OS: Cmd+Shft+R Windows和Linux操作系统: Shift+F5 或 Ctrl+Shift+R Chrome浏览器如何强制刷新页面(不使用缓存)
