@@ -370,3 +370,4 @@
 	* [转：知乎上的神回复](beyondbook/zhihu_sharp_answers.md)
 	* [转：哈佛大学推荐20个快乐的习惯](beyondbook/happiness_suggestion_from_harvard.md)
 	* [面对问题的18种心态](beyondbook/18_mentality_to_hard_problem.md)
+	* [登山对领导力的明悟](beyondbook/moutain_climbing_and_leadership.md)
