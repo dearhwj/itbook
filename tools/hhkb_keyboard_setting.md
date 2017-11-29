@@ -18,7 +18,14 @@
 * fn + A : 声音降
 * fn + S : 声音升
            
-           
+
+### 禁用mac内置的键盘
+![](hhkb_put_on_mac_keyboard.jpg)   
+如果你想把HHKB放置到Mac 笔记本的内置键盘区就需要禁用掉Mac的内置键盘。通过Karabiner能很方便的支持这个，Karabiner检测到HHKB连上Mac以后可以自动的禁止Mac的内置键盘。
+
+![](karabiner_disable_buildin_keyboard.png)
+
+        
 
 ### 参考资料
 [如何评价 HHKB 新出的蓝牙机型](https://www.zhihu.com/question/46227340)
