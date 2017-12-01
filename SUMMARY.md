@@ -350,6 +350,7 @@
 	* [转:湖畔大学彭蕾剖析阿里人才观：聪明、皮实、乐观、自省](tech_management/ali_talented_people_viewpoint.md)
 * 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
+    * [当你老了，一生最后悔什么？全球统计前五名](beyondbook/top_five_regret_things.md)
 	* [Why、What、How的策略运用](beyondbook/why_how_what.md)
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
 	* [百万富翁的生活习惯总结](beyondbook/millionaire_habits.md)
