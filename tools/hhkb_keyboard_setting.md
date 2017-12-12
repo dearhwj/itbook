@@ -25,6 +25,13 @@
 
 ![](karabiner_disable_buildin_keyboard.png)
 
+
+### 设置方向键
+HHKB在Mac OS需要用小拇指 FN ＋ [;'/ 实现方向键。Fn和[;'/在一个手上操作太麻烦!
+
+通过Karabiner可以实现Command+ HJKL替换方向键
+
+![](chage_command_hjik_to_arrows.png)
         
 
 ### 参考资料
