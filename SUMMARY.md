@@ -351,7 +351,7 @@
 * 思考和阅读
 	* [12个沟通技巧受用一辈子](beyondbook/communication_tech_12.md) 
 	* [如何提高自己的归纳总结能力](beyondbook/how_to_improve_your_conclude_ability.md)
-   * [当你老了，一生最后悔什么？全球统计前五名](beyondbook/top_five_regret_things.md)
+	* [当你老了，一生最后悔什么？全球统计前五名](beyondbook/top_five_regret_things.md)
 	* [Why、What、How的策略运用](beyondbook/why_how_what.md)
 	* [华为副总裁的离职信](beyondbook/huawei_manager_resign_word.md)
 	* [百万富翁的生活习惯总结](beyondbook/millionaire_habits.md)
@@ -374,5 +374,6 @@
 	* [转：哈佛大学推荐20个快乐的习惯](beyondbook/happiness_suggestion_from_harvard.md)
 	* [面对问题的18种心态](beyondbook/18_mentality_to_hard_problem.md)
 	* [登山对领导力的明悟](beyondbook/moutain_climbing_and_leadership.md)
+	* [12种认知偏见](beyond/12_acknowledge_bias.md)
 * 家庭教育
 	* [家长层次有五层,你在哪一层](education/five_levels_abount_home_education.md)
