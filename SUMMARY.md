@@ -26,6 +26,7 @@
 	* [奇偶校验](algorithm/parity_check.md)
 	* [Luhn算法 (模10校验) ](algorithm/luhn_mod_10.md)
 	* [代码校验位及其计算方法](algorithm/code_check_digit_algorithm.md)
+	* [查找表](algorithm/searching_table.md)
 	* [其他算法](algorithm/other_algorithms.md)
 * [编程]
 	* [并发编程]
