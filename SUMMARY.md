@@ -221,6 +221,7 @@
 	* [MacOS小窍门](macos/macos_tips.md)
 	* [程序员如何优雅地使用Mac](macos/mac_dev.md)
 	* [Mac Icon图标制作](macos/mac_make_icon.md)
+	* [Mac系统如何显示隐藏文件](macos/mac_show_hiding_files.md)
 * 网络
 	* [快速诊断网络问题](network/network_diagnose.md) 
 	* [DNS如何实现全局负载均衡](dns_global_balance.md)
