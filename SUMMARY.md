@@ -9,7 +9,7 @@
 * [数学](math/README.md)
   * [漫画线性代数](math/linear_algebra.md) 
   * [线性代数视频教程](math/linear_algebra_videos.md) 
-  * [排列和组合](match/permutation_combination.md)
+  * [排列和组合](math/permutation_combination.md)
 * [业务]
   * [To B业务 VS To C业务](business/2c_2b.md)
   * [乔布斯苹果内部演讲谈营销](business/jobs_talking_about_marketing.md)
