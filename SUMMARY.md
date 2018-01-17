@@ -14,8 +14,10 @@
 * [业务]
   * [To B业务 VS To C业务](business/2c_2b.md)
   * [乔布斯苹果内部演讲谈营销](business/jobs_talking_about_marketing.md)
+
 * [数据](data/README.md)
   * [Gapminder](data/gapminder.md) 	
+
 * [算法和数据结构](algorithm/README.md)
   * [bloom filter](algorithm/bloom_filter.md)
   * [Twitter的分布式自增ID算法Snowflake](algorithm/snowflake.md)
@@ -30,6 +32,7 @@
   * [代码校验位及其计算方法](algorithm/code_check_digit_algorithm.md)
   * [查找表](algorithm/searching_table.md)
   * [其他算法](algorithm/other_algorithms.md)
+
 * [编程]
 	* [日志输出要有洁癖](programming/logging_sytle.md)
 	* [并发编程]
@@ -46,6 +49,7 @@
 		* [cpu cache line 原理](programming/hardware/cpu_cache_line.md)
 		* [CPU Cache和内存一致性](programming/hardware/cpu_cache_memory.md)
 		* [RAID详解](programming/hardware/raid.md)
+
 * [架构](architecture/README.md)
 	* [Linked架构汇总](architecture/linked_architecture_collection.md)
 	* [产品经理](architecture/product_management)
@@ -82,15 +86,18 @@
 	* [类（对象）之间的四种关系](architecture/class_object_relations.md)
 	* [什么是高内聚低耦合](architecture/what_is_high_cohension_low_coupling.md)
 	* [领域对象细化分解方法总结](architecture/domain_objct_refining_way.md)
+
 * [Chrome](chrome/README.md)
   * [chrome插件](chrome/chrome_plugin.md)
   * [chrome小技巧](chrome/chrome_tips.md)
   * [chrome快捷键](chrome/chrome_shortcut.md)
   * [Chrome Command Line API 参考](chrome/chrome_command_line_api.md)
+  
 * [数据库](database/README.md)
   * [Mysql小技巧](database/mysql_tips.md)
   * [SQL小技巧](database/sql_tips.md)
   * [转载:MySQL中Cardinality值的介绍](database/mysql_cardinality.md)
+  
 * [Groovy](groovy/README.md)
 	* [Groovy小技巧](groovy/groovy.md)	
   	* [Groovy环境配置](groovy/groovy_environment.md) 
@@ -116,7 +123,7 @@
   	* [Mastering Gradle阅读笔记](groovy/mastering_gradle.md)
 
 * [Python](python/README.md)
-	* [转：Python之禅](python/python_zen.md)
+	* [Python之禅](python/python_zen.md)
   	* [Python的迭代器](python/python_iterator.md)
   	* [转载:python判断指定的端口是否被占用](python/if_port_is_used.md) 
   	* [Python IDE设置](python/python_ide_environment.md)
@@ -136,6 +143,7 @@
   	* [Python __getattr__/__setattr__](python/python_getattr_setattr.md)
   	* [Python List操作](python/python_list.md)
   	* [Python Deque操作](python/python_deque.md)
+  	
 * [Java](java/README.md)
 	* [Maven小窍门](java/maven_tips.md)	  
   	* [Maven插件开发资料](java/maven_plugin_dev_ref.md)
