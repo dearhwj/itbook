@@ -31,6 +31,7 @@
   * [查找表](algorithm/searching_table.md)
   * [其他算法](algorithm/other_algorithms.md)
 * [编程]
+	* [日志输出要有洁癖](programming/logging_sytle.md)
 	* [并发编程]
 		* [Preshing on Programming笔记](programming/parallel/preshing_on_programming_reading.md)
 		* [Read-Copy Update](programming/parallel/read_copy_update.md)
@@ -61,7 +62,7 @@
 	* [“框架”论述摘录](architecture/framework_expound.md)
 	* [23种设计模式](architecture/design_pattern_list_23.md)
 	* [架构的内容](architecture/architecture_content.md)
-  	* [电商系统架构整理](architecture/electronic_business_architecture.md)
+	* [电商系统架构整理](architecture/electronic_business_architecture.md)
   	* [开放平台架构整理](architecture/open_platform_architecture.md)
   	* [蔡学镛的微博阅读笔记](architecture/author_caixueyong.md)
   	* [蔡学镛的软件架构设计方法论](architecture/architecture_design_caixueyong.md)
@@ -91,7 +92,7 @@
   * [SQL小技巧](database/sql_tips.md)
   * [转载:MySQL中Cardinality值的介绍](database/mysql_cardinality.md)
 * [Groovy](groovy/README.md)
-  	* [Groovy小技巧](groovy/groovy.md)	
+	* [Groovy小技巧](groovy/groovy.md)	
   	* [Groovy环境配置](groovy/groovy_environment.md) 
   	* [Groovy操作JSON](groovy/groovy_json.md)
   	* [Groovy处理Java Bean](groovy/groovy_java_bean.md) 
