@@ -57,6 +57,7 @@
 	* [企业应用结构](architecture/enterprise_architecture/)
 		* [TOGAF简介](architecture/enterprise_architecture/togaf_introduction.md) 
 		* [笔记：《从一个故事说起，谈谈企业应用架构的演变史》](architecture/enterprise_architecture/story_about_enterprise_architecture.md)
+	
 	* [REST](architecture/rest.md)
 	* [转：解决方案与需求](architecture/solution_and_requirement.md)
 	* [亚马逊的架构](architecture/aws_architecture_collection.md)
@@ -67,6 +68,7 @@
 	* [23种设计模式](architecture/design_pattern_list_23.md)
 	* [架构的内容](architecture/architecture_content.md)
 	* [电商系统架构整理](architecture/electronic_business_architecture.md)
+  	
   	* [开放平台架构整理](architecture/open_platform_architecture.md)
   	* [蔡学镛的微博阅读笔记](architecture/author_caixueyong.md)
   	* [蔡学镛的软件架构设计方法论](architecture/architecture_design_caixueyong.md)
