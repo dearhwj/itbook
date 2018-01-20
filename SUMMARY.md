@@ -271,6 +271,7 @@
   * [压力测试](test/pressure_test.md)
   * [一分钟学会AB](test/ab_one_minute.md)
   * [全面质量管理的经典理念——戴明的十四要点](test/tqm_deming_14_rules.md)
+  * [5M1E分析法](test/5m1e_analysis.md) 
 * [VIM](vim/README.md)
   * [Vim小窍门](vim/vim_tips.md)
   * [vim插入](vim/vim_insert.md)
