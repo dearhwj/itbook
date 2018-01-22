@@ -1,6 +1,7 @@
 # Summary
 * [企业文化](corporate_culture/README.md)
   * [早期苹果员工胸牌背面写的11条“成功法则”](corporate_culture/apple_early_success_rules.jpg)
+  * [IBM企业文化](corporate_culture/ibm_enterprise_culture.md)
 * [数据智能](di/README.md)
   * [决策树算法介绍及应用](di/decision_tree.md) 
   * [数据智能资源大全](di/di_learning_collection.md)
@@ -272,7 +273,7 @@
   * [什么是灰度测试和水桶测试](test/ab_testing_bucket_testing.md)
   * [压力测试](test/pressure_test.md)
   * [一分钟学会AB](test/ab_one_minute.md)
-  * [全面质量管理的经典理念——戴明的十四要点](test/tqm_deming_14_rules.md)
+  * [全面质量管理的经典理念](test/tqm_deming_14_rules.md)
   * [5M1E分析法](test/5m1e_analysis.md) 
 * [VIM](vim/README.md)
   * [Vim小窍门](vim/vim_tips.md)
