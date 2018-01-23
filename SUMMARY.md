@@ -55,6 +55,7 @@
 	* [Linked架构汇总](architecture/linked_architecture_collection.md)
 	* [产品经理](architecture/product_management)
 		* [如何分析俞军的PM12条](architecture/product_management/12_pm_rules_from_yujun.md)  
+		* [理解](architecture/product_management/how_to_understand_less_is_more.md) 
 	* [企业应用结构](architecture/enterprise_architecture/)
 		* [TOGAF简介](architecture/enterprise_architecture/togaf_introduction.md) 
 		* [笔记：《从一个故事说起，谈谈企业应用架构的演变史》](architecture/enterprise_architecture/story_about_enterprise_architecture.md)
