@@ -332,6 +332,7 @@
 	* [HHKB键盘设置](tools/hhkb_keyboard_setting.md)
 	* [使用Graphviz画UML类图](tools/using_graphviz_drawing_uml.md)
 	* [鱼骨图](tools/fishbone_diagram.md)
+	* [定制ideavim](tools/customer_ideavim.md)
 * 程序猿宝典
   * [值得程序员关注的微信公众号](programmer/wx_public.md)
   * [程序员鄙视链](programmer/dev_down.md)
