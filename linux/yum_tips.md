@@ -27,4 +27,17 @@
 	 命令：yum provides~
 	 
 	 
-	 
+[在Centos中yum安装和卸载软件的使用方法](http://blog.51cto.com/gzmaster/72278)
+
+	安装一个软件时
+	yum -y install httpd
+	安装多个相类似的软件时
+	yum -y install httpd*
+	安装多个非类似软件时
+	yum -y install httpd php php-gd mysql
+	卸载一个软件时
+	yum -y remove httpd
+	卸载多个相类似的软件时
+	yum -y remove httpd*
+	卸载多个非类似软件时
+	yum -y remove httpd php php-gd mysql	 
