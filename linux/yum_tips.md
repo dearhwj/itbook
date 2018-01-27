@@ -41,3 +41,6 @@
 	yum -y remove httpd*
 	卸载多个非类似软件时
 	yum -y remove httpd php php-gd mysql	 
+	
+[CentOS 7更改yum源与更新系统](https://www.cnblogs.com/taomylife/p/7851744.html)
+	
