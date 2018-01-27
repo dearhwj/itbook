@@ -86,3 +86,15 @@
 * CTRL+y 同上，但是向下移
 * % match of next brace, bracket, comment
 
+
+### 插入模式下的移动
+```
+" insert mode shortcut
+inoremap  < C-h >   < Left >
+inoremap  < C-j >   < Down >
+inoremap  < C-k >   < Up >
+inoremap  < C-l >   < Right >
+inoremap  < C-d >   < DELETE >
+
+
+```

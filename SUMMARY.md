@@ -7,6 +7,7 @@
   * [数据智能资源大全](di/di_learning_collection.md)
   * [时间序列挖掘-预测算法-三次指数平滑法](di/holt_winters.md)
   * [数据仓库逻辑区域及各区域的功能和特点](di/dataware_region_function.md)
+  * [高效的数据科学团队如何建设](di/how_to_build_data_science_team.md)
 * [数学](math/README.md)
   * [漫画线性代数](math/linear_algebra.md) 
   * [线性代数视频教程](math/linear_algebra_videos.md) 
