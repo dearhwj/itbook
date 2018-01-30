@@ -249,7 +249,8 @@
   	* [Mac系统如何显示隐藏文件](macos/mac_show_hiding_files.md)
 * 网络
   * [快速诊断网络问题](network/network_diagnose.md) 
-  * [DNS如何实现全局负载均衡](dns_global_balance.md)
+  * [DNS如何实现全局负载均衡](network/dns_global_balance.md)
+  * [TCP创建用来listen的socket时使用的地址](network/tcp_listen_ip.md)
 * [前端](frontend/README.md)
   * [Grunt小窍门](frontend/grunt_tips.md)
   * [npm小窍门](frontend/npm_tips.md)
