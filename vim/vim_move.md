@@ -90,11 +90,11 @@
 ### 插入模式下的移动
 ```
 " insert mode shortcut
-inoremap  < C-h >   < Left >
-inoremap  < C-j >   < Down >
-inoremap  < C-k >   < Up >
-inoremap  < C-l >   < Right >
-inoremap  < C-d >   < DELETE >
-
+inoremap  < C-h >   < Left > # 插入模式下向左移一位
+inoremap  < C-j >   < Down ># 插入模式下向下移一位
+inoremap  < C-k >   < Up ># 插入模式下向上移一位
+inoremap  < C-l >   < Right > # 插入模式下向右移一位
+inoremap  < C-d >   < DELETE ># 插入模式下删除
+inoremap <C-l> <Esc>o # 插入模式下插入空白行
 
 ```
