@@ -282,6 +282,7 @@
   * [一分钟学会AB](test/ab_one_minute.md)
   * [全面质量管理的经典理念](test/tqm_deming_14_rules.md)
   * [5M1E分析法](test/5m1e_analysis.md) 
+  * [中国工厂的154种浪费](test/154_wasts_in_china.md)
 * [VIM](vim/README.md)
   * [Vim小窍门](vim/vim_tips.md)
   * [vim插入](vim/vim_insert.md)
