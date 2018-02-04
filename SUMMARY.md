@@ -218,6 +218,7 @@
     * [/var/log目录下的20个Linux日志文件功能详解](linux/linux_log_file_function.md)
     * [Linux日志体系](linux/linux_log_architecture.md)
     * [Linux devel包 和 非devel包的区别](linux/linux_lib_devlib.md)
+    * [Pick命令行模糊搜索工具](linux/linux_command_pick.md)
   * [Shell小窍门](Shell/shell_programming.md)
     * [MAC下通过命令行格式化JSON](Shell/mac_shell_format_json.md)
     * [Shell命令查找源代码](Shell/find_source_code.md)
