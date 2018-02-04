@@ -343,6 +343,7 @@
 	* [鱼骨图](tools/fishbone_diagram.md)
 	* [定制ideavim](tools/customer_ideavim.md)
 	* [IDEA自动生成serialVersionUID](tools/idea_serialversionuid.md)
+	* [EXCEL多重判断](tools/excel_multi_decision.md)
 * 程序猿宝典
   * [值得程序员关注的微信公众号](programmer/wx_public.md)
   * [程序员鄙视链](programmer/dev_down.md)
